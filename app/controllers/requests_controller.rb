@@ -1,6 +1,8 @@
 class RequestsController < ApplicationController
   def new
     @landing = params["landing"]
+    @landing_desc = landings.find { |l| l[:landing] == @landing }[:desc]
+    @landing_img = landings.find { |l| l[:landing] == @landing }[:img]
     @fields = personnal_information_fields
     @request = Request.new
   end
@@ -32,4 +34,13 @@ class RequestsController < ApplicationController
     return { sections: sections, fields: a}
   end
 
+  def landings
+    l = [
+      { landing: "1", desc: "Vendez votre bien en 48h", img: 'cover.png' },
+      { landing: "2", desc: "Vendez en toute tranquilité", img: 'cover.png' },
+      { landing: "3", desc: "L'agence immobilière 2.0", img: 'cover.png' },
+      { landing: "4", desc: "La première agence immobilière gratuite", img: 'cover.png' },
+      { landing: "5", desc: "Des services exceptionnels pour des biens exceptionnels", img: 'cover.png' },
+      ]
+  end
 end

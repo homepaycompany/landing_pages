@@ -8024,3 +8024,17 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 17:37:11 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (11.2ms)
+  Rendered pages/home.html.erb within layouts/application (12.0ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/albanp/code/aporcheron/homepay/landing_pages/public/packs
+Completed 200 OK in 4671ms (Views: 4670.2ms | ActiveRecord: 0.0ms)
+
+

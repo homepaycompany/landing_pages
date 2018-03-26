@@ -4,7 +4,7 @@
       <% if t[:input_type] == 'state_box' %>
         <div class="col-xs-12">
           <div class="form-field">
-            <%= render 'property_forms/form_fields/state_field', fields: fields, t: t %>
+            <%= render 'property_forms/form_fields/state_field', fields: fields, t: t, f: f %>
           </div>
         </div>
       <% else %>
@@ -12,9 +12,9 @@
           <div class="col-xs-12">
             <div class="form-field">
               <% if t[:input_type] == 'text' %>
-                <%= render 'property_forms/form_fields/text_field', fields: fields, t: t %>
+                <%= render 'property_forms/form_fields/text_field', fields: fields, t: t, f: f %>
               <% elsif t[:input_type] == 'boolean' %>
-                <%= render 'property_forms/form_fields/boolean_field', fields: fields, t: t %>
+                <%= render 'property_forms/form_fields/boolean_field', fields: fields, t: t, f: f %>
               <% end %>
             </div>
           </div>
@@ -22,9 +22,9 @@
           <div class="col-xs-12 col-sm-6">
             <div class="form-field">
               <% if t[:input_type] == 'text' %>
-                <%= render 'property_forms/form_fields/text_field', fields: fields, t: t %>
+                <%= render 'property_forms/form_fields/text_field', fields: fields, t: t, f: f %>
               <% elsif t[:input_type] == 'boolean' %>
-                <%= render 'property_forms/form_fields/boolean_field', fields: fields, t: t %>
+                <%= render 'property_forms/form_fields/boolean_field', fields: fields, t: t, f: f %>
               <% end %>
             </div>
           </div>
@@ -32,9 +32,9 @@
           <div class="col-xs-12 col-sm-4">
             <div class="form-field">
               <% if t[:input_type] == 'text' %>
-                <%= render 'property_forms/form_fields/text_field', fields: fields, t: t %>
+                <%= render 'property_forms/form_fields/text_field', fields: fields, t: t, f: f %>
               <% elsif t[:input_type] == 'boolean' %>
-                <%= render 'property_forms/form_fields/boolean_field', fields: fields, t: t %>
+                <%= render 'property_forms/form_fields/boolean_field', fields: fields, t: t, f: f %>
               <% end %>
             </div>
           </div>

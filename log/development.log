@@ -5411,3 +5411,2087 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-26 15:13:08 +0200
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (11.5ms)
+Completed 401 Unauthorized in 68ms (ActiveRecord: 5.8ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/landings_tests/_home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb__3865171624022433896_70210304172260'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/" for 127.0.0.1 at 2018-03-26 15:13:25 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.6ms)
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/landings_tests/_home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb__3865171624022433896_70210332180840'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/landing=simplicity" for 127.0.0.1 at 2018-03-26 15:13:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/landing=simplicity"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.2.2) lib/webpacker/dev_server_proxy.rb:18:in `perform_request'
+rack-proxy (0.6.3) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/landing" for 127.0.0.1 at 2018-03-26 15:13:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/landing"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.2.2) lib/webpacker/dev_server_proxy.rb:18:in `perform_request'
+rack-proxy (0.6.3) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/landing=simplicity" for 127.0.0.1 at 2018-03-26 15:13:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/landing=simplicity"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.2.2) lib/webpacker/dev_server_proxy.rb:18:in `perform_request'
+rack-proxy (0.6.3) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/?landing=simplicity" for 127.0.0.1 at 2018-03-26 15:13:29 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"simplicity"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.6ms)
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/landings_tests/_simplicity with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb__3865171624022433896_70210339096740'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 15:13:32 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (62.7ms)
+  Rendered pages/features/_free.html.erb (1.7ms)
+  Rendered pages/features/_value.html.erb (1.5ms)
+  Rendered pages/features/_flexible.html.erb (1.4ms)
+  Rendered pages/landings_tests/_1.html.erb (9145.3ms)
+  Rendered pages/home.html.erb within layouts/application (9151.4ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Hash: 4826d7b37ece589a8ea4
+Version: webpack 3.11.0
+Time: 1666ms
+                                  Asset       Size  Chunks                    Chunk Names
+    application-a09eaea3d7c1972e4e7d.js     491 kB       0  [emitted]  [big]  application
+            map-e4997b475f8cfb42c197.js     342 kB       1  [emitted]  [big]  map
+application-a09eaea3d7c1972e4e7d.js.map     608 kB       0  [emitted]         application
+        map-e4997b475f8cfb42c197.js.map     443 kB       1  [emitted]         map
+                          manifest.json  250 bytes          [emitted]         
+   [1] ./app/javascript/packs/application.js 1.83 kB {0} [built]
+  [15] ./app/javascript/shared/autocomplete.js 653 bytes {0} [built]
+  [16] ./app/javascript/shared/goBack.js 147 bytes {0} [built]
+  [17] ./app/javascript/shared/formSectionValidation.js 1.55 kB {0} [built]
+  [18] ./app/javascript/shared/formRevealElements.js 1.1 kB {0} [built]
+  [19] ./app/javascript/shared/formCheckBoolean.js 577 bytes {0} [built]
+  [20] ./app/javascript/shared/formCheckStateBox.js 977 bytes {0} [built]
+  [21] ./app/javascript/shared/addressValidation.js 1.35 kB {0} [built]
+  [22] ./app/javascript/shared/dropzone.js 1.31 kB {0} [built]
+  [24] (webpack)/buildin/module.js 517 bytes {0} [built]
+  [26] ./app/javascript/shared/faq.js 1.59 kB {0} [built]
+  [27] ./app/javascript/packs/map.js 384 bytes {1} [built]
+    + 20 hidden modules
+
+ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/dropzone/dist/dropzone.css
+Module build failed: Error: No PostCSS Config found in: /Users/arthurreboul/code/oruhtra/homepay/landing_pages/.postcssrc.yml
+    at /Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
+    at <anonymous>
+ @ ./node_modules/dropzone/dist/dropzone.css 2:14-121
+ @ ./app/javascript/shared/dropzone.js
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./node_modules/dropzone/dist/dropzone.css
+Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Config found in: /Users/arthurreboul/code/oruhtra/homepay/landing_pages/.postcssrc.yml
+    at /Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
+    at <anonymous>
+    at runLoaders (/Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/webpack/lib/NormalModule.js:195:19)
+    at /Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/loader-runner/lib/LoaderRunner.js:364:11
+    at /Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/loader-runner/lib/LoaderRunner.js:230:18
+    at context.callback (/Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at Promise.resolve.then.then.catch (/Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/postcss-loader/lib/index.js:196:71)
+    at <anonymous>
+ @ ./node_modules/dropzone/dist/dropzone.css
+ @ ./app/javascript/shared/dropzone.js
+ @ ./app/javascript/packs/application.js
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!node_modules/dropzone/dist/dropzone.css:
+       1 module
+    
+    ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/dropzone/dist/dropzone.css
+    Module build failed: Error: No PostCSS Config found in: /Users/arthurreboul/code/oruhtra/homepay/landing_pages/.postcssrc.yml
+        at /Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
+        at <anonymous>
+
+set is deprecated! Use append instead
+
+Completed 200 OK in 12750ms (Views: 12748.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 15:14:46 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (9.8ms)
+  Rendered pages/features/_free.html.erb (1.6ms)
+  Rendered pages/features/_value.html.erb (1.8ms)
+  Rendered pages/features/_flexible.html.erb (2.1ms)
+  Rendered pages/landings_tests/_1.html.erb (42.3ms)
+  Rendered pages/home.html.erb within layouts/application (47.5ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (3.0ms)
+Completed 200 OK in 129ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?1" for 127.0.0.1 at 2018-03-26 15:14:48 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"1"=>nil}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (3.2ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?1" for 127.0.0.1 at 2018-03-26 15:15:15 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"1"=>nil}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (0.4ms)
+  Rendered shared/_navbar.html.erb (4.1ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (3.1ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?1" for 127.0.0.1 at 2018-03-26 15:15:19 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"1"=>nil}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (0.4ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.0ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 15:15:23 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (3.1ms)
+  Rendered pages/features/_free.html.erb (1.6ms)
+  Rendered pages/features/_value.html.erb (1.4ms)
+  Rendered pages/features/_flexible.html.erb (1.3ms)
+  Rendered pages/landings_tests/_1.html.erb (25.5ms)
+  Rendered pages/home.html.erb within layouts/application (28.5ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.9ms)
+Completed 200 OK in 87ms (Views: 84.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:15:24 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (3.0ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:16:45 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (4.7ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `personnal_information_fields' for nil:NilClass):
+     6:           <h1>Parlez-nous un peu de vous</h1>
+     7:         </div>
+     8:         <div class="form-body">
+     9:           <%= render 'property_forms/form_sections/form_section_dispatch', page: @property_form.personnal_information_fields %>
+    10:         </div>
+    11:         <%= render 'property_forms/form_validation/form_validation', next_p: 'Valider', previous_p: 'Retour' %>
+    12:       </div>
+  
+app/views/pages/subscription.html.erb:9:in `_app_views_pages_subscription_html_erb__4347270064267213307_70210372103640'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:17:55 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (5.8ms)
+Completed 401 Unauthorized in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Property):
+     6:           <h1>Parlez-nous un peu de vous</h1>
+     7:         </div>
+     8:         <div class="form-body">
+     9:           <%= render 'property_forms/form_sections/form_section_dispatch', page: Property.personnal_information_fields %>
+    10:         </div>
+    11:         <%= render 'property_forms/form_validation/form_validation', next_p: 'Valider', previous_p: 'Retour' %>
+    12:       </div>
+  
+app/views/pages/subscription.html.erb:9:in `_app_views_pages_subscription_html_erb__4347270064267213307_70210340731660'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:19:23 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+Completed 401 Unauthorized in 127ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `asset_url' for #<PagesController:0x00007fb63a10a520>
+Did you mean?  assets_dir):
+  
+app/controllers/pages_controller.rb:45:in `personnal_information_fields'
+app/controllers/pages_controller.rb:18:in `subscription'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:24:15 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+Completed 401 Unauthorized in 182ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `asset_url' for #<PagesController:0x00007fb640c467f8>
+Did you mean?  assets_dir):
+  
+app/controllers/pages_controller.rb:45:in `personnal_information_fields'
+app/controllers/pages_controller.rb:18:in `subscription'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:29:22 +0200
+  [1m[35m (27.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+Completed 401 Unauthorized in 106ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `asset_url' for #<PagesController:0x00007fb666009168>
+Did you mean?  assets_dir):
+  
+app/controllers/pages_controller.rb:45:in `personnal_information_fields'
+app/controllers/pages_controller.rb:18:in `subscription'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:30:25 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (1675.2ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (1680.2ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (1683.3ms)
+  Rendered pages/subscription.html.erb within layouts/application (1686.6ms)
+Completed 401 Unauthorized in 1710ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    3:   <strong><%= t[:desc] %></strong>
+    4: </div>
+    5: <div class="form-input">
+    6:   <%= simple_form_for(@property_form, remote: true) do |f| %>
+    7:     <%= f.input t[:name], label: false,  placeholder: t[:unit] %>
+    8:     <%= f.submit class:"hidden form-field-submit-button" %>
+    9:   <% end %>
+  
+app/views/property_forms/form_fields/_text_field.html.erb:6:in `_app_views_property_forms_form_fields__text_field_html_erb___4033948394977124044_70210683191880'
+app/views/property_forms/form_sections/_form_input_section.html.erb:25:in `block in _app_views_property_forms_form_sections__form_input_section_html_erb__4085906757643432221_70210683224240'
+app/views/property_forms/form_sections/_form_input_section.html.erb:3:in `each'
+app/views/property_forms/form_sections/_form_input_section.html.erb:3:in `_app_views_property_forms_form_sections__form_input_section_html_erb__4085906757643432221_70210683224240'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:5:in `block in _app_views_property_forms_form_sections__form_section_dispatch_html_erb___1822653013125741184_70210683256920'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:1:in `each'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:1:in `_app_views_property_forms_form_sections__form_section_dispatch_html_erb___1822653013125741184_70210683256920'
+app/views/pages/subscription.html.erb:9:in `_app_views_pages_subscription_html_erb___4162318440929112341_70210683311300'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35mSQL (22.6ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (175.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "faqs" CASCADE[0m
+  [1m[35m (82.3ms)[0m  [1m[35mCREATE TABLE "faqs" ("id" bigserial primary key, "question" character varying, "answer" text, "topic" character varying)[0m
+  [1m[35m (34.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "property_forms" CASCADE[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "property_forms" ("id" bigserial primary key, "address" character varying, "property_type" character varying, "num_floors" integer, "num_rooms" integer, "num_bedrooms" integer, "num_bathrooms" integer, "property_total_size_sqm" integer, "size_balcony_sqm" integer, "size_terrace_sqm" integer, "size_cellar_sqm" integer, "building_construction_year" integer, "has_balcony" boolean, "has_garage" boolean, "has_terrace" boolean, "has_cellar" boolean, "has_parking" boolean, "has_elevator" boolean, "has_works_in_building_planned" boolean, "building_state" character varying, "property_state" character varying, "kitchen_state" character varying, "bathroom_state" character varying, "complete" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" bigint, "latitude" float, "longitude" float, "has_pool" boolean, "has_attic" boolean, "is_attic_convertible" boolean, "appartment_floor" integer, "livable_size_sqm" integer, "ground_floor_size_sqm" integer, "first_name" character varying, "last_name" character varying, "email" character varying, "phone_number" character varying, "time_to_sell" character varying, "token" character varying)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE  INDEX  "index_property_forms_on_user_id" ON "property_forms"  ("user_id")[0m
+  [1m[35m (9.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "property_images" CASCADE[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "property_images" ("id" bigserial primary key, "photo" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "real_estate_property_id" bigint, "property_form_id" bigint)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_property_images_on_property_form_id" ON "property_images"  ("property_form_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_property_images_on_real_estate_property_id" ON "property_images"  ("real_estate_property_id")[0m
+  [1m[35m (9.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "real_estate_properties" CASCADE[0m
+  [1m[35m (11.0ms)[0m  [1m[35mCREATE TABLE "real_estate_properties" ("id" bigserial primary key, "address" character varying, "property_type" character varying, "num_floors" integer, "num_rooms" integer, "num_bedrooms" integer, "num_bathrooms" integer, "property_total_size_sqm" integer, "size_balcony_sqm" integer, "size_terrace_sqm" integer, "size_cellar_sqm" integer, "building_construction_year" integer, "has_balcony" boolean, "has_garage" boolean, "has_terrace" boolean, "has_cellar" boolean, "has_parking" boolean, "has_elevator" boolean, "has_works_in_building_planned" boolean, "building_state" character varying, "property_state" character varying, "kitchen_state" character varying, "bathroom_state" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" bigint, "property_form_id" bigint, "latitude" float, "longitude" float, "has_pool" boolean, "has_attic" boolean, "is_attic_convertible" boolean, "appartment_floor" integer, "livable_size_sqm" integer, "ground_floor_size_sqm" integer, "time_to_sell" character varying, "first_name" character varying, "last_name" character varying, "email" character varying, "phone_number" character varying, "token" character varying)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_real_estate_properties_on_property_form_id" ON "real_estate_properties"  ("property_form_id")[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_real_estate_properties_on_user_id" ON "real_estate_properties"  ("user_id")[0m
+  [1m[35m (10.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "phone_number" character varying, "first_name" character varying, "last_name" character varying, "admin" boolean DEFAULT 'f' NOT NULL)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (17.0ms)[0m  [1m[35mALTER TABLE "property_forms" ADD CONSTRAINT "fk_rails_321e44ee9e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "property_images" ADD CONSTRAINT "fk_rails_6e7adbcfca"
+FOREIGN KEY ("property_form_id")
+  REFERENCES "property_forms" ("id")
+[0m
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "property_images" ADD CONSTRAINT "fk_rails_f6c531c4cb"
+FOREIGN KEY ("real_estate_property_id")
+  REFERENCES "real_estate_properties" ("id")
+[0m
+  [1m[35m (1.6ms)[0m  [1m[35mALTER TABLE "real_estate_properties" ADD CONSTRAINT "fk_rails_d9c5154143"
+FOREIGN KEY ("property_form_id")
+  REFERENCES "property_forms" ("id")
+[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "real_estate_properties" ADD CONSTRAINT "fk_rails_df08f859f0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (3.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "faqs" CASCADE[0m
+  [1m[35m (34.0ms)[0m  [1m[35mCREATE TABLE "faqs" ("id" bigserial primary key, "question" character varying, "answer" text, "topic" character varying)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "property_forms" CASCADE[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "property_forms" ("id" bigserial primary key, "address" character varying, "property_type" character varying, "num_floors" integer, "num_rooms" integer, "num_bedrooms" integer, "num_bathrooms" integer, "property_total_size_sqm" integer, "size_balcony_sqm" integer, "size_terrace_sqm" integer, "size_cellar_sqm" integer, "building_construction_year" integer, "has_balcony" boolean, "has_garage" boolean, "has_terrace" boolean, "has_cellar" boolean, "has_parking" boolean, "has_elevator" boolean, "has_works_in_building_planned" boolean, "building_state" character varying, "property_state" character varying, "kitchen_state" character varying, "bathroom_state" character varying, "complete" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" bigint, "latitude" float, "longitude" float, "has_pool" boolean, "has_attic" boolean, "is_attic_convertible" boolean, "appartment_floor" integer, "livable_size_sqm" integer, "ground_floor_size_sqm" integer, "first_name" character varying, "last_name" character varying, "email" character varying, "phone_number" character varying, "time_to_sell" character varying, "token" character varying)[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE  INDEX  "index_property_forms_on_user_id" ON "property_forms"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "property_images" CASCADE[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "property_images" ("id" bigserial primary key, "photo" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "real_estate_property_id" bigint, "property_form_id" bigint)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_property_images_on_property_form_id" ON "property_images"  ("property_form_id")[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_property_images_on_real_estate_property_id" ON "property_images"  ("real_estate_property_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "real_estate_properties" CASCADE[0m
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE "real_estate_properties" ("id" bigserial primary key, "address" character varying, "property_type" character varying, "num_floors" integer, "num_rooms" integer, "num_bedrooms" integer, "num_bathrooms" integer, "property_total_size_sqm" integer, "size_balcony_sqm" integer, "size_terrace_sqm" integer, "size_cellar_sqm" integer, "building_construction_year" integer, "has_balcony" boolean, "has_garage" boolean, "has_terrace" boolean, "has_cellar" boolean, "has_parking" boolean, "has_elevator" boolean, "has_works_in_building_planned" boolean, "building_state" character varying, "property_state" character varying, "kitchen_state" character varying, "bathroom_state" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" bigint, "property_form_id" bigint, "latitude" float, "longitude" float, "has_pool" boolean, "has_attic" boolean, "is_attic_convertible" boolean, "appartment_floor" integer, "livable_size_sqm" integer, "ground_floor_size_sqm" integer, "time_to_sell" character varying, "first_name" character varying, "last_name" character varying, "email" character varying, "phone_number" character varying, "token" character varying)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_real_estate_properties_on_property_form_id" ON "real_estate_properties"  ("property_form_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_real_estate_properties_on_user_id" ON "real_estate_properties"  ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "phone_number" character varying, "first_name" character varying, "last_name" character varying, "admin" boolean DEFAULT 'f' NOT NULL)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (9.3ms)[0m  [1m[35mALTER TABLE "property_forms" ADD CONSTRAINT "fk_rails_321e44ee9e"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (1.7ms)[0m  [1m[35mALTER TABLE "property_images" ADD CONSTRAINT "fk_rails_6e7adbcfca"
+FOREIGN KEY ("property_form_id")
+  REFERENCES "property_forms" ("id")
+[0m
+  [1m[35m (3.5ms)[0m  [1m[35mALTER TABLE "property_images" ADD CONSTRAINT "fk_rails_f6c531c4cb"
+FOREIGN KEY ("real_estate_property_id")
+  REFERENCES "real_estate_properties" ("id")
+[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "real_estate_properties" ADD CONSTRAINT "fk_rails_d9c5154143"
+FOREIGN KEY ("property_form_id")
+  REFERENCES "property_forms" ("id")
+[0m
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "real_estate_properties" ADD CONSTRAINT "fk_rails_df08f859f0"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20180322130136)[0m
+  [1m[35m (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20180302173601),
+(20180305134132),
+(20180303161736),
+(20180306165017),
+(20180320105942),
+(20180303135709),
+(20180305134248),
+(20180303162034),
+(20180307161931),
+(20180305132040),
+(20180303151355),
+(20180306202108),
+(20180303150112),
+(20180302160748),
+(20180305134511),
+(20180303150808),
+(20180318152809),
+(20180303152301),
+(20180309075715),
+(20180302161648),
+(20180306155956);
+
+[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-03-26 13:31:26.350327"], ["updated_at", "2018-03-26 13:31:26.350327"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-03-26 13:31:26.355081"], ["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:31:29 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (8.1ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (12.7ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (16.6ms)
+  Rendered pages/subscription.html.erb within layouts/application (20.2ms)
+Completed 401 Unauthorized in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    3:   <strong><%= t[:desc] %></strong>
+    4: </div>
+    5: <div class="form-input">
+    6:   <%= simple_form_for(@property_form, remote: true) do |f| %>
+    7:     <%= f.input t[:name], label: false,  placeholder: t[:unit] %>
+    8:     <%= f.submit class:"hidden form-field-submit-button" %>
+    9:   <% end %>
+  
+app/views/property_forms/form_fields/_text_field.html.erb:6:in `_app_views_property_forms_form_fields__text_field_html_erb___4033948394977124044_70210669016780'
+app/views/property_forms/form_sections/_form_input_section.html.erb:25:in `block in _app_views_property_forms_form_sections__form_input_section_html_erb__4085906757643432221_70210681953260'
+app/views/property_forms/form_sections/_form_input_section.html.erb:3:in `each'
+app/views/property_forms/form_sections/_form_input_section.html.erb:3:in `_app_views_property_forms_form_sections__form_input_section_html_erb__4085906757643432221_70210681953260'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:5:in `block in _app_views_property_forms_form_sections__form_section_dispatch_html_erb___1822653013125741184_70210682145540'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:1:in `each'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:1:in `_app_views_property_forms_form_sections__form_section_dispatch_html_erb___1822653013125741184_70210682145540'
+app/views/pages/subscription.html.erb:9:in `_app_views_pages_subscription_html_erb___4162318440929112341_70210682424980'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:31:58 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (23.5ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.1ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (33.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.6ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.7ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (17.9ms)
+  Rendered property_forms/form_fields/_state_field.html.erb (1.2ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (3.7ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (62.2ms)
+  Rendered pages/subscription.html.erb within layouts/application (67.9ms)
+Completed 401 Unauthorized in 150ms (ActiveRecord: 7.9ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"h_confirmation", :controller=>"property_forms", :token=>nil}, possible unmatched constraints: [:token]):
+    13:   </div>
+    14: </div>
+    15: 
+    16: <%= link_to form_step_8_path(@property_form.token), method: :get do %>
+    17:   <div class="btn hidden" id="move-to-next-section"></div>
+    18: <% end %>
+  
+app/views/pages/subscription.html.erb:16:in `_app_views_pages_subscription_html_erb___4162318440929112341_70210704583380'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:32:11 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (2.9ms)
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"h_confirmation", :controller=>"property_forms", :token=>nil}, possible unmatched constraints: [:token]):
+    12:   </div>
+    13: </div>
+    14: 
+    15: <%= link_to form_step_8_path(@property_form.token), method: :get do %>
+    16:   <div class="btn hidden" id="move-to-next-section"></div>
+    17: <% end %>
+  
+app/views/pages/subscription.html.erb:15:in `_app_views_pages_subscription_html_erb___4162318440929112341_70210637578440'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:32:21 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (0.4ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.4ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:32:51 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (3.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.3ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (14.2ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.1ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.6ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (15.1ms)
+  Rendered property_forms/form_fields/_state_field.html.erb (1.7ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (5.1ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (43.4ms)
+  Rendered pages/subscription.html.erb within layouts/application (46.2ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 105ms (Views: 101.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:33:09 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (4.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.4ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (13.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (9.6ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (28.1ms)
+  Rendered pages/subscription.html.erb within layouts/application (31.3ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.9ms)
+Completed 200 OK in 146ms (Views: 103.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:34:12 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (380.5ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (389.0ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (392.5ms)
+  Rendered pages/subscription.html.erb within layouts/application (396.9ms)
+Completed 401 Unauthorized in 409ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007fb665cfa7d8>:0x00007fb66838ea20>):
+    3:   <strong><%= t[:desc] %></strong>
+    4: </div>
+    5: <div class="form-input">
+    6:   <%= f.input t[:name], label: false,  placeholder: t[:unit] %>
+    7: </div>
+  
+app/views/property_forms/form_fields/_text_field.html.erb:6:in `_app_views_property_forms_form_fields__text_field_html_erb___4033948394977124044_70210704506460'
+app/views/property_forms/form_sections/_form_input_section.html.erb:25:in `block in _app_views_property_forms_form_sections__form_input_section_html_erb__4085906757643432221_70210638092840'
+app/views/property_forms/form_sections/_form_input_section.html.erb:3:in `each'
+app/views/property_forms/form_sections/_form_input_section.html.erb:3:in `_app_views_property_forms_form_sections__form_input_section_html_erb__4085906757643432221_70210638092840'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:5:in `block in _app_views_property_forms_form_sections__form_section_dispatch_html_erb___1822653013125741184_70210704601600'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:1:in `each'
+app/views/property_forms/form_sections/_form_section_dispatch.html.erb:1:in `_app_views_property_forms_form_sections__form_section_dispatch_html_erb___1822653013125741184_70210704601600'
+app/views/pages/subscription.html.erb:10:in `block in _app_views_pages_subscription_html_erb___4162318440929112341_70210704669660'
+app/views/pages/subscription.html.erb:9:in `_app_views_pages_subscription_html_erb___4162318440929112341_70210704669660'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:35:39 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (5.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.7ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (14.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (6.1ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.6ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (17.6ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (39.6ms)
+  Rendered pages/subscription.html.erb within layouts/application (44.0ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (3.9ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:35:47 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (3.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (0.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (10.6ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.5ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (13.8ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (29.0ms)
+  Rendered pages/subscription.html.erb within layouts/application (33.2ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.1ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/property_forms" for 127.0.0.1 at 2018-03-26 15:35:51 +0200
+Processing by PropertyFormsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Tqi/ABuWg8SooTVvSQ5qK9IpXp9olG71G7EI5r9JCWF0XAAqJ4TooBouD9v558ZKKvJ7+/8N5w36aRdItORTyQ==", "property_form"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "phone_number"=>""}, "commit"=>"Create Property form"}
+  [1m[36mPropertyForm Load (1.3ms)[0m  [1m[34mSELECT "property_forms".* FROM "property_forms"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPropertyForm Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "property_forms" WHERE "property_forms"."token" = $1 LIMIT $2[0m  [["token", "F8XMPI2WOM"], ["LIMIT", 1]]
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "property_forms" ("created_at", "updated_at", "token") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2018-03-26 13:35:51.871881"], ["updated_at", "2018-03-26 13:35:51.871881"], ["token", "F8XMPI2WOM"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mPropertyForm Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "property_forms" WHERE "property_forms"."token" = $1 AND ("property_forms"."id" != $2) LIMIT $3[0m  [["token", "F8XMPI2WOM"], ["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "property_forms" SET "updated_at" = $1, "first_name" = $2, "last_name" = $3, "email" = $4, "phone_number" = $5 WHERE "property_forms"."id" = $6[0m  [["updated_at", "2018-03-26 13:35:51.881262"], ["first_name", ""], ["last_name", ""], ["email", ""], ["phone_number", ""], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/seller/F8XMPI2WOM/address
+Completed 302 Found in 23ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/seller/F8XMPI2WOM/address" for 127.0.0.1 at 2018-03-26 15:35:51 +0200
+Processing by PropertyFormsController#a_address_validation as HTML
+  Parameters: {"token"=>"F8XMPI2WOM"}
+  [1m[36mPropertyForm Load (0.9ms)[0m  [1m[34mSELECT  "property_forms".* FROM "property_forms" WHERE "property_forms"."token" = $1 LIMIT $2[0m  [["token", "F8XMPI2WOM"], ["LIMIT", 1]]
+  Rendering property_forms/a_address_validation.html.erb within layouts/application
+  Rendered property_forms/progress_bar/_progress_bar.html.erb (0.6ms)
+  Rendered property_forms/form_map/_form_map.html.erb (0.9ms)
+  Rendered property_forms/form_validation/_form_validation.html.erb (0.5ms)
+  Rendered property_forms/a_address_validation.html.erb within layouts/application (11.8ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (5.3ms)
+Completed 200 OK in 87ms (Views: 72.4ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mPropertyForm Load (0.9ms)[0m  [1m[34mSELECT "property_forms".* FROM "property_forms"[0m
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:36:38 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (4.4ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (0.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (10.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.3ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.5ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (12.7ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (29.6ms)
+  Rendered pages/subscription.html.erb within layouts/application (34.4ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (2.4ms)
+Completed 200 OK in 106ms (Views: 103.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:36:57 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (5.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.8ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (18.6ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.3ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.4ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (14.0ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (42.0ms)
+  Rendered pages/subscription.html.erb within layouts/application (48.1ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (3.2ms)
+Completed 200 OK in 123ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:37:10 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (3.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.0ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (11.5ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.1ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (12.6ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (28.5ms)
+  Rendered pages/subscription.html.erb within layouts/application (32.9ms)
+  Rendered shared/_navbar.html.erb (4.4ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.3ms)
+Completed 200 OK in 121ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:40:31 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (7.5ms)
+Completed 401 Unauthorized in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views/pages/subscription.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+ f.submit "Je m'inscris" class:"btn" );@output_buffer.safe_a
+                              ^
+/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views/pages/subscription.html.erb:12: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+t "Je m'inscris" class:"btn" );@output_buffer.safe_append='
+                              ^
+/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views/pages/subscription.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;           end 
+                       ^
+/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views/pages/subscription.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views/pages/subscription.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/pages/subscription.html.erb:12: syntax error, unexpected keyword_class, expecting ')'
+app/views/pages/subscription.html.erb:12: syntax error, unexpected ')', expecting &. or :: or '[' or '.'
+app/views/pages/subscription.html.erb:14: syntax error, unexpected keyword_end, expecting ')'
+app/views/pages/subscription.html.erb:25: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/pages/subscription.html.erb:27: syntax error, unexpected keyword_end, expecting ')'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:40:35 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (17.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.3ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (27.4ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.1ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (13.7ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (46.8ms)
+  Rendered pages/subscription.html.erb within layouts/application (57.7ms)
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (3.3ms)
+Completed 200 OK in 139ms (Views: 135.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:40:40 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (5.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.0ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (15.2ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.6ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.0ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (20.2ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (43.8ms)
+  Rendered pages/subscription.html.erb within layouts/application (48.5ms)
+  Rendered shared/_navbar.html.erb (6.3ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (3.3ms)
+Completed 200 OK in 147ms (Views: 143.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:41:07 +0200
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (5.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.5ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (11.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (7.6ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (17.1ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (34.4ms)
+  Rendered pages/subscription.html.erb within layouts/application (39.6ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (1.9ms)
+Completed 200 OK in 4477ms (Views: 4474.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:47:06 +0200
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2118642476538569625)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRequests (20180326134628)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.4ms)[0m  [1m[35mCREATE TABLE "requests" ("id" bigserial primary key, "email" character varying, "first_name" character varying, "last_name" character varying, "phone_number" character varying, "landing" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180326134628"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2118642476538569625)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:47:50 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#subscription as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/subscription.html.erb within layouts/application
+  Rendered pages/subscription.html.erb within layouts/application (246.7ms)
+Completed 401 Unauthorized in 276ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `requests_path' for #<#<Class:0x00007fe3c5dc4e10>:0x00007fe3c5da6de8>
+Did you mean?  request):
+     6:           <h1>Parlez-nous un peu de vous</h1>
+     7:         </div>
+     8:         <div class="form-body">
+     9:           <%= simple_form_for(@request) do |f| %>
+    10:             <%= render 'property_forms/form_sections/form_section_dispatch', page: @fields, f: f %>
+    11:             <div class="text-center" style="margin-top: 20px;">
+    12:               <%= f.hidden_field :landing, :value => "some value" %>
+  
+app/views/pages/subscription.html.erb:9:in `_app_views_pages_subscription_html_erb___3915493800508183436_70308126928780'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/inscription?landing=1" for 127.0.0.1 at 2018-03-26 15:57:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/inscription"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.2.2) lib/webpacker/dev_server_proxy.rb:18:in `perform_request'
+rack-proxy (0.6.3) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 15:57:39 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (16.4ms)
+  Rendered pages/features/_free.html.erb (1.3ms)
+  Rendered pages/features/_value.html.erb (1.1ms)
+  Rendered pages/features/_flexible.html.erb (1.3ms)
+  Rendered pages/landings_tests/_1.html.erb (1665.6ms)
+  Rendered pages/home.html.erb within layouts/application (1670.1ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (16.2ms)
+Completed 200 OK in 1867ms (Views: 1738.9ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/request/new?landing=1" for 127.0.0.1 at 2018-03-26 15:57:44 +0200
+  
+ActionController::RoutingError (uninitialized constant RequestController):
+  
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/request/new?landing=1" for 127.0.0.1 at 2018-03-26 15:58:07 +0200
+  [1m[35m (24.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant RequestController):
+  
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 16:01:37 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (63.0ms)
+  Rendered pages/features/_free.html.erb (1.2ms)
+  Rendered pages/features/_value.html.erb (1.3ms)
+  Rendered pages/features/_flexible.html.erb (1.6ms)
+  Rendered pages/landings_tests/_1.html.erb (1743.7ms)
+  Rendered pages/home.html.erb within layouts/application (1746.5ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (2.8ms)
+Completed 200 OK in 1909ms (Views: 1808.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/request/new" for 127.0.0.1 at 2018-03-26 16:01:41 +0200
+  
+ActionController::RoutingError (uninitialized constant RequestController):
+  
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/request/new" for 127.0.0.1 at 2018-03-26 16:02:54 +0200
+  
+ActionController::RoutingError (uninitialized constant RequestController):
+  
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 16:04:10 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (4.6ms)
+  Rendered pages/features/_free.html.erb (1.6ms)
+  Rendered pages/features/_value.html.erb (1.5ms)
+  Rendered pages/features/_flexible.html.erb (1.6ms)
+  Rendered pages/landings_tests/_1.html.erb (39.3ms)
+  Rendered pages/home.html.erb within layouts/application (43.9ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.5ms)
+Completed 200 OK in 161ms (Views: 95.1ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/request/new?landing=1" for 127.0.0.1 at 2018-03-26 16:04:12 +0200
+Processing by RequestController#new as HTML
+  Parameters: {"landing"=>"1"}
+Completed 401 Unauthorized in 255ms (ActiveRecord: 5.5ms)
+
+
+  
+ActionController::UnknownFormat (RequestController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/request/new?landing=1" for 127.0.0.1 at 2018-03-26 16:04:23 +0200
+Processing by RequestController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering request/new.html.erb within layouts/application
+  Rendered request/new.html.erb within layouts/application (195.7ms)
+Completed 401 Unauthorized in 212ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `requests_path' for #<#<Class:0x00007fb455eabeb8>:0x00007fb455ea9640>
+Did you mean?  request_index_path):
+     6:           <h1>Parlez-nous un peu de vous</h1>
+     7:         </div>
+     8:         <div class="form-body">
+     9:           <%= simple_form_for(@request) do |f| %>
+    10:             <%= render 'property_forms/form_sections/form_section_dispatch', page: @fields, f: f %>
+    11:             <div class="text-center" style="margin-top: 20px;">
+    12:               <%= f.hidden_field :landing, :value => "some value" %>
+  
+app/views/request/new.html.erb:9:in `_app_views_request_new_html_erb__3410793256192140889_70206288275060'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/request/new?landing=1" for 127.0.0.1 at 2018-03-26 16:05:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/request/new"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.2.2) lib/webpacker/dev_server_proxy.rb:18:in `perform_request'
+rack-proxy (0.6.3) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/request/new?landing=1" for 127.0.0.1 at 2018-03-26 16:05:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/request/new"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.2.2) lib/webpacker/dev_server_proxy.rb:18:in `perform_request'
+rack-proxy (0.6.3) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 16:05:51 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (5.5ms)
+  Rendered pages/features/_free.html.erb (1.8ms)
+  Rendered pages/features/_value.html.erb (1.8ms)
+  Rendered pages/features/_flexible.html.erb (1.9ms)
+  Rendered pages/landings_tests/_1.html.erb (33.5ms)
+  Rendered pages/home.html.erb within layouts/application (36.6ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.2ms)
+Completed 200 OK in 175ms (Views: 97.2ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:05:52 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (8.6ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (0.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (16.2ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.7ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (14.5ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (35.8ms)
+  Rendered requests/new.html.erb within layouts/application (79.3ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 154ms (Views: 136.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:06:18 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (8.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.7ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (16.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (6.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.3ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (14.4ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (37.5ms)
+  Rendered requests/new.html.erb within layouts/application (43.3ms)
+  Rendered shared/_navbar.html.erb (7.2ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (3.5ms)
+Completed 200 OK in 145ms (Views: 124.8ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:06:21 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cTxI2MFqK/N0/+0tuc360DOkg1bA41Xu5j2wZOvhrH5LyPfy/XhAl8Zw15kJJFaxy3+mMld63BYH5a/K4Ez21g==", "request"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "phone_number"=>"", "landing"=>"some value"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (17.6ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", ""], ["first_name", ""], ["last_name", ""], ["phone_number", ""], ["landing", "some value"], ["created_at", "2018-03-26 14:06:44.224371"], ["updated_at", "2018-03-26 14:06:44.224371"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you
+Completed 302 Found in 22670ms (ActiveRecord: 20.8ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:06:44 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (8.5ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (2.9ms)
+Completed 200 OK in 83ms (Views: 79.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:06:50 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (6.3ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.2ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (12.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.3ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (15.9ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (33.7ms)
+  Rendered requests/new.html.erb within layouts/application (40.8ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (2.4ms)
+Completed 200 OK in 111ms (Views: 106.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:06:55 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jqdPJulNHQNRql+P9E/DPaAcinoayz2/I9zQ7lLEzIG0U/AM1V92Z+MlZTtEpm9cWMevHo1StEfCBM9AWWmWKQ==", "request"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "phone_number"=>"", "landing"=>"some value"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", ""], ["first_name", ""], ["last_name", ""], ["phone_number", ""], ["landing", "some value"], ["created_at", "2018-03-26 14:07:31.783210"], ["updated_at", "2018-03-26 14:07:31.783210"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you
+Completed 302 Found in 36061ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:07:31 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (6.1ms)
+Completed 200 OK in 80ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:07:38 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (6.5ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.8ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (16.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.4ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.2ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (15.1ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (39.9ms)
+  Rendered requests/new.html.erb within layouts/application (45.9ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.2ms)
+Completed 200 OK in 123ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:07:41 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"34YkBq+O2EhKcPUOBNENoVJjjXgIfanE3BZU5KHcmOPlcpssk5yzLPj/z7q0OKHAqrioHJ/kIDw9zktKqnHCSw==", "request"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "phone_number"=>"", "landing"=>"some value"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", ""], ["first_name", ""], ["last_name", ""], ["phone_number", ""], ["landing", "some value"], ["created_at", "2018-03-26 14:08:26.846651"], ["updated_at", "2018-03-26 14:08:26.846651"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you
+Completed 302 Found in 45213ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:08:26 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (6.7ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.5ms)
+Completed 200 OK in 82ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:08:29 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (4.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.5ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (13.1ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.7ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (14.0ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (33.0ms)
+  Rendered requests/new.html.erb within layouts/application (38.2ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.9ms)
+Completed 200 OK in 98ms (Views: 94.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:08:31 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cBT4EbmKYVglDix1+HPMpy5NunyxEfSMzdLrzpDVUn9K4Ec7hZgKPJeBFsFImmDG1pafGCaIfXQsCvRgm3gI1w==", "request"=>{"first_name"=>"", "last_name"=>"", "email"=>"", "phone_number"=>"", "landing"=>"1"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", ""], ["first_name", ""], ["last_name", ""], ["phone_number", ""], ["landing", "1"], ["created_at", "2018-03-26 14:08:38.929666"], ["updated_at", "2018-03-26 14:08:38.929666"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you
+Completed 302 Found in 7398ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:08:38 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (4.3ms)
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mRequest Load (0.5ms)[0m  [1m[34mSELECT  "requests".* FROM "requests" ORDER BY "requests"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:12:27 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (7.1ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.1ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (14.4ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.1ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.8ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (9.8ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (29.6ms)
+  Rendered requests/new.html.erb within layouts/application (35.8ms)
+  Rendered shared/_navbar.html.erb (3.5ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (2.7ms)
+Completed 200 OK in 124ms (Views: 106.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:12:41 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UEgtO9RmkPx3/aAVN8K+KJWHpnJVPLvPLQ1N+SC/8I1qvJIR6HT7mMVymqGHKxJJbVyDFsKlMjfM1VJXKxKqJQ==", "request"=>{"first_name"=>"arthur", "last_name"=>"reboul", "email"=>"arthur@mail.com", "phone_number"=>"0123456789", "landing"=>"1"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "arthur@mail.com"], ["first_name", "arthur"], ["last_name", "reboul"], ["phone_number", "0123456789"], ["landing", "1"], ["created_at", "2018-03-26 14:12:49.318805"], ["updated_at", "2018-03-26 14:12:49.318805"]]
+  Rendering admin_mailer/new_form.html.erb within layouts/mailer
+  Rendered admin_mailer/new_form.html.erb within layouts/mailer (0.5ms)
+  Rendering admin_mailer/new_form.text.erb within layouts/mailer
+  Rendered admin_mailer/new_form.text.erb within layouts/mailer (0.4ms)
+AdminMailer#new_form: processed outbound mail in 304.0ms
+Sent mail to admin@homepay.fr (42.2ms)
+Date: Mon, 26 Mar 2018 16:12:49 +0200
+From: guillaume@homepay.fr
+To: admin@homepay.fr
+Message-ID: <5ab8ffe19e775_4d43fda2c8e9004550b1@MBP-de-arthur.localdomain.mail>
+Subject: Landing 1 - formulaire rempli
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ab8ffe19b896_4d43fda2c8e9004549be";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5ab8ffe19b896_4d43fda2c8e9004549be
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+new_form.text.erb
+
+
+----==_mimepart_5ab8ffe19b896_4d43fda2c8e9004549be
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>A form has been created !</h1>
+<h2>landing : 1</h2>
+<p>arthur reboul</p>
+<p>arthur@mail.com</p>
+<p>0123456789</p>
+
+
+
+  </body>
+</html>
+
+----==_mimepart_5ab8ffe19b896_4d43fda2c8e9004549be--
+
+  [1m[35m (27.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you
+Completed 302 Found in 8452ms (ActiveRecord: 29.2ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:12:49 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (3.3ms)
+Completed 200 OK in 87ms (Views: 81.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:15:46 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (4.3ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.6ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (14.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.2ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (10.8ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (29.7ms)
+  Rendered requests/new.html.erb within layouts/application (34.3ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (3.3ms)
+Completed 200 OK in 113ms (Views: 93.5ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:16:13 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (3.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (0.7ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (10.1ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.8ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (12.2ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (28.2ms)
+  Rendered requests/new.html.erb within layouts/application (32.8ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.2ms)
+Completed 200 OK in 89ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:16:32 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (5.5ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.8ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (16.7ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (11.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.6ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (22.9ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (49.2ms)
+  Rendered requests/new.html.erb within layouts/application (54.9ms)
+  Rendered shared/_navbar.html.erb (6.8ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (3.2ms)
+Completed 200 OK in 144ms (Views: 141.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:20:41 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (27.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.6ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (42.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.9ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (18.5ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (71.3ms)
+  Rendered requests/new.html.erb within layouts/application (91.0ms)
+  Rendered shared/_navbar.html.erb (4.4ms)
+  Rendered shared/_flashes.html.erb (1.0ms)
+  Rendered shared/_footer.html.erb (3.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Hash: 861819120046790c702f
+Version: webpack 3.11.0
+Time: 735ms
+                                  Asset       Size  Chunks             Chunk Names
+    application-caaaaee47f028c08a94b.js    3.04 kB       0  [emitted]  application
+application-caaaaee47f028c08a94b.js.map    2.49 kB       0  [emitted]  application
+                          manifest.json  142 bytes          [emitted]  
+   [0] ./app/javascript/packs/application.js 286 bytes {0} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed: SyntaxError: Unexpected token, expected ( (4:3)
+
+  2 | 
+  3 | 
+> 4 | if document.getElementById('js-validate-section') {
+    |    ^
+  5 |   const c = document.getElementById('js-validate-section');
+  6 |   console.log('hello');
+  7 | }
+
+
+set is deprecated! Use append instead
+
+Completed 200 OK in 3248ms (Views: 3238.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:20:53 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (9.6ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.0ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (19.3ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.2ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (16.8ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (46.6ms)
+  Rendered requests/new.html.erb within layouts/application (53.4ms)
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (2.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/arthurreboul/code/oruhtra/homepay/landing_pages/public/packs
+Completed 200 OK in 3267ms (Views: 3261.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:23:34 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (65.3ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (1.8ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (75.1ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.4ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (5.1ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (17.5ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (99.0ms)
+  Rendered requests/new.html.erb within layouts/application (108.3ms)
+  Rendered shared/_navbar.html.erb (8.5ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (3.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/arthurreboul/code/oruhtra/homepay/landing_pages/public/packs
+Completed 200 OK in 3450ms (Views: 3445.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:23:55 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (4.5ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (0.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (11.2ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.2ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (13.6ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (32.1ms)
+  Rendered requests/new.html.erb within layouts/application (36.9ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (3.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/arthurreboul/code/oruhtra/homepay/landing_pages/public/packs
+Completed 200 OK in 3868ms (Views: 3865.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:24:47 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OSWo4meNbiF+aYUXNXOjMeNSA6nTqPlhRettkkBRJ+0D0RfIW58FRczmv6OFmg9QG4kmzUQxcJmkM3I8S/x9RQ==", "request"=>{"first_name"=>"arthur", "last_name"=>"reboul", "email"=>"arthur@mail.com", "phone_number"=>"0134233467", "landing"=>"1"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "arthur@mail.com"], ["first_name", "arthur"], ["last_name", "reboul"], ["phone_number", "0134233467"], ["landing", "1"], ["created_at", "2018-03-26 14:24:47.142179"], ["updated_at", "2018-03-26 14:24:47.142179"]]
+  Rendering admin_mailer/new_form.html.erb within layouts/mailer
+  Rendered admin_mailer/new_form.html.erb within layouts/mailer (0.9ms)
+  Rendering admin_mailer/new_form.text.erb within layouts/mailer
+  Rendered admin_mailer/new_form.text.erb within layouts/mailer (0.4ms)
+AdminMailer#new_form: processed outbound mail in 36.3ms
+Sent mail to admin@homepay.fr (36.7ms)
+Date: Mon, 26 Mar 2018 16:24:47 +0200
+From: guillaume@homepay.fr
+To: admin@homepay.fr
+Message-ID: <5ab902af30234_4d43fda2c8e91bc552c7@MBP-de-arthur.localdomain.mail>
+Subject: Landing 1 - formulaire rempli
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ab902af2eed7_4d43fda2c8e91bc5519a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5ab902af2eed7_4d43fda2c8e91bc5519a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+new_form.text.erb
+
+
+----==_mimepart_5ab902af2eed7_4d43fda2c8e91bc5519a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>A form has been created !</h1>
+<h2>landing : 1</h2>
+<p>arthur reboul</p>
+<p>arthur@mail.com</p>
+<p>0134233467</p>
+
+
+
+  </body>
+</html>
+
+----==_mimepart_5ab902af2eed7_4d43fda2c8e91bc5519a--
+
+  [1m[35m (11.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you
+Completed 302 Found in 109ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:24:47 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (2.8ms)
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:26:10 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (3.0ms)
+Completed 200 OK in 85ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:26:20 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (7.0ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (4.1ms)
+Completed 200 OK in 76ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:28:06 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (4.6ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (3.1ms)
+Completed 200 OK in 79ms (Views: 76.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:28:20 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (2.5ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:28:35 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.9ms)
+Completed 200 OK in 81ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:29:04 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.9ms)
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 16:29:08 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.8ms)
+Completed 401 Unauthorized in 89ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/landings_tests/_home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb___4055852775743682981_70206309669520'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:30:58 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (3.9ms)
+  Rendered shared/_flashes.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (2.5ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=" for 127.0.0.1 at 2018-03-26 16:30:59 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>""}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.1ms)
+Completed 401 Unauthorized in 73ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/_landings_tests with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb___4055852775743682981_70206288516700'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/requests/new?landing=1" for 127.0.0.1 at 2018-03-26 16:31:03 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (5.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (0.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (11.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (4.0ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (3.2ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (11.2ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (28.1ms)
+  Rendered requests/new.html.erb within layouts/application (32.9ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.2ms)
+Completed 200 OK in 102ms (Views: 80.9ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:31:12 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"alvDVnMb1vs+hj0zpHehlgt/rX9uV5U40eAeoBSwcJpQr3x8Twm9n4wJB4cUng3386SIG/nOHMAwOAEOHx0qMg==", "request"=>{"first_name"=>"afrzr", "last_name"=>"rere", "email"=>"a@mail.com", "phone_number"=>"0987654321", "landing"=>"1"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "a@mail.com"], ["first_name", "afrzr"], ["last_name", "rere"], ["phone_number", "0987654321"], ["landing", "1"], ["created_at", "2018-03-26 14:31:12.891480"], ["updated_at", "2018-03-26 14:31:12.891480"]]
+  Rendering admin_mailer/new_form.html.erb within layouts/mailer
+  Rendered admin_mailer/new_form.html.erb within layouts/mailer (0.6ms)
+  Rendering admin_mailer/new_form.text.erb within layouts/mailer
+  Rendered admin_mailer/new_form.text.erb within layouts/mailer (0.4ms)
+AdminMailer#new_form: processed outbound mail in 33.8ms
+Sent mail to admin@homepay.fr (51.3ms)
+Date: Mon, 26 Mar 2018 16:31:12 +0200
+From: guillaume@homepay.fr
+To: admin@homepay.fr
+Message-ID: <5ab90430e62ac_4d43fda2c8e900455490@MBP-de-arthur.localdomain.mail>
+Subject: Landing 1 - formulaire rempli
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ab90430e507a_4d43fda2c8e900455386";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5ab90430e507a_4d43fda2c8e900455386
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+new_form.text.erb
+
+
+----==_mimepart_5ab90430e507a_4d43fda2c8e900455386
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>A form has been created !</h1>
+<h2>landing : 1</h2>
+<p>afrzr rere</p>
+<p>a@mail.com</p>
+<p>0987654321</p>
+
+
+
+  </body>
+</html>
+
+----==_mimepart_5ab90430e507a_4d43fda2c8e900455386--
+
+  [1m[35m (11.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you
+Completed 302 Found in 121ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:31:13 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (6.0ms)
+  Rendered shared/_navbar.html.erb (5.8ms)
+  Rendered shared/_flashes.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (3.8ms)
+Completed 200 OK in 126ms (Views: 123.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=" for 127.0.0.1 at 2018-03-26 16:31:18 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>""}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (7.6ms)
+Completed 401 Unauthorized in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/_landings_tests with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb___4055852775743682981_70206332558940'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:31:51 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.5ms)
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=" for 127.0.0.1 at 2018-03-26 16:31:55 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>""}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.1ms)
+Completed 401 Unauthorized in 67ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/_landings_tests with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb___4055852775743682981_70206300664860'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=" for 127.0.0.1 at 2018-03-26 16:32:17 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>""}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.4ms)
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/_landings_tests with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb___4055852775743682981_70206299080440'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/thank-you" for 127.0.0.1 at 2018-03-26 16:32:21 +0200
+Processing by PagesController#thank_you as HTML
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (2.3ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:33:23 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"alvDVnMb1vs+hj0zpHehlgt/rX9uV5U40eAeoBSwcJpQr3x8Twm9n4wJB4cUng3386SIG/nOHMAwOAEOHx0qMg==", "request"=>{"first_name"=>"afrzr", "last_name"=>"rere", "email"=>"a@mail.com", "phone_number"=>"0987654321", "landing"=>"1"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "a@mail.com"], ["first_name", "afrzr"], ["last_name", "rere"], ["phone_number", "0987654321"], ["landing", "1"], ["created_at", "2018-03-26 14:33:23.965826"], ["updated_at", "2018-03-26 14:33:23.965826"]]
+  Rendering admin_mailer/new_form.html.erb within layouts/mailer
+  Rendered admin_mailer/new_form.html.erb within layouts/mailer (0.7ms)
+  Rendering admin_mailer/new_form.text.erb within layouts/mailer
+  Rendered admin_mailer/new_form.text.erb within layouts/mailer (0.5ms)
+AdminMailer#new_form: processed outbound mail in 34.2ms
+Sent mail to admin@homepay.fr (45.0ms)
+Date: Mon, 26 Mar 2018 16:33:24 +0200
+From: guillaume@homepay.fr
+To: admin@homepay.fr
+Message-ID: <5ab904b42e75_4d43fda2c8e9130556df@MBP-de-arthur.localdomain.mail>
+Subject: Landing 1 - formulaire rempli
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ab904b41f8c_4d43fda2c8e9130555ea";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5ab904b41f8c_4d43fda2c8e9130555ea
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+new_form.text.erb
+
+
+----==_mimepart_5ab904b41f8c_4d43fda2c8e9130555ea
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>A form has been created !</h1>
+<h2>landing : 1</h2>
+<p>afrzr rere</p>
+<p>a@mail.com</p>
+<p>0987654321</p>
+
+
+
+  </body>
+</html>
+
+----==_mimepart_5ab904b41f8c_4d43fda2c8e9130555ea--
+
+  [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000pages/thank-you?landing=1
+Completed 302 Found in 119ms (ActiveRecord: 13.1ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-26 16:33:51 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"alvDVnMb1vs+hj0zpHehlgt/rX9uV5U40eAeoBSwcJpQr3x8Twm9n4wJB4cUng3386SIG/nOHMAwOAEOHx0qMg==", "request"=>{"first_name"=>"afrzr", "last_name"=>"rere", "email"=>"a@mail.com", "phone_number"=>"0987654321", "landing"=>"1"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "a@mail.com"], ["first_name", "afrzr"], ["last_name", "rere"], ["phone_number", "0987654321"], ["landing", "1"], ["created_at", "2018-03-26 14:33:51.516909"], ["updated_at", "2018-03-26 14:33:51.516909"]]
+  Rendering admin_mailer/new_form.html.erb within layouts/mailer
+  Rendered admin_mailer/new_form.html.erb within layouts/mailer (1.1ms)
+  Rendering admin_mailer/new_form.text.erb within layouts/mailer
+  Rendered admin_mailer/new_form.text.erb within layouts/mailer (0.4ms)
+AdminMailer#new_form: processed outbound mail in 36.0ms
+Sent mail to admin@homepay.fr (71.3ms)
+Date: Mon, 26 Mar 2018 16:33:51 +0200
+From: guillaume@homepay.fr
+To: admin@homepay.fr
+Message-ID: <5ab904cf8b55d_4d43fda2c8e91bc558eb@MBP-de-arthur.localdomain.mail>
+Subject: Landing 1 - formulaire rempli
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5ab904cf89c31_4d43fda2c8e91bc557f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5ab904cf89c31_4d43fda2c8e91bc557f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+new_form.text.erb
+
+
+----==_mimepart_5ab904cf89c31_4d43fda2c8e91bc557f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>A form has been created !</h1>
+<h2>landing : 1</h2>
+<p>afrzr rere</p>
+<p>a@mail.com</p>
+<p>0987654321</p>
+
+
+
+  </body>
+</html>
+
+----==_mimepart_5ab904cf89c31_4d43fda2c8e91bc557f--
+
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you?landing=1
+Completed 302 Found in 149ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/thank-you?landing=1" for 127.0.0.1 at 2018-03-26 16:33:51 +0200
+Processing by PagesController#thank_you as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (9.6ms)
+  Rendered shared/_navbar.html.erb (4.1ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (3.7ms)
+Completed 200 OK in 127ms (Views: 122.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 16:33:58 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (4.1ms)
+  Rendered pages/features/_free.html.erb (1.6ms)
+  Rendered pages/features/_value.html.erb (1.8ms)
+  Rendered pages/features/_flexible.html.erb (1.8ms)
+  Rendered pages/landings_tests/_1.html.erb (30.0ms)
+  Rendered pages/home.html.erb within layouts/application (33.1ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (2.1ms)
+Completed 200 OK in 134ms (Views: 75.6ms | ActiveRecord: 6.3ms)
+
+

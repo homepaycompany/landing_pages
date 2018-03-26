@@ -9,12 +9,16 @@ Rails.application.routes.draw do
   get "home", to: 'pages#landing_liquidity'
   get "about", to: 'pages#about_us'
   get "how-it-works", to: 'pages#how_it_works'
+  get "thank-you", to: 'pages#thank_you'
 
   # Static admin section to set admin cookie to exclude internal traffic
   get "set_admin_cookie", to: 'pages#set_admin_cookie'
 
   # Property form funnel routes
   resources :property_forms, only: [:show, :new, :create, :update, :destroy]
+
+  # Request CRUD
+  resources :requests, only: [:new, :create]
 
   get "seller/:token/address", to: "property_forms#a_address_validation", as: :form_step_1
   get "seller/:token/property_type", to: "property_forms#b_property_type_selection", as: :form_step_2

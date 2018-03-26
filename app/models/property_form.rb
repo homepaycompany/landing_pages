@@ -6,7 +6,7 @@ class PropertyForm < ApplicationRecord
   has_one :real_estate_property
   validates :token, uniqueness: true
 
-  def dsc_1_fields
+  def self.dsc_1_fields
     a = [
           { section: 1, name: 'livable_size_sqm', input_type: 'text', desc: 'Surface habitable', validation_type: 'number', unit: 'm2', icon: asset_url('form_size.svg') },
           { section: 3, name: 'num_rooms', input_type: 'text', desc: 'Nb de pièces', validation_type: 'number', unit: 'nombre', icon: asset_url('form_rooms.svg') },
@@ -28,7 +28,7 @@ class PropertyForm < ApplicationRecord
     return { sections: sections, fields: a}
   end
 
-  def dsc_2_fields
+  def self.dsc_2_fields
     a = [
           { section: 1, name: 'has_terrace', input_type: 'selection_box', desc: 'Terrasse', validation_type: 'boolean', connected_field: 'size_terrace_sqm', icon: asset_url('form_size.svg') },
           { section: 1, name: 'has_cellar', input_type: 'selection_box', desc: 'Cave', validation_type: 'boolean', connected_field: 'size_cellar_sqm', icon: asset_url('form_size.svg') },
@@ -54,7 +54,7 @@ class PropertyForm < ApplicationRecord
     return { sections: sections, fields: a}
   end
 
-  def dsc_3_fields
+  def self.dsc_3_fields
     a = [
           { section: 1, name: 'building_construction_year', input_type: 'text', desc: 'Année approximative de construction', validation_type: 'number', unit: 'année', icon: asset_url('form_build_year.svg') },
           { section: 3, name: 'property_state', input_type: 'state_box', desc: 'Etat général du bien', validation_type: 'string', values: ['Neuf', 'Bon', 'Moyen', 'Mauvais'], icon: asset_url('form_size.svg') },
@@ -71,7 +71,7 @@ class PropertyForm < ApplicationRecord
     return { sections: sections, fields: a}
   end
 
-  def personnal_information_fields
+  def self.personnal_information_fields
     a = [
           { section: 1, name: 'first_name', input_type: 'text', desc: 'Prénom', validation_type: 'string', unit: 'Jean', icon: asset_url('form_personal_info.svg') },
           { section: 1, name: 'last_name', input_type: 'text', desc: 'Nom', validation_type: 'string', unit: 'Dupont', icon: asset_url('form_personal_info.svg') },
@@ -83,11 +83,11 @@ class PropertyForm < ApplicationRecord
     return { sections: sections, fields: a}
   end
 
-  def all_pages
+  def self.all_pages
     return [self.dsc_1_fields, self.dsc_2_fields, self.dsc_3_fields, self.personnal_information_fields]
   end
 
-  def asset_url(string)
+  def self.asset_url(string)
     ActionController::Base.helpers.asset_url(string)
   end
 end

@@ -1,0 +1,26 @@
+<div class="main-section">
+  <div class="container">
+    <div class="validation-section">
+      <div class="validation-card text-center">
+        <div class="row">
+          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+            <h2>Votre inscription a bien été prise en compte !</h2>
+            <%= image_tag "confirmation.png" %>
+          </div>
+          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+            <div class="validation-contact">
+              <h2>Les prochaines étapes</h2>
+              <p>Nos équipes vous contacterons sous peu afin de comprendre aux mieux vos besoins et comment vous aider ! <br>Nous sommes impatients de vous accompagner.</p>
+              <%= image_tag "confirmation_guillaume.png" %>
+              <p><strong>Guillaume</strong></p>
+              <p><i>CEO et responsable clientèle</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="validation-home">
+        <%= link_to "Retour sur la page d'accueil", "/?landing=#{@landing}", class: "btn" %>
+      </div>
+    </div>
+  </div>
+</div>

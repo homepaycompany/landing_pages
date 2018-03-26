@@ -18,14 +18,20 @@
 <div class="landing-prop">
   <div class="container text-center">
     <div class="row">
-      <div class="col-xs-12 col-sm-4 landing-prop-item" id="js-value-prop-sale">
-        <%= render 'pages/features/free' %>
+      <div class="col-xs-12 col-sm-4 landing-prop-item">
+        <%= image_tag "price.svg" %>
+        <h3>Vendez au meilleur prix</h3>
+        <p>Nos conseillers ont une connaissance fine de votre marché et vous permettent de maximiser le prix de vente de votre bien </p>
       </div>
-      <div class="col-xs-12 col-sm-4 landing-prop-item"  id="js-value-prop-move">
-        <%= render 'pages/features/value' %>
+      <div class="col-xs-12 col-sm-4 landing-prop-item">
+        <%= image_tag "time.svg" %>
+        <h3>Vendez rapidement</h3>
+        <p>Nous utilisons la technologie pour vous permettre d'accélérer la vente de votre bien</p>
       </div>
-      <div class="col-xs-12 col-sm-4 landing-prop-item"  id="js-value-prop-certainty">
-        <%= render 'pages/features/flexible' %>
+      <div class="col-xs-12 col-sm-4 landing-prop-item">
+        <%= image_tag "free.svg" %>
+        <h3>C'est gratuit</h3>
+        <p>Nous sommes persuadés que nous pouvons vous apporter une qualité de service forte tout en préservant notre modèle gratuit et indépendant</p>
       </div>
     </div>
   </div>
@@ -47,8 +53,8 @@
             </div>
             <div class="col-xs-12 col-md-6 col-md-pull-4">
               <div class="landing-step-card">
-                <h3>Décrivez votre bien</h3>
-                <p>Répondez à quelques questions et envoyez-nous quelques photos. Nous les enverrons à des acquéreurs présélectionnés.</p>
+                <h3>Pilotez votre vente à partir d'un seul outil</h3>
+                <p>Grâce à notre technologie révolutionnaire, pilotez et maitrisez la vente de votre bien immobillier. Vous pourrez notamment estimer la durée de vente de votre bien, suivre le nombre de vos visites et estimer la solvabilité d'une offre grâce à Zenkey.</p>
                 <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
               </div>
             </div>
@@ -64,7 +70,7 @@
             <div class="col-xs-12 col-md-6">
               <div class="landing-step-card">
                 <h3>Un modèle indépendant et 100% gratuit</h3>
-                <p>Nous souhaitons avoir une démarche claire et transparente. Zenkey est rémunéré directement par les banques dans le cadre de ses services de courtage, et vous accompagne ainsi gratuitement et en toute indépendance dans le cadre de la vente de votre logement.</p>
+                <p>Chez Zenkey, nous souhaitons avoir une démarche claire et transparente. Nous nous rémunérons directement auprès des banques à travers notre service de courtage. Nous pouvons ainsi vous accompagner gratuitement et en toute indépendance lors de la vente de votre logement.</p>
                 <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
               </div>
             </div>
@@ -80,7 +86,7 @@
             <div class="col-xs-12 col-md-6 col-md-pull-4">
               <div class="landing-step-card">
                 <h3>Un suivi personnalisé</h3>
-                <p>Des conseils d’experts basés en France sont à votre disposition par chat, par email ou téléphone. C’est comme vous voulez.</p>
+                <p>Des conseils d’experts immobiliers vous accompagnent tout le long de la vente. Ils ont une connaissance précise de votre marché local et sont disponibles pour vous informez lorsque vous avez des questions.</p>
                 <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
               </div>
             </div>
@@ -88,7 +94,7 @@
         </div>
         <div class="col-xs-12 text-center">
           <div class = "btn-feature text-center">
-            <%= link_to "En savoir plus", how_it_works_path, class: "btn" %>
+            <%= link_to "Estimer gratuitement mon bien", new_property_form_path, class: "btn" %>
           </div>
         </div>
       </div>
@@ -101,8 +107,7 @@
       <%= image_tag "contact.png" %>
       <p>Une question ou une suggestion ?</p>
       <p>Appelez-nous au <%= link_to "‭06 44 66 31 30‬", "tel:‭0644663130‬" %></p>
-      <p>Email : <%= mail_to "contact@zenkey.fr" %></p>
+      <p>Email : <%= mail_to "contact@zenkey.co" %></p>
     </div>
   </div>
 </div>
-

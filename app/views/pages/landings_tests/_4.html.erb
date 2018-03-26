@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="landing-steps-title text-center">
-            <h2>Vendez simplement avec Homepay</h2>
+            <h2>Vendez simplement avec <strong>Homepay</strong></h2>
           </div>
         </div>
         <div class="col-xs-12">
@@ -47,10 +47,9 @@
             </div>
             <div class="col-xs-12 col-md-6 col-md-pull-4">
               <div class="landing-step-card">
-                <h4 class="text-center">1</h4>
                 <h3>Décrivez votre bien</h3>
                 <p>Répondez à quelques questions et envoyez-nous quelques photos. Nous les enverrons à des acquéreurs présélectionnés.</p>
-                <%= link_to "Commencez", new_property_form_path %> | <%= link_to "En savoir plus", how_it_works_path %>
+                <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
               </div>
             </div>
           </div>
@@ -64,10 +63,9 @@
             </div>
             <div class="col-xs-12 col-md-6">
               <div class="landing-step-card">
-                <h4 class="text-center">2</h4>
-                <h3>Recevez des offres</h3>
-                <p>Les acquéreurs professionnels que nous avons présélectionnés vous formulerons une offre d'achat en seulement quelques jours.</p>
-                <%= link_to "Commencez", new_property_form_path %> | <%= link_to "En savoir plus", how_it_works_path %>
+                <h3>Un modèle indépendant et 100% gratuit</h3>
+                <p>Nous souhaitons avoir une démarche claire et transparente. Zenkey est rémunéré directement par les banques dans le cadre de ses services de courtage, et vous accompagne ainsi gratuitement et en toute indépendance dans le cadre de la vente de votre logement.</p>
+                <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
               </div>
             </div>
           </div>
@@ -81,10 +79,9 @@
             </div>
             <div class="col-xs-12 col-md-6 col-md-pull-4">
               <div class="landing-step-card">
-                <h4 class="text-center">3</h4>
-                <h3>Choisissez la meilleure option pour vous</h3>
-                <p>Vous pouvez choisir une des offres qui vous a été formulées et organiser une visite confirmatoire en fonction de vos disponibilités. Vous n'avez aucune obligation.</p>
-                <%= link_to "Commencez", new_property_form_path %> | <%= link_to "En savoir plus", how_it_works_path %>
+                <h3>Un suivi personnalisé</h3>
+                <p>Des conseils d’experts basés en France sont à votre disposition par chat, par email ou téléphone. C’est comme vous voulez.</p>
+                <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
               </div>
             </div>
           </div>
@@ -104,7 +101,7 @@
       <%= image_tag "contact.png" %>
       <p>Une question ou une suggestion ?</p>
       <p>Appelez-nous au <%= link_to "‭06 44 66 31 30‬", "tel:‭0644663130‬" %></p>
-      <p>Email : <%= mail_to "contact@homepay.fr" %></p>
+      <p>Email : <%= mail_to "contact@zenkey.fr" %></p>
     </div>
   </div>
 </div>

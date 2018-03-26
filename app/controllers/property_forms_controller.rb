@@ -66,7 +66,7 @@ class PropertyFormsController < ApplicationController
   def c_description_1
     if params[:property_type]
       unless @property_form.update(property_type: params[:property_type])
-        lash[:alert] = "Un erreur est survenue - le formulaire n'a pas pu être créé"
+        flash[:alert] = "Un erreur est survenue - le formulaire n'a pas pu être créé"
         redirect_to root_path
       end
     else

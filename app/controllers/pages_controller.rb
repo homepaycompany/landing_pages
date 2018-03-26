@@ -16,6 +16,10 @@ class PagesController < ApplicationController
   def landing_liquidity
   end
 
+  def thank_you
+    @landing = params["landing"]
+  end
+
   def how_it_works
   end
 

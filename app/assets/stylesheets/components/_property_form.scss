@@ -24,12 +24,8 @@
     text-decoration: none;
     color: $light-black;
   }
-  .form-section:last-child {
-    border-bottom: none;
-  }
 }
 .form-section {
-  border-bottom: 1px solid $light-grey;
   padding: 20px 0;
 }
 .form-field {

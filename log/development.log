@@ -8458,3 +8458,185 @@ Processing by PagesController#how_it_works as HTML
 Completed 200 OK in 65ms (Views: 30.9ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:31:40 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (4.4ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/albanp/code/aporcheron/homepay/landing_pages/public/packs
+Completed 200 OK in 4197ms (Views: 4167.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:36:52 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (6.8ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (8.8ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:36:56 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (3.2ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.7ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:38:14 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (3.0ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.7ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:38:27 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (9.6ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (11.7ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:39:12 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (2.7ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:39:23 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (2.6ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:39:56 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (8.3ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (10.9ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:40:12 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (3.7ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.9ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:40:32 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (2.8ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:41:43 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (3.1ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.7ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:42:20 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (2.4ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:42:47 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (2.6ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.6ms)
+Completed 200 OK in 24ms (Views: 23.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:43:45 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (1.9ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=4" for 127.0.0.1 at 2018-03-26 22:44:07 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_4.html.erb (2.9ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+

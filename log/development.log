@@ -7949,3 +7949,78 @@ Completed 200 OK in 1850ms (Views: 1848.1ms | ActiveRecord: 0.0ms)
 >>>>>>> master
 
 
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2118642476538569625)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRequests (20180326134628)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE "requests" ("id" bigserial primary key, "email" character varying, "first_name" character varying, "last_name" character varying, "phone_number" character varying, "landing" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180326134628"]]
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2118642476538569625)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 17:20:17 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (4892.2ms)
+  Rendered pages/home.html.erb within layouts/application (4894.1ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/albanp/code/aporcheron/homepay/landing_pages/public/packs
+Completed 200 OK in 6147ms (Views: 6109.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 17:20:48 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (5.1ms)
+  Rendered pages/home.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 17:27:17 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (17.3ms)
+  Rendered pages/home.html.erb within layouts/application (19.5ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 17:27:28 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (4.9ms)
+  Rendered pages/home.html.erb within layouts/application (5.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 17:28:27 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (14.0ms)
+  Rendered pages/home.html.erb within layouts/application (16.3ms)
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (2.1ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+

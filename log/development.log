@@ -8038,3 +8038,59 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 4671ms (Views: 4670.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 17:39:11 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (4222.8ms)
+  Rendered pages/home.html.erb within layouts/application (4224.9ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/albanp/code/aporcheron/homepay/landing_pages/public/packs
+Completed 200 OK in 5463ms (Views: 5461.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 17:40:31 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (15.9ms)
+  Rendered pages/home.html.erb within layouts/application (18.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-26 19:35:21 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.1ms)
+Completed 401 Unauthorized in 45ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/landings_tests/_home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/albanp/code/aporcheron/homepay/landing_pages/app/views"
+  * "/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/forest_liana-2.4.3/app/views"
+  * "/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb__2795317479583860333_47009644442300'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 19:35:32 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (866.9ms)
+  Rendered pages/home.html.erb within layouts/application (869.1ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 897ms (Views: 894.3ms | ActiveRecord: 0.0ms)
+
+

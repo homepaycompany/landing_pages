@@ -8094,3 +8094,41 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 897ms (Views: 894.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 19:39:23 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (26.1ms)
+  Rendered pages/home.html.erb within layouts/application (28.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/albanp/code/aporcheron/homepay/landing_pages/public/packs
+Completed 200 OK in 5358ms (Views: 5356.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 19:47:52 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (8.4ms)
+  Rendered pages/home.html.erb within layouts/application (9.1ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 19:51:32 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (6.6ms)
+  Rendered pages/home.html.erb within layouts/application (7.4ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+

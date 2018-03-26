@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@landing}" %>
+<% content_for :meta_description, @landing.description %>
+<% content_for :meta_image, @landing.cover %>
+
 <div class="main-section">
   <div class="container">
     <div class="validation-section">
@@ -10,7 +14,7 @@
           <div class="col-xs-12 col-sm-offset-1 col-sm-10">
             <div class="validation-contact">
               <h2>Les prochaines étapes</h2>
-              <p>Nos équipes vous contacterons sous peu afin de comprendre aux mieux vos besoins et comment vous aider ! <br>Nous sommes impatients de vous accompagner.</p>
+              <p>Nos équipes vous contacteront sous peu afin de comprendre aux mieux vos besoins et comment vous aider ! <br>Nous sommes impatients de vous accompagner.</p>
               <%= image_tag "confirmation_guillaume.png" %>
               <p><strong>Guillaume</strong></p>
               <p><i>CEO et responsable clientèle</i></p>

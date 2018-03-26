@@ -7949,6 +7949,7 @@ Completed 200 OK in 1850ms (Views: 1848.1ms | ActiveRecord: 0.0ms)
 >>>>>>> master
 
 
+<<<<<<< HEAD
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2118642476538569625)[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Migrating to CreateRequests (20180326134628)
@@ -8216,10 +8217,35 @@ Processing by PagesController#home as HTML
   Rendered pages/landings_tests/_4.html.erb (5.5ms)
   Rendered pages/home.html.erb within layouts/application (6.3ms)
   Rendered shared/_navbar.html.erb (2.4ms)
+=======
+Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 16:41:50 +0200
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"1"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered shared/_address_form.html.erb (91.9ms)
+  Rendered pages/features/_free.html.erb (1.7ms)
+  Rendered pages/features/_value.html.erb (1.2ms)
+  Rendered pages/features/_flexible.html.erb (1.5ms)
+  Rendered pages/landings_tests/_1.html.erb (5243.8ms)
+  Rendered pages/home.html.erb within layouts/application (5248.7ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (5.1ms)
+Completed 200 OK in 5344ms (Views: 5307.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/?landing=" for 127.0.0.1 at 2018-03-26 16:42:51 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>""}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (11.4ms)
+>>>>>>> master
 Completed 401 Unauthorized in 23ms (ActiveRecord: 0.0ms)
 
 
   
+<<<<<<< HEAD
 ActionView::Template::Error ():
     10:   <div class="navbar-right hidden-xs hidden-sm">
     11:     <%= link_to "A propos", about_path(landing: 1), class: "navbar-item navbar-link #{active_class(about_path)}" %>
@@ -9144,5 +9170,106 @@ Processing by PagesController#home as HTML
   Rendered shared/_flashes.html.erb (0.3ms)
   Rendered shared/_footer.html.erb (1.7ms)
 Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+=======
+ActionView::Template::Error (Missing partial pages/_landings_tests with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
+  * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb___847682067127369397_70306694058180'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 16:42:52 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/features/_free.html.erb (42.6ms)
+  Rendered pages/features/_value.html.erb (1.3ms)
+  Rendered pages/features/_flexible.html.erb (1.3ms)
+  Rendered pages/landings_tests/_4.html.erb (61.3ms)
+  Rendered pages/home.html.erb within layouts/application (64.9ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (4.1ms)
+Completed 200 OK in 121ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 17:20:35 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/features/_free.html.erb (1.8ms)
+  Rendered pages/features/_value.html.erb (1.8ms)
+  Rendered pages/features/_flexible.html.erb (1.2ms)
+  Rendered pages/landings_tests/_4.html.erb (1677.2ms)
+  Rendered pages/home.html.erb within layouts/application (1681.9ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (2.9ms)
+Completed 200 OK in 1843ms (Views: 1784.9ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 17:21:55 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/features/_free.html.erb (2.7ms)
+  Rendered pages/features/_value.html.erb (2.0ms)
+  Rendered pages/features/_flexible.html.erb (4.5ms)
+  Rendered pages/landings_tests/_4.html.erb (39.7ms)
+  Rendered pages/home.html.erb within layouts/application (51.7ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (3.0ms)
+Completed 200 OK in 153ms (Views: 143.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 17:22:33 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/features/_free.html.erb (1.7ms)
+  Rendered pages/features/_value.html.erb (1.7ms)
+  Rendered pages/features/_flexible.html.erb (1.6ms)
+  Rendered pages/landings_tests/_4.html.erb (22.6ms)
+  Rendered pages/home.html.erb within layouts/application (25.7ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (9.8ms)
+Completed 200 OK in 280ms (Views: 101.6ms | ActiveRecord: 85.8ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 17:23:51 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+Completed 401 Unauthorized in 96ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:9:in `home'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started PUT "/__web_console/repl_sessions/6bc10329b732a6bd047763bf63055428" for 127.0.0.1 at 2018-03-26 17:24:05 +0200
+Started PUT "/__web_console/repl_sessions/6bc10329b732a6bd047763bf63055428" for 127.0.0.1 at 2018-03-26 17:24:06 +0200
+Started PUT "/__web_console/repl_sessions/6bc10329b732a6bd047763bf63055428" for 127.0.0.1 at 2018-03-26 17:24:09 +0200
+Started PUT "/__web_console/repl_sessions/6bc10329b732a6bd047763bf63055428" for 127.0.0.1 at 2018-03-26 17:24:19 +0200
+Started PUT "/__web_console/repl_sessions/6bc10329b732a6bd047763bf63055428" for 127.0.0.1 at 2018-03-26 17:24:54 +0200
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 17:25:18 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/features/_free.html.erb (2.4ms)
+  Rendered pages/features/_value.html.erb (3.2ms)
+  Rendered pages/features/_flexible.html.erb (1.9ms)
+  Rendered pages/landings_tests/_4.html.erb (37.5ms)
+  Rendered pages/home.html.erb within layouts/application (43.6ms)
+  Rendered shared/_navbar.html.erb (8.7ms)
+  Rendered shared/_flashes.html.erb (27.5ms)
+  Rendered shared/_footer.html.erb (2.1ms)
+Completed 200 OK in 265ms (Views: 163.0ms | ActiveRecord: 0.0ms)
+>>>>>>> master
 
 

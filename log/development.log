@@ -5412,16 +5412,47 @@ Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
 
 
 <<<<<<< HEAD
+Started GET "/" for 127.0.0.1 at 2018-03-26 15:51:27 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (3.6ms)
+Completed 401 Unauthorized in 51ms (ActiveRecord: 2.7ms)
+=======
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-03-26 15:13:08 +0200
   [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by PagesController#home as HTML
   Rendering pages/home.html.erb within layouts/application
   Rendered pages/home.html.erb within layouts/application (11.5ms)
 Completed 401 Unauthorized in 68ms (ActiveRecord: 5.8ms)
+>>>>>>> master
 
 
   
 ActionView::Template::Error (Missing partial pages/landings_tests/_home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+<<<<<<< HEAD
+  * "/home/albanp/code/aporcheron/homepay/landing_pages/app/views"
+  * "/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/forest_liana-2.4.3/app/views"
+  * "/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/landings_tests/#{@landing}" %>
+  
+app/views/pages/home.html.erb:1:in `_app_views_pages_home_html_erb__1025523971672987738_47358325806400'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 15:51:38 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/features/_free.html.erb (1.5ms)
+  Rendered pages/features/_value.html.erb (1.0ms)
+  Rendered pages/features/_flexible.html.erb (0.9ms)
+  Rendered pages/landings_tests/_4.html.erb (6356.8ms)
+  Rendered pages/home.html.erb within layouts/application (6358.1ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+=======
   * "/Users/arthurreboul/code/oruhtra/homepay/landing_pages/app/views"
   * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/forest_liana-2.4.3/app/views"
   * "/Users/arthurreboul/.rvm/gems/ruby-2.4.3/gems/devise-4.4.1/app/views"
@@ -5600,16 +5631,24 @@ Processing by PagesController#home as HTML
   Rendered shared/_navbar.html.erb (1.6ms)
   Rendered shared/_flashes.html.erb (0.4ms)
   Rendered shared/_footer.html.erb (1.7ms)
+>>>>>>> master
 [Webpacker] Compiling…
 [Webpacker] Compilation failed:
 Hash: b228ae4a021ab7f6f53c
 Version: webpack 3.11.0
+<<<<<<< HEAD
+Time: 1347ms
+=======
 Time: 947ms
+>>>>>>> master
                                   Asset       Size  Chunks                    Chunk Names
     application-9c0086a90e3ecd522fcb.js     491 kB       0  [emitted]  [big]  application
             map-e4997b475f8cfb42c197.js     342 kB       1  [emitted]  [big]  map
 application-9c0086a90e3ecd522fcb.js.map     608 kB       0  [emitted]         application
+<<<<<<< HEAD
+=======
 >>>>>>> ca294660671f5ceec6047c90b7359e3c63be4c8d
+>>>>>>> master
         map-e4997b475f8cfb42c197.js.map     443 kB       1  [emitted]         map
                           manifest.json  250 bytes          [emitted]         
    [1] ./app/javascript/packs/application.js 1.83 kB {0} [built]
@@ -5628,18 +5667,25 @@ application-9c0086a90e3ecd522fcb.js.map     608 kB       0  [emitted]         ap
 
 ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/dropzone/dist/dropzone.css
 <<<<<<< HEAD
+Module build failed: Error: No PostCSS Config found in: /home/albanp/code/aporcheron/homepay/landing_pages/.postcssrc.yml
+    at /home/albanp/code/aporcheron/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
+=======
+<<<<<<< HEAD
 Module build failed: Error: No PostCSS Config found in: /Users/arthurreboul/code/oruhtra/homepay/landing_pages/.postcssrc.yml
     at /Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
 =======
 Module build failed: Error: No PostCSS Config found in: /home/albanp/code/aporcheron/homepay/landing_pages/.postcssrc.yml
     at /home/albanp/code/aporcheron/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
 >>>>>>> ca294660671f5ceec6047c90b7359e3c63be4c8d
+>>>>>>> master
     at <anonymous>
  @ ./node_modules/dropzone/dist/dropzone.css 2:14-121
  @ ./app/javascript/shared/dropzone.js
  @ ./app/javascript/packs/application.js
 
 ERROR in ./node_modules/dropzone/dist/dropzone.css
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Config found in: /Users/arthurreboul/code/oruhtra/homepay/landing_pages/.postcssrc.yml
     at /Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
@@ -5650,6 +5696,7 @@ Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Co
     at context.callback (/Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
     at Promise.resolve.then.then.catch (/Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/postcss-loader/lib/index.js:196:71)
 =======
+>>>>>>> master
 Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Config found in: /home/albanp/code/aporcheron/homepay/landing_pages/.postcssrc.yml
     at /home/albanp/code/aporcheron/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
     at <anonymous>
@@ -5658,7 +5705,10 @@ Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Co
     at /home/albanp/code/aporcheron/homepay/landing_pages/node_modules/loader-runner/lib/LoaderRunner.js:230:18
     at context.callback (/home/albanp/code/aporcheron/homepay/landing_pages/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
     at Promise.resolve.then.then.catch (/home/albanp/code/aporcheron/homepay/landing_pages/node_modules/postcss-loader/lib/index.js:196:71)
+<<<<<<< HEAD
+=======
 >>>>>>> ca294660671f5ceec6047c90b7359e3c63be4c8d
+>>>>>>> master
     at <anonymous>
  @ ./node_modules/dropzone/dist/dropzone.css
  @ ./app/javascript/shared/dropzone.js
@@ -5668,16 +5718,54 @@ Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist 
     
     ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/dropzone/dist/dropzone.css
 <<<<<<< HEAD
+    Module build failed: Error: No PostCSS Config found in: /home/albanp/code/aporcheron/homepay/landing_pages/.postcssrc.yml
+        at /home/albanp/code/aporcheron/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
+=======
+<<<<<<< HEAD
     Module build failed: Error: No PostCSS Config found in: /Users/arthurreboul/code/oruhtra/homepay/landing_pages/.postcssrc.yml
         at /Users/arthurreboul/code/oruhtra/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
 =======
     Module build failed: Error: No PostCSS Config found in: /home/albanp/code/aporcheron/homepay/landing_pages/.postcssrc.yml
         at /home/albanp/code/aporcheron/homepay/landing_pages/node_modules/postcss-load-config/index.js:51:26
 >>>>>>> ca294660671f5ceec6047c90b7359e3c63be4c8d
+>>>>>>> master
         at <anonymous>
 
 set is deprecated! Use append instead
 
+<<<<<<< HEAD
+Completed 200 OK in 8696ms (Views: 8694.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 15:56:04 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/features/_free.html.erb (1.2ms)
+  Rendered pages/features/_value.html.erb (1.7ms)
+  Rendered pages/features/_flexible.html.erb (1.3ms)
+  Rendered pages/landings_tests/_4.html.erb (12.5ms)
+  Rendered pages/home.html.erb within layouts/application (13.5ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 15:57:09 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/features/_free.html.erb (1.6ms)
+  Rendered pages/features/_value.html.erb (1.2ms)
+  Rendered pages/features/_flexible.html.erb (1.6ms)
+  Rendered pages/landings_tests/_4.html.erb (12.8ms)
+  Rendered pages/home.html.erb within layouts/application (13.9ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.4ms)
+Completed 200 OK in 2490ms (Views: 2487.9ms | ActiveRecord: 0.0ms)
+=======
 <<<<<<< HEAD
 Completed 200 OK in 12750ms (Views: 12748.1ms | ActiveRecord: 0.0ms)
 
@@ -7858,6 +7946,7 @@ Processing by PagesController#home as HTML
   Rendered shared/_footer.html.erb (0.8ms)
 Completed 200 OK in 1850ms (Views: 1848.1ms | ActiveRecord: 0.0ms)
 >>>>>>> ca294660671f5ceec6047c90b7359e3c63be4c8d
+>>>>>>> master
 
 
 Started GET "/?landing=1" for 127.0.0.1 at 2018-03-26 16:41:50 +0200

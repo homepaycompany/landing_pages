@@ -1,14 +1,15 @@
 <div class="navbar">
   <!-- Left navigation -->
   <div class="navbar-left">
-    <%= link_to root_path, class: "navbar-brand" do %>
+    <%= link_to root_path(landing: @landing), class: "navbar-brand" do %>
       <%= image_tag "logo_name.png", alt: "logo" %>
     <% end %>
   </div>
 
   <!-- Right Navigation -->
   <div class="navbar-right hidden-xs hidden-sm">
-    <%= link_to "A propos", about_path, class: "navbar-item navbar-link #{active_class(about_path)}" %>
+    <%= link_to "Comment ça marche", how_it_works_path(landing: @landing), class: "navbar-item navbar-link #{active_class(how_it_works_path(landing: @landing))}" %>
+    <%= link_to "A propos", about_path(landing: @landing), class: "navbar-item navbar-link #{active_class(about_path(landing: @landing))}" %>
     <%= link_to "Estimer gratuitement mon bien", new_property_form_path, class: "btn" %>
   </div>
 

@@ -17,10 +17,11 @@ class PagesController < ApplicationController
   end
 
   def thank_you
-    @landing = params["landing"]
+    @landing = params["landing"] || 'home'
   end
 
   def how_it_works
+    @landing = params["landing"] || 'home'
   end
 
   def about_us

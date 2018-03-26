@@ -1,0 +1,34 @@
+{
+  "name": "homepay_rails_monolyth",
+  "scripts": {
+    "postdeploy":"rails db:migrate && rails db:seed"
+  },
+  "env": {
+    "CLOUDINARY_URL": {
+      "required": true
+    },
+    "GOOGLE_API_SERVER_KEY": {
+      "required": true
+    },
+    "GOOGLE_API_BROWSER_KEY": {
+      "required": true
+    },
+    "POSTMARK_API_KEY": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url" : "heroku/nodejs"
+    },
+    {
+      "url" : "heroku/ruby"
+    }
+
+  ]
+}

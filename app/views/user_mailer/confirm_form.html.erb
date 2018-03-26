@@ -1,0 +1,81 @@
+
+
+<div class="main-section" style="background-color: #F5FBFF;
+color: #525975; font-style: 'Titillium Web';
+text-align: center;
+padding: 20px 10px;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+          <td align="center">
+            <div class="container" style="  min-height: calc(100vh - 310px);
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 10px 30px;
+            box-shadow: 0 0 1px $grey;
+            max-width: 900px;">
+              <div style="max-width: 700px;">
+                <h1 style="color: #20E8B6; font-style: 'EB Garamond';">
+                  Votre demande est envoyée
+                </h1>
+                <div class="img-container">
+                  <img src="http://res.cloudinary.com/homepay/image/upload/v1520858943/confirmation-1d94787de88979d74e486ce4102f9db2c51bd2e0ce47dc89669e84bf21065b6f.png" alt="confirmation" style="height: 200px;">
+                </div>
+                <p style="margin-bottom: 20px;">
+                  <strong><%= @user.first_name.capitalize %></strong>, nous sommes heureux de vous annoncer que nous avons bien reçu votre demande pour votre logement situé à l'adresse : <strong><%= @property.address %></strong>.
+                </p>
+                <div class="valuer-prop-container" style="text-align: left; margin-bottom: 40px;">
+                  <p>
+                    <strong style="color: #20E8B6;">Homepay</strong> vous permet de vendre votre logement simplement en quelques jours, afin de pouvoir commencer le nouveau chapitre de votre vie sereinement.
+                  </p>
+                  <ul>
+                    <li>Epargnez-vous les visites</li>
+                    <li>Soyez flexible sur la date de votre déménagement</li>
+                    <li>Soyez accompagné sur toutes les étapes de vente</li>
+                    <li>Profitez d'une vente simple et efficace</li>
+                  </ul>
+                </div>
+                <div class="next-steps-container" style="margin-bottom: 40px;">
+                  <h2 style="font-style: 'EB Garamond';">Les prochaines étapes</h2>
+                  <table>
+                    <tr>
+                      <td style="width: 100%; margin: 10px;">
+                        <h3 style="font-style: 'EB Garamond';"><strong>1.</strong> Analyse de votre dossier</h3>
+                        <p>Des investisseurs présélectionnés vont préparer une offre d'achat basée sur les données de marché et les informations que vous nous avez communiquées.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 100%; margin: 10px;">
+                        <h3 style="font-style: 'EB Garamond';"><strong>2.</strong> Réception des offres</h3>
+                        <p>Après quelques jours, vous recevrez vos premières offres. Si une offre vous convient, nous organisons pour vous une visite confirmatoire avec l'acquéreur.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 100%; margin: 10px;">
+                        <h3 style="font-style: 'EB Garamond';"><strong>3.</strong> Visite confirmatoire</h3>
+                        <p>Après la visite de l'acquéreur, celui-ci va vous formuler une offre ferme. Vous êtes libre de l'accepter.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="width: 100%; margin: 10px;">
+                        <h3 style="font-style: 'EB Garamond';"><strong>4.</strong> Vente de votre bien</h3>
+                        <p>Une fois l'offre acceptée, nous vous accompagnons jusqu'à la signature de l'acte de vente.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="contact-container">
+                  <h2>Votre contact</h2>
+                  <p>Je m'appelle Guillaume et je vais vous aider sur les différentes étapes liées à la vente de de votre logement. N'hésitez pas à me contacter si vous avez des questions. Nous sommes impatients de vous accompagner.</p>
+                  <img src="http://res.cloudinary.com/homepay/image/upload/v1520529674/lju7pburtb6kvdbccc9c.png" alt="contact profile picture" style="height: 200px;">
+                  <p><strong>Guillaume Lestrade</strong></p>
+                  <p>Téléphone : <%= link_to "‭06 44 66 31 30‬", "tel:‭0644663130‬", {:style=>'color: #20E8B6;'} %></p>
+                  <p>Email   : <%= mail_to "guillaume@homepay.fr", {:style=>'color: #20E8B6;'} %></p>
+                </div>
+              </div>
+            </div>
+          </td>
+      </tr>
+  </table>
+</div>
+

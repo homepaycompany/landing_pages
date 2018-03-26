@@ -1,0 +1,30 @@
+<div class="main-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <%= render 'property_forms/progress_bar/progress_bar', section: 2, name: 'Type de bien'  %>
+      <div class="form-container">
+        <div class="form-title text-center">
+          <h1>De quel type de bien s'agit-il ?</h1>
+        </div>
+        <div class="form-body">
+          <div class="row">
+            <div class="col-xs-6 text-center">
+              <%= link_to form_step_3_path(@property_form.token, property_type:'house'), method: :put do %>
+                <%= image_tag "form_house.png", class: "property-type-icon" %>
+                <p>Maison</p>
+              <% end %>
+            </div>
+            <div class="col-xs-6 text-center">
+              <%= link_to form_step_3_path(@property_form.token, property_type:'appartment'), method: :put do %>
+                <%= image_tag "form_flat.png", class: "property-type-icon" %>
+                <p>Appartement</p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+        <div class="form-validation">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

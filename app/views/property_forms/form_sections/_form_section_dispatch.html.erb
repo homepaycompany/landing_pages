@@ -1,0 +1,12 @@
+<% page[:sections].each do |s| %>
+  <% fields = page[:fields].select { |f| f[:section] == s[:id] } %>
+  <% unless fields.length == 0 %>
+    <% if s[:type] == 'input_section' %>
+      <%= render 'property_forms/form_sections/form_input_section', fields: fields %>
+    <% elsif s[:type] == 'selection_section' %>
+      <%= render 'property_forms/form_sections/form_selection_section', fields: fields %>
+    <% elsif s[:type] == 'hidden_input_section' %>
+      <%= render 'property_forms/form_sections/form_hidden_input_section', fields: fields %>
+    <% end %>
+  <% end %>
+<% end %>

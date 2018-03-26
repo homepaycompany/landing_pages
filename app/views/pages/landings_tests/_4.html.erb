@@ -1,0 +1,111 @@
+<div class="main-section">
+  <div class="banner" style="background-image: url('<%= image_url("banner-image.png") %>'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+        <div class="banner-content">
+          <div>
+            <h1>La première agence immobilière <strong>gratuite</strong></h1>
+            <%= link_to "Estimer gratuitement mon bien", "javascript:void(0)", class: "btn" %>
+            <p>Vendre son bien immobilier avec un professionnel sans frais d'agence, c'est possible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="landing-prop">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 landing-prop-item" id="js-value-prop-sale">
+        <%= render 'pages/features/free' %>
+      </div>
+      <div class="col-xs-12 col-sm-4 landing-prop-item"  id="js-value-prop-move">
+        <%= render 'pages/features/value' %>
+      </div>
+      <div class="col-xs-12 col-sm-4 landing-prop-item"  id="js-value-prop-certainty">
+        <%= render 'pages/features/flexible' %>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="landing-steps">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="landing-steps-title text-center">
+            <h2>Vendez simplement avec Homepay</h2>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="landing-step" id="landing-first-step">
+            <div class="col-xs-12 col-md-offset-1 col-md-4 col-md-push-6">
+              <div class="landing-step-img text-center">
+                <%= image_tag 'step_1.png' %>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-md-pull-4">
+              <div class="landing-step-card">
+                <h4 class="text-center">1</h4>
+                <h3>Décrivez votre bien</h3>
+                <p>Répondez à quelques questions et envoyez-nous quelques photos. Nous les enverrons à des acquéreurs présélectionnés.</p>
+                <%= link_to "Commencez", new_property_form_path %> | <%= link_to "En savoir plus", how_it_works_path %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="landing-step" id="landing-second-step">
+            <div class="col-xs-12 col-md-4 col-md-offset-1">
+              <div class="landing-step-img text-center">
+                <%= image_tag 'step_2.png' %>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="landing-step-card">
+                <h4 class="text-center">2</h4>
+                <h3>Recevez des offres</h3>
+                <p>Les acquéreurs professionnels que nous avons présélectionnés vous formulerons une offre d'achat en seulement quelques jours.</p>
+                <%= link_to "Commencez", new_property_form_path %> | <%= link_to "En savoir plus", how_it_works_path %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="landing-step" id="landing-third-step">
+            <div class="col-xs-12 col-md-offset-1 col-md-4 col-md-push-6">
+              <div class="landing-step-img text-center">
+                <%= image_tag 'step_3.png' %>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-md-pull-4">
+              <div class="landing-step-card">
+                <h4 class="text-center">3</h4>
+                <h3>Choisissez la meilleure option pour vous</h3>
+                <p>Vous pouvez choisir une des offres qui vous a été formulées et organiser une visite confirmatoire en fonction de vos disponibilités. Vous n'avez aucune obligation.</p>
+                <%= link_to "Commencez", new_property_form_path %> | <%= link_to "En savoir plus", how_it_works_path %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 text-center">
+          <div class = "btn-feature text-center">
+            <%= link_to "En savoir plus", how_it_works_path, class: "btn" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="landing-contact text-center">
+    <div class="container">
+      <h2>Nous contacter</h2>
+      <%= image_tag "contact.png" %>
+      <p>Une question ou une suggestion ?</p>
+      <p>Appelez-nous au <%= link_to "‭06 44 66 31 30‬", "tel:‭0644663130‬" %></p>
+      <p>Email : <%= mail_to "contact@homepay.fr" %></p>
+    </div>
+  </div>
+</div>
+

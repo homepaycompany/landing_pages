@@ -1,0 +1,10 @@
+<div class="address-input-form" id="js-form-address">
+  <%= simple_form_for(@property_form) do |f| %>
+    <div class="form-input border-green">
+      <i class="fas fa-map-marker-alt marker"></i>
+      <%= f.input :address, label: false, input_html: { id: "real_estate_property_address", placeholder: "Indiquez l'adresse" } %>
+    </div>
+    <%= f.submit "Je demande mes offres d'achat", class: "form-submit border-green visible-md visible-lg visible-xl" %>
+    <%= f.submit "Je vends", class: "form-submit border-green visible-xs visible-sm" %>
+  <% end %>
+</div>

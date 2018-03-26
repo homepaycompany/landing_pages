@@ -1,0 +1,56 @@
+<div class="main-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <%= render 'property_forms/progress_bar/progress_bar', section: 6, name: 'Photos' %>
+      <div class="form-container">
+        <div class="form-title text-center">
+          <h1>Veuillez ajouter des photos de votre bien</h1>
+          <i><span style="font-size:15px;">Pas besoin de photos de professionels... quelques photos du plafond, des murs, du sol et des fenêtres prises depuis un téléphone nous permettront d'évaluer si des travaux sont à prévoir</span></i>
+        </div>
+        <div class="form-body">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-sm-offset-4 text-center">
+              <div class="dropzone-btn dz-message" id="clickable">
+                <%= image_tag "form_camera.png" %>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="dropzone-preview-container">
+                <% @property_form.property_images.each do |i| %>
+                  <div class="dropzone-image-card" id="js-dropzone-uploaded">
+                    <%= cl_image_tag i.photo, width: 120, height: 120 ,class:'dropzone-image' %>
+                  </div>
+                <% end %>
+                <div>
+                  <%= simple_form_for @property_image, html: {id:"doc-dropzone", class: "dropzone", multipart: true }  do |f| %>
+                  <%= hidden_field_tag(:property_form_id, @property_form.id) %>
+                  <% end %>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        <%= render 'property_forms/form_validation/form_validation', next_p: 'Continuer sans photos', previous_p: 'Retour' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to form_step_7_path(@property_form.token), method: :get do %>
+  <div class="btn hidden" id="move-to-next-section"></div>
+<% end %>
+
+<!-- HTML TEMPLATE FOR DROPZONE PASSED WITH JS -->
+<div class="dropzone-preview-container hidden" id="tpl">
+  <div class="dz-preview dz-file-preview dropzone-image-card">
+    <div class="dz-details">
+      <img data-dz-thumbnail class="dropzone-image" />
+      <div class="hidden dz-filename"><span data-dz-name></span></div>
+      <div class="hidden dz-size" data-dz-size></div>
+    </div>
+    <div class="hidden dz-progress"><span class="dz-upload" data-dz-uploadprogress></span></div>
+    <div class="hidden dz-success-mark"><span>✔</span></div>
+    <div class="hidden dz-error-mark"><span>✘</span></div>
+    <div class="hidden dz-error-message"><span data-dz-errormessage></span></div>
+  </div>
+</div>

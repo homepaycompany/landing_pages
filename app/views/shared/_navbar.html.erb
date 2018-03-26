@@ -1,0 +1,36 @@
+<div class="navbar">
+  <!-- Left navigation -->
+  <div class="navbar-left">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "logo_name.png", alt: "logo" %>
+    <% end %>
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-right hidden-xs hidden-sm">
+    <%= link_to "A propos", about_path, class: "navbar-item navbar-link #{active_class(about_path)}" %>
+    <%= link_to "Estimer gratuitement mon bien", new_property_form_path, class: "btn" %>
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-right hidden-lg hidden-xl">
+    <%= link_to "Vendre", new_property_form_path, class: "navbar-item navbar-link hidden-md hidden-lg #{active_class(new_property_form_path)}" %>
+    <div class="navbar-item hidden-md hidden-lg">
+      <div class="dropdown">
+        <div data-toggle="dropdown">
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+          <li>
+            <%= link_to "A propos", about_path, class: "navbar-item navbar-link #{active_class(about_path)}" %>
+          </li>
+          <li>
+            <%= link_to "Comment ça marche", how_it_works_path, class: "navbar-item navbar-link #{active_class(how_it_works_path)}" %>
+          </li>
+          <li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

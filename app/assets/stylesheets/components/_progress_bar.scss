@@ -1,0 +1,21 @@
+.progress-bar-container {
+  margin-top: 25px;
+  // margin-bottom: -5px;
+  padding: 0 100px;
+  text-align: center;
+  .progress {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 1px $grey;
+  }
+  .progress-bar-success {
+    background-color: $green;
+  }
+}
+
+// MEDIA WIDTH RELATED STYLES
+@media(max-width: 768px) {
+  .progress-bar-container .progress-bar-success {
+    color: transparent;
+  }
+}

@@ -1,0 +1,38 @@
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>form_size</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2567 -5957)">
+<g id="form_size">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-2567 5957)" fill="#FFFFFF"/>
+</g>
+<g id="Group">
+<g id="Rectangle">
+<use xlink:href="#path1_stroke" transform="translate(-2499.73 6024.27)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-2446.55 6012)" fill="#FFFFFF"/>
+<use xlink:href="#path3_stroke" transform="translate(-2446.55 6012)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-2446.55 6077.45)" fill="#FFFFFF"/>
+<use xlink:href="#path3_stroke" transform="translate(-2446.55 6077.45)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-2512 6077.45)" fill="#FFFFFF"/>
+<use xlink:href="#path3_stroke" transform="translate(-2512 6077.45)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-2512 6012)" fill="#FFFFFF"/>
+<use xlink:href="#path3_stroke" transform="translate(-2512 6012)" fill="#20E8B6"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 200 0L 200 200L 0 200L 0 0Z"/>
+<path id="path1_stroke" d="M 0 0L 0 -3L -3 -3L -3 0L 0 0ZM 65.4545 0L 68.4545 0L 68.4545 -3L 65.4545 -3L 65.4545 0ZM 65.4545 65.4545L 65.4545 68.4545L 68.4545 68.4545L 68.4545 65.4545L 65.4545 65.4545ZM 0 65.4545L -3 65.4545L -3 68.4545L 0 68.4545L 0 65.4545ZM 0 3L 65.4545 3L 65.4545 -3L 0 -3L 0 3ZM 62.4545 0L 62.4545 65.4545L 68.4545 65.4545L 68.4545 0L 62.4545 0ZM 65.4545 62.4545L 0 62.4545L 0 68.4545L 65.4545 68.4545L 65.4545 62.4545ZM 3 65.4545L 3 0L -3 0L -3 65.4545L 3 65.4545Z"/>
+<path id="path2_fill" d="M 0 0L 24.5455 0L 24.5455 24.5455L 0 24.5455L 0 0Z"/>
+<path id="path3_stroke" d="M 0 0L 0 -3L -3 -3L -3 0L 0 0ZM 24.5455 0L 27.5455 0L 27.5455 -3L 24.5455 -3L 24.5455 0ZM 24.5455 24.5455L 24.5455 27.5455L 27.5455 27.5455L 27.5455 24.5455L 24.5455 24.5455ZM 0 24.5455L -3 24.5455L -3 27.5455L 0 27.5455L 0 24.5455ZM 0 3L 24.5455 3L 24.5455 -3L 0 -3L 0 3ZM 21.5455 0L 21.5455 24.5455L 27.5455 24.5455L 27.5455 0L 21.5455 0ZM 24.5455 21.5455L 0 21.5455L 0 27.5455L 24.5455 27.5455L 24.5455 21.5455ZM 3 24.5455L 3 0L -3 0L -3 24.5455L 3 24.5455Z"/>
+</defs>
+</svg>

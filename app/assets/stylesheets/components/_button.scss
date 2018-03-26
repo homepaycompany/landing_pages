@@ -1,0 +1,55 @@
+.btn {
+  color: white;
+  background: $green;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background: $dark-green;
+  text-decoration: none;
+  color: white;
+}
+.white-btn {
+  color: $green;
+  border: solid 1px $green;
+  background: white;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.white-btn:hover {
+  text-decoration: none;
+  color: $dark-green;
+  border: solid 1px $dark-green;
+}
+.toggle-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  background-color: white;
+  &.active {
+    background-color: $green;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toggle-btn-border {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 17px;
+  border: 2px solid $green;
+}

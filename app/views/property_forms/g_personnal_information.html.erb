@@ -1,0 +1,50 @@
+<div class="main-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <%= render 'property_forms/progress_bar/progress_bar', section: 7, name: 'Informations personnelles' %>
+      <div class="form-container">
+        <div class="form-title text-center">
+          <h1>Parlez-nous un peu de vous</h1>
+          <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 disclaimer">
+              <!-- DISCLAIMER ON LARGE SCREENS -->
+              <div class="hidden-xs visible-sm visible-md visible-lg">
+                <div class="disclaimer-container">
+                  <%= image_tag 'freedom', class: "disclaimer-icon" %>
+                  <p><i>Fournir ces informations ne vous <strong>engage à rien</strong> : vous avez l'entière liberté de refuser les offres de nos partennaires</i></p>
+                </div>
+                <div class="disclaimer-container">
+                  <%= image_tag 'locked', class: "disclaimer-icon" %>
+                  <p><i>Ces informations sont <strong>confidentielles</strong> : elles nous servent uniquement à vous transmettre les offres et ne seront pas partagées</i></p>
+                </div>
+              </div>
+              <!-- DISCLAIMER ON SMALL SCREENS -->
+              <div class="row visble-xs hidden-sm hidden-md hidden-lg text-center">
+                <div class="col-xs-12">
+                  <%= image_tag 'freedom', class: "disclaimer-icon" %>
+                </div>
+                <div class="col-xs-12">
+                  <p class=""><i>Fournir ces informations ne vous <strong>engage à rien</strong> : vous avez l'entière liberté de refuser les offres de nos partennaires</i></p>
+                </div>
+                <div class="col-xs-12">
+                  <%= image_tag 'locked', class: "disclaimer-icon" %>
+                </div>
+                <div class="col-xs-12">
+                  <p><i>Ces informations sont <strong>confidentielles</strong> : elles nous servent uniquement à vous transmettre les offres et ne seront pas partagées</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-body">
+          <%= render 'property_forms/form_sections/form_section_dispatch', page: @property_form.personnal_information_fields %>
+        </div>
+        <%= render 'property_forms/form_validation/form_validation', next_p: 'Valider', previous_p: 'Retour' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to form_step_8_path(@property_form.token), method: :get do %>
+  <div class="btn hidden" id="move-to-next-section"></div>
+<% end %>

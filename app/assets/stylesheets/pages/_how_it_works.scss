@@ -1,0 +1,158 @@
+.how-it-works-section {
+  padding: 40px 0px;
+  margin: 40px 0px;
+  background: white;
+  padding: 40px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  .container {
+    width: 80%;
+  }
+  h2 {
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 0px;
+  }
+  p {
+    margin: 40px 0px;
+    color: $light-black;
+    font-size: 16px;
+  }
+  ul {
+    list-style: none;
+    color: $light-black;
+    font-size: 16px;
+    p {
+      margin: 20px 0px;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    .crucial-step {
+      font-weight: 800;
+      font-size: 18px;
+      height: 80px;
+      p {
+        color: $green;
+      }
+      &:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $green;
+        position: absolute;
+        top: 25px;
+        left: calc(50% - 4px);
+        z-index: 1;
+      }
+    }
+    .regular-step {
+      height: 250px;
+      &:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $grey;
+        position: absolute;
+        top: 120px;
+        left: calc(50% - 4px);
+        z-index: 1;
+      }
+    }
+    .timeline-step {
+      &:after {
+        content: "";
+        background-color: $light-grey;
+        position: absolute;
+        width: 1px;
+        height: 250px;
+        top: 0px;
+        left: 50%;
+        display: block;
+      }
+    }
+    .crucial-step-container {
+      text-align: right;
+      padding-right: 80px;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 28px;
+        right: 0;
+        width: 60px;
+        height: 2px;
+        background: $green;
+      }
+    }
+    .row > .col-xs-12:nth-child(odd) > .timeline-step > .step-container {
+      padding-right: 80px;
+      text-align: right;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 124px;
+        right: 0;
+        width: 60px;
+        height: 2px;
+        background: $light-grey;
+      }
+    }
+    .row > .col-xs-12:nth-child(even) > .timeline-step > .step-container {
+      padding-left: 80px;
+      text-align: left;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 124px;
+        left: 0;
+        width: 60px;
+        height: 2px;
+        background: $light-grey;
+      }
+    }
+  }
+  .form {
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// Mobile responsive
+@media (max-width: 768px) {
+  .how-it-works-section {
+    padding: 20px;
+    .container {
+      width: 100%;
+    }
+  }
+  .timeline {
+    padding: 0px;
+    p {
+      text-align: center;
+    }
+  }
+  .crucial-step-container, .step-container {
+    padding: 0px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .crucial-step-container:before {
+    content: none !important;
+  }
+  .regular-step, .crucial-step {
+    &:before {
+      content: none !important;
+    }
+    p, img {
+      z-index: 1;
+    }
+  }
+  .form {
+    margin-top: 40px !important;
+  }
+}

@@ -1,0 +1,26 @@
+<div class="main-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <%= render 'property_forms/progress_bar/progress_bar', section: 8, name: 'Confirmation' %>
+      <div class="form-container">
+        <div class="form-title text-center">
+          <h1 class="confirmation">Bravo, c'est presque terminé !</h1>
+          <h2>Voici un récapitulatif de votre dossier, merci de bien verifier chaque élément</h2>
+        </div>
+        <div class="form-body">
+          <div class="form-section">
+            <%= render 'property_forms/form_map/form_map' %>
+          </div>
+          <% @property_form.all_pages.each do |page| %>
+            <%= render 'property_forms/form_sections/form_section_dispatch', page: page %>
+          <% end %>
+        </div>
+        <%= render 'property_forms/form_validation/form_validation', next_p: 'Finaliser', previous_p: 'Retour' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to form_step_9_path(@property_form.token), method: :get do %>
+  <div class="btn hidden" id="move-to-next-section"></div>
+<% end %>

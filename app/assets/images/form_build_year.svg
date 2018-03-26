@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>form_build_year</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(960 -5955)">
+<g id="form_build_year">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-960 5955)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(-905 6010)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(-905 6010)" fill="#20E8B6"/>
+</g>
+</g>
+<g id="Rectangle 2">
+<use xlink:href="#path3_fill" transform="translate(-883 6004)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle 2.1">
+<use xlink:href="#path3_fill" transform="translate(-845 6004)" fill="#20E8B6"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 200 0L 200 200L 0 200L 0 0Z"/>
+<path id="path1_fill" d="M 0 12C 0 5.37258 5.37258 0 12 0L 78 0C 84.6274 0 90 5.37258 90 12L 90 27L 90 78C 90 84.6274 84.6274 90 78 90L 12 90C 5.37258 90 0 84.6274 0 78L 0 27L 0 12Z"/>
+<path id="path2_stroke_2x" d="M 0 29.5L 90 29.5L 90 24.5L 0 24.5L 0 29.5ZM 12 5L 78 5L 78 -5L 12 -5L 12 5ZM 78 85L 12 85L 12 95L 78 95L 78 85ZM 5 78L 5 27L -5 27L -5 78L 5 78ZM 5 27L 5 12L -5 12L -5 27L 5 27ZM 85 12L 85 27L 95 27L 95 12L 85 12ZM 85 27L 85 78L 95 78L 95 27L 85 27ZM 12 85C 8.13401 85 5 81.866 5 78L -5 78C -5 87.3888 2.61116 95 12 95L 12 85ZM 78 95C 87.3888 95 95 87.3888 95 78L 85 78C 85 81.866 81.866 85 78 85L 78 95ZM 78 5C 81.866 5 85 8.13401 85 12L 95 12C 95 2.61116 87.3888 -5 78 -5L 78 5ZM 12 -5C 2.61116 -5 -5 2.61116 -5 12L 5 12C 5 8.13401 8.13401 5 12 5L 12 -5Z"/>
+<path id="path3_fill" d="M 0 0L 7 0L 7 18L 0 18L 0 0Z"/>
+</defs>
+</svg>

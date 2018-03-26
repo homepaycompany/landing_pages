@@ -1,0 +1,34 @@
+<div class="main-section">
+  <div class="container">
+    <div class="faq-section">
+      <div class="row">
+        <h2 class="text-center">Questions fréquentes</h2>
+        <div class="faq-values">
+          <% @topics.each_with_index do |(k,v), i| %>
+            <h3 class="<%= "active" if i == 0 %>" data-faq="<%= k %>"><%= v %></h3>
+          <% end %>
+        </div>
+
+        <% @topics.each_with_index do |(k,v), i| %>
+          <div class="faq-wrapper <%= "faq-wrapper-active" if i == 0 %>" data-faq="<%= k %>">
+            <% @faqs.where(topic: k).order(:id).each do |faq| %>
+              <div class="col-xs-12">
+                <div class="question-wrapper" id="js-faq-question" data-question="<%= faq.id %>">
+                  <p>
+                    <%= faq.question %>
+                  </p>
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="answer-wrapper hidden" id="js-faq-answer" data-answer="<%= faq.id %>">
+                  <p>
+                    <%= faq.answer %>
+                  </p>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

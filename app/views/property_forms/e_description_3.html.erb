@@ -1,0 +1,20 @@
+<div class="main-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <%= render 'property_forms/progress_bar/progress_bar', section: 5, name: 'Description (3/3)' %>
+      <div class="form-container">
+        <div class="form-title text-center">
+          <h1>Description générale du bien (3/4)</h1>
+        </div>
+        <div class="form-body">
+          <%= render 'property_forms/form_sections/form_section_dispatch', page: @property_form.dsc_3_fields %>
+        </div>
+        <%= render 'property_forms/form_validation/form_validation', next_p: 'Valider', previous_p: 'Retour' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to form_step_6_path(@property_form.token), method: :get do %>
+  <div class="btn hidden" id="move-to-next-section"></div>
+<% end %>

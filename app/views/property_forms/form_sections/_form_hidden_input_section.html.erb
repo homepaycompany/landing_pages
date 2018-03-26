@@ -1,0 +1,13 @@
+<div class="form-section">
+  <div class="row">
+    <% fields.each do |t| %>
+      <div class="col-xs-12 hidden" id=<%= "js-property-form-#{t[:name]}" %>>
+        <% if t[:input_type] == 'text' %>
+          <%= render 'property_forms/form_fields/hidden_text_field', t: t %>
+        <% elsif t[:input_type] == 'boolean' %>
+          <%= render 'property_forms/form_fields/hidden_boolean_field', fields: fields, t: t %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

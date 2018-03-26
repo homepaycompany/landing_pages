@@ -1,0 +1,6 @@
+meta_product_name: "Homepay"
+meta_title: "Homepay - Vendez votre logement en un clic"
+meta_description: "Demandez une offre d'achat pour votre logement et
+épargnez vous les désagréments liés à la mise en vente"
+meta_image: "cover.png"                       # should exist in `app/assets/images/`
+twitter_account: "@homepay_social"

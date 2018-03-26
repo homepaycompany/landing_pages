@@ -1,0 +1,19 @@
+<div class="form-section form-choice-section"  id="js-form-toggle-section">
+  <div class="row">
+    <% fields.each do |t| %>
+      <% if fields.length.odd? %>
+        <div class="col-xs-6 col-sm-4">
+          <%= render 'property_forms/form_fields/selection_box_field', t: t %>
+        </div>
+      <% else %>
+        <div class="col-xs-6">
+          <%= render 'property_forms/form_fields/selection_box_field', t: t %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+
+
+
+

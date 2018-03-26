@@ -1,0 +1,215 @@
+# Logfile created on 2018-03-18 16:24:13 +0100 by logger.rb/56815
+[2018-03-18T16:24:13 (process) #5930][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-18T16:24:13 (process) #5930][ERROR] appsignal: Push api key not set after loading config
+[2018-03-18T16:24:13 (process) #5930][ERROR] Not starting, no valid config for this environment
+[2018-03-18T16:24:40 (process) #6134][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-18T16:24:40 (process) #6134][ERROR] appsignal: Push api key not set after loading config
+[2018-03-18T16:24:40 (process) #6134][ERROR] Not starting, no valid config for this environment
+[2018-03-18T16:24:50 (process) #6254][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-18T16:24:51 (process) #6254][ERROR] appsignal: Push api key not set after loading config
+[2018-03-18T16:24:51 (process) #6254][ERROR] Not starting, no valid config for this environment
+[2018-03-18T16:25:50 (process) #6949][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-18T16:25:50 (process) #6949][ERROR] appsignal: Push api key not set after loading config
+[2018-03-18T16:25:50 (process) #6949][ERROR] Not starting, no valid config for this environment
+[2018-03-18T16:25:57 (process) #7022][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-18T16:25:57 (process) #7022][ERROR] appsignal: Push api key not set after loading config
+[2018-03-18T16:25:57 (process) #7022][ERROR] Not starting, no valid config for this environment
+[2018-03-18T16:28:08 (process) #7297][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-18T16:28:08 (process) #7297][ERROR] appsignal: Push api key not set after loading config
+[2018-03-18T16:28:08 (process) #7297][ERROR] Not starting, no valid config for this environment
+[2018-03-18T16:28:55 (process) #7592][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-18T16:28:55 (process) #7592][ERROR] appsignal: Push api key not set after loading config
+[2018-03-18T16:28:55 (process) #7592][ERROR] Not starting, no valid config for this environment
+[2018-03-19T17:01:07 (process) #11997][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-19T17:01:07 (process) #11997][ERROR] appsignal: Push api key not set after loading config
+[2018-03-19T17:01:07 (process) #11997][ERROR] Not starting, no valid config for this environment
+[2018-03-19T17:06:37 (process) #13266][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-19T17:06:38 (process) #13266][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-19T17:06:38 (process) #13266][INFO] Installing action_cable hook
+[2018-03-19T17:06:38 (process) #13266][INFO] Installing active_support_notifications hook
+[2018-03-19T17:06:38 (process) #13266][INFO] Installing net_http hook
+[2018-03-19T17:06:38 (process) #13266][INFO] Installing redis hook
+[2018-03-19T17:06:38 (process) #13266][INFO] Installing sidekiq hook
+[2018-03-19T17:06:38 (agent) #13324][Info] Started appsignal-agent Config { active: true, agent_standalone: false, running_in_container: false, app_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth"), agent_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/ext"), debug_logging: false, log: File, log_file_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth/log/appsignal.log"), working_dir_path: "/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "452a5df2-a2b1-432b-9b89-e8dcd00e7db4", environment: "development", app_name: Some("HomepayRailsMonolyth"), language_integration_version: Some("ruby-2.5.0"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("XPS-15-9560-a"), ca_file_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/resources/cacert.pem"), diagnose_mode: false, dns_servers: None, files_world_accessible: true }
+[2018-03-19T17:06:38 (agent) #13324][Info] Listening on /tmp/appsignal/agent.socket
+[2018-03-20T11:33:43 (process) #10830][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T11:33:44 (process) #10830][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T11:33:44 (process) #10830][INFO] Installing action_cable hook
+[2018-03-20T11:33:44 (process) #10830][INFO] Installing active_support_notifications hook
+[2018-03-20T11:33:44 (process) #10830][INFO] Installing net_http hook
+[2018-03-20T11:33:44 (process) #10830][INFO] Installing redis hook
+[2018-03-20T11:33:44 (process) #10830][INFO] Installing sidekiq hook
+[2018-03-20T11:33:44 (agent) #10878][Info] Started appsignal-agent Config { active: true, agent_standalone: false, running_in_container: false, app_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth"), agent_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/ext"), debug_logging: false, log: File, log_file_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth/log/appsignal.log"), working_dir_path: "/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "452a5df2-a2b1-432b-9b89-e8dcd00e7db4", environment: "development", app_name: Some("HomepayRailsMonolyth"), language_integration_version: Some("ruby-2.5.0"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("XPS-15-9560-a"), ca_file_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/resources/cacert.pem"), diagnose_mode: false, dns_servers: None, files_world_accessible: true }
+[2018-03-20T11:33:44 (agent) #10878][Info] Listening on /tmp/appsignal/agent.socket
+[2018-03-20T11:59:04 (process) #14923][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T11:59:05 (process) #14923][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T11:59:05 (process) #14923][INFO] Installing action_cable hook
+[2018-03-20T11:59:05 (process) #14923][INFO] Installing active_support_notifications hook
+[2018-03-20T11:59:05 (process) #14923][INFO] Installing net_http hook
+[2018-03-20T11:59:05 (process) #14923][INFO] Installing redis hook
+[2018-03-20T11:59:05 (process) #14923][INFO] Installing sidekiq hook
+[2018-03-20T11:59:40 (process) #15044][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T11:59:41 (process) #15044][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T11:59:41 (process) #15044][INFO] Installing action_cable hook
+[2018-03-20T11:59:41 (process) #15044][INFO] Installing active_support_notifications hook
+[2018-03-20T11:59:41 (process) #15044][INFO] Installing net_http hook
+[2018-03-20T11:59:41 (process) #15044][INFO] Installing redis hook
+[2018-03-20T11:59:41 (process) #15044][INFO] Installing sidekiq hook
+[2018-03-20T12:00:41 (process) #15330][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T12:00:41 (process) #15330][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T12:00:41 (process) #15330][INFO] Installing action_cable hook
+[2018-03-20T12:00:41 (process) #15330][INFO] Installing active_support_notifications hook
+[2018-03-20T12:00:41 (process) #15330][INFO] Installing net_http hook
+[2018-03-20T12:00:41 (process) #15330][INFO] Installing rake hook
+[2018-03-20T12:00:41 (process) #15330][INFO] Installing redis hook
+[2018-03-20T12:00:41 (process) #15330][INFO] Installing sidekiq hook
+[2018-03-20T12:00:41 (agent) #15380][Info] Started appsignal-agent Config { active: true, agent_standalone: false, running_in_container: false, app_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth"), agent_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/ext"), debug_logging: false, log: File, log_file_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth/log/appsignal.log"), working_dir_path: "/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "452a5df2-a2b1-432b-9b89-e8dcd00e7db4", environment: "development", app_name: Some("HomepayRailsMonolyth"), language_integration_version: Some("ruby-2.5.0"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("XPS-15-9560-a"), ca_file_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/resources/cacert.pem"), diagnose_mode: false, dns_servers: None, files_world_accessible: true }
+[2018-03-20T12:00:41 (agent) #15380][Info] Listening on /tmp/appsignal/agent.socket
+[2018-03-20T12:00:45 (process) #15413][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T12:00:45 (process) #15413][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T12:00:45 (process) #15413][INFO] Installing action_cable hook
+[2018-03-20T12:00:45 (process) #15413][INFO] Installing active_support_notifications hook
+[2018-03-20T12:00:45 (process) #15413][INFO] Installing net_http hook
+[2018-03-20T12:00:45 (process) #15413][INFO] Installing redis hook
+[2018-03-20T12:00:45 (process) #15413][INFO] Installing sidekiq hook
+[2018-03-20T12:01:40 (process) #15709][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T12:01:40 (process) #15709][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T12:01:40 (process) #15709][INFO] Installing action_cable hook
+[2018-03-20T12:01:40 (process) #15709][INFO] Installing active_support_notifications hook
+[2018-03-20T12:01:40 (process) #15709][INFO] Installing net_http hook
+[2018-03-20T12:01:40 (process) #15709][INFO] Installing redis hook
+[2018-03-20T12:01:40 (process) #15709][INFO] Installing sidekiq hook
+[2018-03-20T12:07:56 (process) #17051][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T12:07:56 (process) #17051][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T12:07:56 (process) #17051][INFO] Installing action_cable hook
+[2018-03-20T12:07:56 (process) #17051][INFO] Installing active_support_notifications hook
+[2018-03-20T12:07:56 (process) #17051][INFO] Installing net_http hook
+[2018-03-20T12:07:56 (process) #17051][INFO] Installing redis hook
+[2018-03-20T12:07:56 (process) #17051][INFO] Installing sidekiq hook
+[2018-03-20T12:07:56 (agent) #17102][Info] Started appsignal-agent Config { active: true, agent_standalone: false, running_in_container: false, app_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth"), agent_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/ext"), debug_logging: false, log: File, log_file_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth/log/appsignal.log"), working_dir_path: "/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "452a5df2-a2b1-432b-9b89-e8dcd00e7db4", environment: "development", app_name: Some("HomepayRailsMonolyth"), language_integration_version: Some("ruby-2.5.0"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("XPS-15-9560-a"), ca_file_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/resources/cacert.pem"), diagnose_mode: false, dns_servers: None, files_world_accessible: true }
+[2018-03-20T12:07:56 (agent) #17102][Info] Listening on /tmp/appsignal/agent.socket
+[2018-03-20T12:09:18 (process) #17350][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T12:09:18 (process) #17350][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T12:09:18 (process) #17350][INFO] Installing action_cable hook
+[2018-03-20T12:09:18 (process) #17350][INFO] Installing active_support_notifications hook
+[2018-03-20T12:09:18 (process) #17350][INFO] Installing net_http hook
+[2018-03-20T12:09:18 (process) #17350][INFO] Installing redis hook
+[2018-03-20T12:09:18 (process) #17350][INFO] Installing sidekiq hook
+[2018-03-20T12:09:18 (agent) #17401][Info] Started appsignal-agent Config { active: true, agent_standalone: false, running_in_container: false, app_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth"), agent_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/ext"), debug_logging: false, log: File, log_file_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth/log/appsignal.log"), working_dir_path: "/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "452a5df2-a2b1-432b-9b89-e8dcd00e7db4", environment: "development", app_name: Some("HomepayRailsMonolyth"), language_integration_version: Some("ruby-2.5.0"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("XPS-15-9560-a"), ca_file_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/resources/cacert.pem"), diagnose_mode: false, dns_servers: None, files_world_accessible: true }
+[2018-03-20T12:09:18 (agent) #17401][Info] Listening on /tmp/appsignal/agent.socket
+[2018-03-20T12:10:19 (process) #17576][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T12:10:19 (process) #17576][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T12:10:19 (process) #17576][INFO] Installing action_cable hook
+[2018-03-20T12:10:19 (process) #17576][INFO] Installing active_support_notifications hook
+[2018-03-20T12:10:19 (process) #17576][INFO] Installing net_http hook
+[2018-03-20T12:10:19 (process) #17576][INFO] Installing redis hook
+[2018-03-20T12:10:19 (process) #17576][INFO] Installing sidekiq hook
+[2018-03-20T12:11:28 (process) #17892][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T12:11:29 (process) #17892][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T12:11:29 (process) #17892][INFO] Installing action_cable hook
+[2018-03-20T12:11:29 (process) #17892][INFO] Installing active_support_notifications hook
+[2018-03-20T12:11:29 (process) #17892][INFO] Installing net_http hook
+[2018-03-20T12:11:29 (process) #17892][INFO] Installing rake hook
+[2018-03-20T12:11:29 (process) #17892][INFO] Installing redis hook
+[2018-03-20T12:11:29 (process) #17892][INFO] Installing sidekiq hook
+[2018-03-20T12:19:58 (process) #19206][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-20T12:19:58 (process) #19206][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-20T12:19:58 (process) #19206][INFO] Installing action_cable hook
+[2018-03-20T12:19:58 (process) #19206][INFO] Installing active_support_notifications hook
+[2018-03-20T12:19:58 (process) #19206][INFO] Installing net_http hook
+[2018-03-20T12:19:58 (process) #19206][INFO] Installing redis hook
+[2018-03-20T12:19:58 (process) #19206][INFO] Installing sidekiq hook
+[2018-03-21T12:13:08 (process) #17510][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-21T12:13:08 (process) #17510][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-21T12:13:08 (process) #17510][INFO] Installing action_cable hook
+[2018-03-21T12:13:08 (process) #17510][INFO] Installing active_support_notifications hook
+[2018-03-21T12:13:08 (process) #17510][INFO] Installing net_http hook
+[2018-03-21T12:13:08 (process) #17510][INFO] Installing rake hook
+[2018-03-21T12:13:08 (process) #17510][INFO] Installing redis hook
+[2018-03-21T12:13:08 (process) #17510][INFO] Installing sidekiq hook
+[2018-03-21T12:13:08 (agent) #17554][Info] Started appsignal-agent Config { active: true, agent_standalone: false, running_in_container: false, app_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth"), agent_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/ext"), debug_logging: false, log: File, log_file_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth/log/appsignal.log"), working_dir_path: "/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "452a5df2-a2b1-432b-9b89-e8dcd00e7db4", environment: "development", app_name: Some("HomepayRailsMonolyth"), language_integration_version: Some("ruby-2.5.0"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("XPS-15-9560-a"), ca_file_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/resources/cacert.pem"), diagnose_mode: false, dns_servers: None, files_world_accessible: true }
+[2018-03-21T12:13:08 (agent) #17554][Info] Listening on /tmp/appsignal/agent.socket
+[2018-03-21T12:13:12 (process) #17582][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-21T12:13:13 (process) #17582][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-21T12:13:13 (process) #17582][INFO] Installing action_cable hook
+[2018-03-21T12:13:13 (process) #17582][INFO] Installing active_support_notifications hook
+[2018-03-21T12:13:13 (process) #17582][INFO] Installing net_http hook
+[2018-03-21T12:13:13 (process) #17582][INFO] Installing redis hook
+[2018-03-21T12:13:13 (process) #17582][INFO] Installing sidekiq hook
+[2018-03-22T12:14:13 (process) #8259][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-22T12:14:14 (process) #8259][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-22T12:14:14 (process) #8259][INFO] Installing action_cable hook
+[2018-03-22T12:14:14 (process) #8259][INFO] Installing active_support_notifications hook
+[2018-03-22T12:14:14 (process) #8259][INFO] Installing net_http hook
+[2018-03-22T12:14:14 (process) #8259][INFO] Installing redis hook
+[2018-03-22T12:14:14 (process) #8259][INFO] Installing sidekiq hook
+[2018-03-22T12:14:14 (agent) #8305][Info] Started appsignal-agent Config { active: true, agent_standalone: false, running_in_container: false, app_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth"), agent_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/ext"), debug_logging: false, log: File, log_file_path: Some("/home/albanp/code/aporcheron/homepay/homepay_rails_monolyth/log/appsignal.log"), working_dir_path: "/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "452a5df2-a2b1-432b-9b89-e8dcd00e7db4", environment: "development", app_name: Some("HomepayRailsMonolyth"), language_integration_version: Some("ruby-2.5.0"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("XPS-15-9560-a"), ca_file_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/resources/cacert.pem"), diagnose_mode: false, dns_servers: None, files_world_accessible: true }
+[2018-03-22T12:14:14 (agent) #8305][Info] Listening on /tmp/appsignal/agent.socket
+[2018-03-22T12:14:44 (process) #8480][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-22T12:14:44 (process) #8480][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-22T12:14:44 (process) #8480][INFO] Installing action_cable hook
+[2018-03-22T12:14:44 (process) #8480][INFO] Installing active_support_notifications hook
+[2018-03-22T12:14:44 (process) #8480][INFO] Installing net_http hook
+[2018-03-22T12:14:44 (process) #8480][INFO] Installing redis hook
+[2018-03-22T12:14:44 (process) #8480][INFO] Installing sidekiq hook
+[2018-03-22T12:21:35 (agent) #8305][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2018-03-22T12:22:05 (agent) #8305][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2018-03-22T12:22:35 (agent) #8305][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2018-03-22T12:23:05 (agent) #8305][Warn] Connection error while posting to push api, queuing payload: Timeout was reached
+[2018-03-22T12:23:21 (agent) #8305][Warn] Connection error while posting to push api, queuing payload: Couldn't resolve host name
+[2018-03-22T14:01:34 (process) #13350][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-22T14:01:35 (process) #13350][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-22T14:01:35 (process) #13350][INFO] Installing action_cable hook
+[2018-03-22T14:01:35 (process) #13350][INFO] Installing active_support_notifications hook
+[2018-03-22T14:01:35 (process) #13350][INFO] Installing net_http hook
+[2018-03-22T14:01:35 (process) #13350][INFO] Installing redis hook
+[2018-03-22T14:01:35 (process) #13350][INFO] Installing sidekiq hook
+[2018-03-22T14:02:25 (process) #13648][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-22T14:02:25 (process) #13648][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-22T14:02:25 (process) #13648][INFO] Installing action_cable hook
+[2018-03-22T14:02:25 (process) #13648][INFO] Installing active_support_notifications hook
+[2018-03-22T14:02:25 (process) #13648][INFO] Installing net_http hook
+[2018-03-22T14:02:25 (process) #13648][INFO] Installing rake hook
+[2018-03-22T14:02:25 (process) #13648][INFO] Installing redis hook
+[2018-03-22T14:02:25 (process) #13648][INFO] Installing sidekiq hook
+[2018-03-22T14:02:30 (process) #13745][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-22T14:02:31 (process) #13745][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-22T14:02:31 (process) #13745][INFO] Installing action_cable hook
+[2018-03-22T14:02:31 (process) #13745][INFO] Installing active_support_notifications hook
+[2018-03-22T14:02:31 (process) #13745][INFO] Installing net_http hook
+[2018-03-22T14:02:31 (process) #13745][INFO] Installing redis hook
+[2018-03-22T14:02:31 (process) #13745][INFO] Installing sidekiq hook
+[2018-03-22T14:04:45 (process) #14116][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-22T14:04:45 (process) #14116][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-22T14:04:45 (process) #14116][INFO] Installing action_cable hook
+[2018-03-22T14:04:45 (process) #14116][INFO] Installing active_support_notifications hook
+[2018-03-22T14:04:45 (process) #14116][INFO] Installing net_http hook
+[2018-03-22T14:04:45 (process) #14116][INFO] Installing redis hook
+[2018-03-22T14:04:45 (process) #14116][INFO] Installing sidekiq hook
+[2018-03-22T14:09:46 (process) #14715][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-22T14:09:46 (process) #14715][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-22T14:09:46 (process) #14715][INFO] Installing action_cable hook
+[2018-03-22T14:09:46 (process) #14715][INFO] Installing active_support_notifications hook
+[2018-03-22T14:09:46 (process) #14715][INFO] Installing net_http hook
+[2018-03-22T14:09:46 (process) #14715][INFO] Installing redis hook
+[2018-03-22T14:09:46 (process) #14715][INFO] Installing sidekiq hook
+[2018-03-26T11:59:15 (process) #2712][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-26T11:59:16 (process) #2712][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-26T11:59:16 (process) #2712][INFO] Installing action_cable hook
+[2018-03-26T11:59:16 (process) #2712][INFO] Installing active_support_notifications hook
+[2018-03-26T11:59:16 (process) #2712][INFO] Installing net_http hook
+[2018-03-26T11:59:16 (process) #2712][INFO] Installing rake hook
+[2018-03-26T11:59:16 (process) #2712][INFO] Installing redis hook
+[2018-03-26T11:59:16 (process) #2712][INFO] Installing sidekiq hook
+[2018-03-26T11:59:16 (agent) #2763][Info] Started appsignal-agent Config { active: true, agent_standalone: false, running_in_container: false, app_path: Some("/home/albanp/code/aporcheron/homepay/landing_tests"), agent_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/ext"), debug_logging: false, log: File, log_file_path: Some("/home/albanp/code/aporcheron/homepay/landing_tests/log/appsignal.log"), working_dir_path: "/tmp/appsignal", push_api_endpoint: "https://push.appsignal.com/2/collect", push_api_key: "452a5df2-a2b1-432b-9b89-e8dcd00e7db4", environment: "development", app_name: Some("HomepayRailsMonolyth"), language_integration_version: Some("ruby-2.5.0"), transmission_interval: 30, http_proxy: None, ignore_actions: None, ignore_errors: None, ignore_namespaces: None, enable_host_metrics: true, hostname: Some("XPS-15-9560-a"), ca_file_path: Some("/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/appsignal-2.5.0/resources/cacert.pem"), diagnose_mode: false, dns_servers: None, files_world_accessible: true }
+[2018-03-26T11:59:16 (agent) #2763][Info] Listening on /tmp/appsignal/agent.socket
+[2018-03-26T12:07:40 (process) #5093][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-26T12:07:41 (process) #5093][INFO] Starting AppSignal 2.5.0 (./bin/rails, Ruby 2.4.3, x86_64-linux)
+[2018-03-26T12:07:41 (process) #5093][INFO] Installing action_cable hook
+[2018-03-26T12:07:41 (process) #5093][INFO] Installing active_support_notifications hook
+[2018-03-26T12:07:41 (process) #5093][INFO] Installing net_http hook
+[2018-03-26T12:07:41 (process) #5093][INFO] Installing redis hook
+[2018-03-26T12:07:41 (process) #5093][INFO] Installing sidekiq hook
+[2018-03-26T14:02:38 (process) #12101][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-26T14:02:38 (process) #12101][ERROR] appsignal: Push api key not set after loading config
+[2018-03-26T14:02:38 (process) #12101][ERROR] Not starting, no valid config for this environment

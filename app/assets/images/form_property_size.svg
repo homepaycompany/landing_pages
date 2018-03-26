@@ -1,0 +1,38 @@
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>form_property_size</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2567 -5958)">
+<g id="form_property_size">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-2567 5958)" fill="#FFFFFF"/>
+</g>
+<g id="Group">
+<g id="Rectangle">
+<use xlink:href="#path1_stroke" transform="translate(-2499.73 6025.27)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-2446.55 6013)" fill="#FFFFFF"/>
+<use xlink:href="#path3_stroke" transform="translate(-2446.55 6013)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-2446.55 6078.45)" fill="#FFFFFF"/>
+<use xlink:href="#path3_stroke" transform="translate(-2446.55 6078.45)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-2512 6078.45)" fill="#FFFFFF"/>
+<use xlink:href="#path3_stroke" transform="translate(-2512 6078.45)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="translate(-2512 6013)" fill="#FFFFFF"/>
+<use xlink:href="#path3_stroke" transform="translate(-2512 6013)" fill="#20E8B6"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 200 0L 200 200L 0 200L 0 0Z"/>
+<path id="path1_stroke" d="M 0 0L 0 -2.5L -2.5 -2.5L -2.5 0L 0 0ZM 65.4545 0L 67.9545 0L 67.9545 -2.5L 65.4545 -2.5L 65.4545 0ZM 65.4545 65.4545L 65.4545 67.9545L 67.9545 67.9545L 67.9545 65.4545L 65.4545 65.4545ZM 0 65.4545L -2.5 65.4545L -2.5 67.9545L 0 67.9545L 0 65.4545ZM 0 2.5L 65.4545 2.5L 65.4545 -2.5L 0 -2.5L 0 2.5ZM 62.9545 0L 62.9545 65.4545L 67.9545 65.4545L 67.9545 0L 62.9545 0ZM 65.4545 62.9545L 0 62.9545L 0 67.9545L 65.4545 67.9545L 65.4545 62.9545ZM 2.5 65.4545L 2.5 0L -2.5 0L -2.5 65.4545L 2.5 65.4545Z"/>
+<path id="path2_fill" d="M 0 0L 24.5455 0L 24.5455 24.5455L 0 24.5455L 0 0Z"/>
+<path id="path3_stroke" d="M 0 0L 0 -2.5L -2.5 -2.5L -2.5 0L 0 0ZM 24.5455 0L 27.0455 0L 27.0455 -2.5L 24.5455 -2.5L 24.5455 0ZM 24.5455 24.5455L 24.5455 27.0455L 27.0455 27.0455L 27.0455 24.5455L 24.5455 24.5455ZM 0 24.5455L -2.5 24.5455L -2.5 27.0455L 0 27.0455L 0 24.5455ZM 0 2.5L 24.5455 2.5L 24.5455 -2.5L 0 -2.5L 0 2.5ZM 22.0455 0L 22.0455 24.5455L 27.0455 24.5455L 27.0455 0L 22.0455 0ZM 24.5455 22.0455L 0 22.0455L 0 27.0455L 24.5455 27.0455L 24.5455 22.0455ZM 2.5 24.5455L 2.5 0L -2.5 0L -2.5 24.5455L 2.5 24.5455Z"/>
+</defs>
+</svg>

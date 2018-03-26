@@ -1,0 +1,20 @@
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>form_rooms</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2124 -5955)">
+<g id="form_rooms">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-2124 5955)" fill="#FFFFFF"/>
+</g>
+<g id="Group">
+<g id="Rectangle">
+<use xlink:href="#path1_stroke" transform="translate(-2064 6015)" fill="#20E8B6"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 200 0L 200 200L 0 200L 0 0Z"/>
+<path id="path1_stroke" d="M 0 0L 0 -2.5L -2.5 -2.5L -2.5 0L 0 0ZM 80 0L 82.5 0L 82.5 -2.5L 80 -2.5L 80 0ZM 80 80L 80 82.5L 82.5 82.5L 82.5 80L 80 80ZM 0 80L -2.5 80L -2.5 82.5L 0 82.5L 0 80ZM 0 2.5L 40 2.5L 40 -2.5L 0 -2.5L 0 2.5ZM 40 2.5L 80 2.5L 80 -2.5L 40 -2.5L 40 2.5ZM 80 77.5L 40 77.5L 40 82.5L 80 82.5L 80 77.5ZM 40 77.5L 0 77.5L 0 82.5L 40 82.5L 40 77.5ZM 37.5 0L 37.5 80L 42.5 80L 42.5 0L 37.5 0ZM 2.5 80L 2.5 40L -2.5 40L -2.5 80L 2.5 80ZM 2.5 40L 2.5 0L -2.5 0L -2.5 40L 2.5 40ZM 77.5 0L 77.5 40L 82.5 40L 82.5 0L 77.5 0ZM 77.5 40L 77.5 80L 82.5 80L 82.5 40L 77.5 40ZM 0 42.5L 80 42.5L 80 37.5L 0 37.5L 0 42.5Z"/>
+</defs>
+</svg>

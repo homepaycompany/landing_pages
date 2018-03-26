@@ -1,0 +1,108 @@
+.banner {
+  min-height: calc(70vh - 70px);
+  overflow: hidden;
+  .banner-content {
+    min-height: calc(70vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    h1 {
+      font-size: 46px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px $light-black;
+    }
+    strong {
+      color: $green;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+  }
+  .banner-testimonials {
+    min-height: calc(70vh - 70px);
+    .banner-testimonial {
+      color: rgba(256, 256, 256, 0.7);
+      position: absolute;
+      top: 40%;
+      left: 20%;
+      text-align: center;
+      h4 {
+        font-size: 16px;
+        font-weight: 800;
+        margin: 0px 0px 10px 0px;
+      }
+      p {
+        font-size: 14px;
+        margin: 0px 0px 10px 0px;
+      }
+      &:after {
+        content: "";
+        background-color: rgba(256, 256, 256, 0.7);
+        position: absolute;
+        width: 1px;
+        height: 30px;
+        top: 60px;
+        left: 50%;
+        display: block;
+      }
+    }
+    .banner-testimonial-homepay {
+      color: rgba(256, 256, 256, 1);
+      top: 50%;
+      right: -75%;
+      &:after {
+        content: "";
+        background-color: rgba(256, 256, 256, 1);
+        position: absolute;
+        width: 1px;
+        height: 30px;
+        bottom: 60px;
+        left: 50%;
+        display: block;
+      }
+    }
+  }
+}
+
+// Banner on about-us page
+.banner-about {
+  min-height: calc(60vh - 70px);
+  color: $green;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  h1 {
+    font-size: 46px;
+    font-weight: 800;
+  }
+}
+
+// Mobile responsive of banners
+@media (max-width: 768px) {
+  .banner {
+    min-height: calc(90vh - 70px);
+    text-align: center;
+    .banner-content {
+      min-height: calc(90vh - 70px);
+      h1 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+    }
+  }
+  .banner-about {
+    min-height: calc(70vh - 70px);
+    h1 {
+      font-size: 32px;
+    }
+  }
+}

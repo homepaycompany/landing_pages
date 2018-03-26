@@ -1,0 +1,23 @@
+.dropzone-preview-container {
+  width: 100%;
+}
+
+.dropzone-image-card {
+  float: left;
+  margin: 7px;
+  height: 120px;
+  width: 120px;
+}
+.dropzone-image {
+  border-radius: 5px;
+}
+
+.dropzone-btn {
+  margin: 20px 0;
+  img {
+    max-width: 250px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}

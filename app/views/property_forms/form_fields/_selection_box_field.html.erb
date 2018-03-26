@@ -1,0 +1,14 @@
+<div class="form-selection-box js-form-selection-box"
+  id="js-form-selection-box"
+  data-name="<%= t[:name] %>"
+  data-selected="<%= @property_form.send t[:name].to_sym %>"
+  <%= "data-reveal=js-property-form-#{t[:connected_field]}" if t[:connected_field] %>>
+  <p><strong><%= t[:desc] %></strong></p>
+</div>
+<div class="hidden">
+  <%= simple_form_for(@property_form, remote: true) do |f| %>
+    <input name="property_form[<%= t[:name] %>]" class = "hidden" id="property_form_<%= t[:name] %>" value="0" />
+    <%= f.submit class:"hidden form-field-submit-button"%>
+  <% end %>
+</div>
+

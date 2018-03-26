@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>form_floor</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2123 -5958)">
+<g id="form_floor">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(-2123 5958)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path1_stroke" transform="translate(-2064 6018)" fill="#20E8B6"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 200 0L 200 200L 0 200L 0 0Z"/>
+<path id="path1_stroke" d="M 0 80.5L -2.5 80.5L -2.5 83L 0 83L 0 80.5ZM 81 80.5L 81 83L 83.5 83L 83.5 80.5L 81 80.5ZM 0 60.5L 0 58L -2.5 58L -2.5 60.5L 0 60.5ZM 20 60.5L 20 63L 22.5 63L 22.5 60.5L 20 60.5ZM 20 41L 20 38.5L 17.5 38.5L 17.5 41L 20 41ZM 39.5 41L 39.5 43.5L 42 43.5L 42 41L 39.5 41ZM 39.5 21L 39.5 18.5L 37 18.5L 37 21L 39.5 21ZM 60 21L 60 23.5L 62.5 23.5L 62.5 21L 60 21ZM 60 0L 60 -2.5L 57.5 -2.5L 57.5 0L 60 0ZM 81 0L 83.5 0L 83.5 -2.5L 81 -2.5L 81 0ZM 81 78L 0 78L 0 83L 81 83L 81 78ZM 2.5 80.5L 2.5 60.5L -2.5 60.5L -2.5 80.5L 2.5 80.5ZM 0 63L 20 63L 20 58L 0 58L 0 63ZM 22.5 60.5L 22.5 41L 17.5 41L 17.5 60.5L 22.5 60.5ZM 20 43.5L 39.5 43.5L 39.5 38.5L 20 38.5L 20 43.5ZM 42 41L 42 21L 37 21L 37 41L 42 41ZM 39.5 23.5L 60 23.5L 60 18.5L 39.5 18.5L 39.5 23.5ZM 62.5 21L 62.5 0L 57.5 0L 57.5 21L 62.5 21ZM 60 2.5L 81 2.5L 81 -2.5L 60 -2.5L 60 2.5ZM 78.5 0L 78.5 80.5L 83.5 80.5L 83.5 0L 78.5 0Z"/>
+</defs>
+</svg>

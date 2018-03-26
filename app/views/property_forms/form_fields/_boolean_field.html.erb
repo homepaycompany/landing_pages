@@ -1,0 +1,16 @@
+<div class="form-field form-field-toggle">
+  <p><%= t[:desc] %></p>
+  <div class="toggle-btn-border">
+    <div class="toggle-btn"
+    id="js-form-toggle-btn"
+    data-name="<%= t[:name] %>"
+    data-selected="<%= @property_form.send t[:name].to_sym %>"></div>
+  </div>
+  <div class="hidden">
+    <%= simple_form_for(@property_form, remote: true) do |f| %>
+      <input name="property_form[<%= t[:name] %>]" class = "hidden" id="property_form_<%= t[:name] %>" value="0" />
+      <%= f.submit class:"hidden form-field-submit-button"%>
+    <% end %>
+  </div>
+</div>
+

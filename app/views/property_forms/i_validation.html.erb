@@ -1,0 +1,78 @@
+<div class="main-section">
+  <div class="container">
+    <div class="validation-section">
+      <div class="validation-card text-center">
+        <div class="row">
+          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+            <h2>Votre demande est envoyée</h2>
+            <%= image_tag "confirmation.png" %>
+            <p>
+              <%= @property_form.first_name.capitalize %>, nous sommes heureux de vous annoncer que nous avons bien reçu votre demande pour votre logement situé à l'adresse : <%= @property_form.address %>.
+            </p>
+            <div class="validation-prop">
+              <div class="col-xs-12 col-sm-6">
+                <p>
+                  <strong>Homepay</strong> vous permet de vendre votre logement simplement en quelques jours, afin de pouvoir commencer le nouveau chapitre de votre vie sereinement.
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <ul>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    Epargnez-vous les visites
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    Soyez flexible sur la date de votre déménagement
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    Soyez accompagné sur toutes les étapes de vente
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle"></i>
+                    Profitez d'une vente simple et efficace
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+            <div class="validation-steps">
+              <h2>Les prochaines étapes</h2>
+              <div class="col-xs-12 col-sm-6">
+                <h3><strong>1.</strong> Analyse de votre dossier</h3>
+                <p>Des investisseurs présélectionnés vont préparer une offre d'achat basée sur les données de marché et les informations que vous nous avez communiquées.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h3><strong>2.</strong> Réception des offres</h3>
+                <p>Après quelques jours, vous recevrez vos premières offres. Si une offre vous convient, nous organisons pour vous une visite confirmatoire avec l'acquéreur.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h3><strong>3.</strong> Visite confirmatoire</h3>
+                <p>Après la visite de l'acquéreur, celui-ci va vous formuler une offre ferme. Vous êtes libre de l'accepter.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <h3><strong>4.</strong> Vente de votre bien</h3>
+                <p>Une fois l'offre acceptée, nous vous accompagnons jusqu'à la signature de l'acte de vente.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-offset-1 col-sm-10">
+            <div class="validation-contact">
+              <h2>Votre contact</h2>
+              <p>Je m'appelle Guillaume et je vais vous aider sur les différentes étapes liées à la vente de de votre logement. N'hésitez pas à me contacter si vous avez des questions. Nous sommes impatients de vous accompagner.</p>
+              <%= image_tag "confirmation_guillaume.png" %>
+              <p><strong>Guillaume Lestrade</strong></p>
+              <p>Téléphone <%= link_to "‭06 44 66 31 30‬", "tel:‭0644663130‬" %></p>
+              <p>Email   : <%= mail_to "guillaume@homepay.fr" %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="validation-home">
+        <%= link_to "Retour sur la page d'accueil", root_path, class: "btn" %>
+      </div>
+    </div>
+  </div>
+</div>

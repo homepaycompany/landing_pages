@@ -1,0 +1,155 @@
+.form-container {
+  min-height: calc(100vh - 310px);
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 30px;
+  box-shadow: 0 0 1px $grey;
+}
+.form-container h1 {
+  color: $green;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.form-body {
+  .property-type-icon {
+    width: 250px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.6;
+    transition: all ease 0.4s;
+  }
+  a {
+    text-decoration: none;
+    color: $light-black;
+  }
+  .form-section:last-child {
+    border-bottom: none;
+  }
+}
+.form-section {
+  border-bottom: 1px solid $light-grey;
+  padding: 20px 0;
+}
+.form-field {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  p {
+    font-size: 15px;
+  }
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+.form-field-toggle {
+  display: flex;
+  align-items: center;
+}
+.form-field-label {
+  display: flex;
+  margin-bottom: 10px;
+  height: 50px;
+  .form-icon {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  strong {
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
+.form-field-logo {
+  font-size: 25px;
+  color: $green;
+  margin-right: 10px;
+}
+.form-input input {
+  width: 100%;
+  color: $green;
+}
+.form-input input::placeholder {
+  opacity: 0.5;
+  font-style: italic;
+}
+.form-validation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.form-wrong-input-format {
+  font-size: 13px;
+  color: $red;
+}
+.form-group {
+  margin: 0;
+}
+.form-choice-section {
+  padding: 15px;
+}
+.form-selection-box {
+  height: 80px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $grey;
+  background-color: $light-grey;
+  border: 1px solid white;
+  border-radius: 5px;
+  &.active {
+    background-color: $green;
+    border-color: $green;
+    color: white;
+  }
+}
+
+// For personnal information section
+.disclaimer {
+  padding: 10px;
+  background-color: rgba(32, 232, 182, 0.1);
+  border-radius: 5px;
+  p {
+      margin: 0;
+      font-size: 15px;
+  }
+  .disclaimer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      text-align: left;
+    }
+  }
+  .disclaimer-icon {
+    width: 50px;
+    margin: 10px;
+  }
+}
+
+// HOVER STYLES on PCs
+
+.form-container {
+  .form-button.disabled:hover {
+    cursor: none;
+  }
+  .form-selection-box:hover {
+    cursor: pointer;
+  }
+  .form-state-box:hover {
+    cursor: pointer;
+  }
+}
+
+.form-body {
+  .property-type-icon:hover {
+    opacity: 1;
+  }
+}
+
+.form-selection-box:hover {
+  cursor: pointer;
+}
+
+

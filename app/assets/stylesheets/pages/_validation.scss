@@ -1,0 +1,78 @@
+.validation-section {
+  padding: 40px 0px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 40px 0px;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: $green;
+    margin: 0px 0px 20px 0px;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: $black;
+    strong {
+      color: $green;
+    }
+  }
+  p {
+    font-size: 16px;
+    color: $light-black;
+    margin: 10px 0px;
+  }
+  img {
+    max-width: 300px;
+    margin: 0 0 20px 0;
+  }
+  .validation-prop {
+    margin: 20px 0px 50px 0px;
+    strong {
+      color: $green;
+    }
+    ul {
+      margin: 10px 0px 10px 10px;
+      padding: 0px;
+      list-style: none;
+      text-align: left;
+      &:before {
+        content: "";
+        background-color: $light-grey;
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        display: block;
+      }
+    }
+    li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    i {
+      color: $green;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+  }
+  .validation-steps {
+    margin: 50px 0px;
+  }
+  .validation-contact {
+    margin: 50px 0px;
+    a {
+      text-decoration: none;
+      color: $green;
+    }
+    img {
+      width: 140px;
+    }
+  }
+  .validation-home {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -25,6 +25,7 @@ class PagesController < ApplicationController
   end
 
   def about_us
+    @landing = params["landing"] || 'home'
   end
 
   def set_admin_cookie

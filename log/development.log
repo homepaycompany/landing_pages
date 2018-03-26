@@ -8640,3 +8640,509 @@ Processing by PagesController#how_it_works as HTML
 Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/how-it-works?landing=3" for 127.0.0.1 at 2018-03-26 22:44:58 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works.html.erb within layouts/application (2.1ms)
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/how_it_works/_3 with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/albanp/code/aporcheron/homepay/landing_pages/app/views"
+  * "/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/forest_liana-2.4.3/app/views"
+  * "/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/how_it_works/#{@landing}" %>
+  
+app/views/pages/how_it_works.html.erb:1:in `_app_views_pages_how_it_works_html_erb___1231681101986450388_70316299171780'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/how-it-works?landing=3" for 127.0.0.1 at 2018-03-26 22:45:17 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_3.html.erb (14.5ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (16.4ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (2.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/albanp/code/aporcheron/homepay/landing_pages/public/packs
+Completed 200 OK in 4125ms (Views: 4123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 22:45:25 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (4.4ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works" for 127.0.0.1 at 2018-03-26 22:45:31 +0200
+Processing by PagesController#how_it_works as HTML
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works.html.erb within layouts/application (5.7ms)
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial pages/how_it_works/_home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/home/albanp/code/aporcheron/homepay/landing_pages/app/views"
+  * "/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/forest_liana-2.4.3/app/views"
+  * "/home/albanp/.rbenv/versions/2.4.3/lib/ruby/gems/2.4.0/gems/devise-4.4.1/app/views"
+):
+    1: <%= render "pages/how_it_works/#{@landing}" %>
+  
+app/views/pages/how_it_works.html.erb:1:in `_app_views_pages_how_it_works_html_erb___1231681101986450388_70316650016160'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 22:46:12 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (7.7ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 401 Unauthorized in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error ():
+    11:     <%= link_to "Comment ça marche", how_it_works_path(landing: @landing), class: "navbar-item navbar-link #{active_class(how_it_works_path(landing: @landing))}" %>
+    12:     <%= link_to "A propos", about_path(landing: @landing), class: "navbar-item navbar-link #{active_class(about_path(landing: @landing))}" %>
+    13:     <%= link_to "Estimer gratuitement mon bien", new_property_form_path, class: "btn" %>
+    14:     <%= raise %>
+    15:   </div>
+    16: 
+    17:   <!-- Dropdown appearing on mobile only -->
+  
+app/views/shared/_navbar.html.erb:14:in `_app_views_shared__navbar_html_erb__4505241803422980445_70316661377020'
+app/views/layouts/application.html.erb:59:in `_app_views_layouts_application_html_erb___2003927011923987206_70316660232900'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started PUT "/__web_console/repl_sessions/cd38e731d80a9d816d07b28fbd4dfc20" for 127.0.0.1 at 2018-03-26 22:46:16 +0200
+Started PUT "/__web_console/repl_sessions/cd38e731d80a9d816d07b28fbd4dfc20" for 127.0.0.1 at 2018-03-26 22:46:17 +0200
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 22:46:35 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=3" for 127.0.0.1 at 2018-03-26 22:46:38 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_3.html.erb (3.5ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 76ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 22:46:44 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (16.1ms)
+  Rendered pages/home.html.erb within layouts/application (17.5ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.6ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 22:47:57 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (7.1ms)
+  Rendered pages/home.html.erb within layouts/application (8.2ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 36ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 22:48:22 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (7.5ms)
+  Rendered pages/home.html.erb within layouts/application (8.3ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 22:48:34 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (4.6ms)
+  Rendered pages/home.html.erb within layouts/application (5.3ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 22:48:50 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (5.9ms)
+  Rendered pages/home.html.erb within layouts/application (6.9ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.0ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 22:49:02 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (10.5ms)
+  Rendered pages/home.html.erb within layouts/application (12.9ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=3" for 127.0.0.1 at 2018-03-26 22:49:20 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_3.html.erb (2.8ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (3.6ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 22:50:25 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (15.6ms)
+  Rendered pages/home.html.erb within layouts/application (18.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 45ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 22:58:31 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (4.2ms)
+  Rendered pages/home.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=3" for 127.0.0.1 at 2018-03-26 22:58:34 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_3.html.erb (8.2ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (10.3ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 22:58:36 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (15.1ms)
+  Rendered pages/home.html.erb within layouts/application (17.3ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 47ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 22:59:26 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.6ms)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 23:00:04 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (7.8ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 23:02:19 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 23:02:55 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.6ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 23:03:29 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 23:03:40 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.7ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 23:04:07 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (7.6ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 23:04:38 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.7ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about?landing=3" for 127.0.0.1 at 2018-03-26 23:04:47 +0200
+Processing by PagesController#about_us as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/about_us.html.erb within layouts/application
+  Rendered pages/about_us.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/how-it-works?landing=3" for 127.0.0.1 at 2018-03-26 23:05:00 +0200
+Processing by PagesController#how_it_works as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/how_it_works.html.erb within layouts/application
+  Rendered pages/how_it_works/_3.html.erb (7.2ms)
+  Rendered pages/how_it_works.html.erb within layouts/application (8.9ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 23:05:04 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (14.9ms)
+  Rendered pages/home.html.erb within layouts/application (17.3ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 23:06:52 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (5.2ms)
+  Rendered pages/home.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 23:07:44 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (16.2ms)
+  Rendered pages/home.html.erb within layouts/application (19.8ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 23:09:59 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (15.1ms)
+  Rendered pages/home.html.erb within layouts/application (17.2ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 23:10:06 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (6.2ms)
+  Rendered pages/home.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 23:10:32 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (4.2ms)
+  Rendered pages/home.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 23:11:04 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (14.2ms)
+  Rendered pages/home.html.erb within layouts/application (16.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 44ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 23:12:14 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (6.4ms)
+  Rendered pages/home.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 23:12:21 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (6.4ms)
+  Rendered pages/home.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (1.7ms)
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 23:13:36 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (8.6ms)
+  Rendered pages/home.html.erb within layouts/application (10.7ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-26 23:14:04 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (6.2ms)
+  Rendered pages/home.html.erb within layouts/application (7.0ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 23:14:15 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (11.9ms)
+  Rendered pages/home.html.erb within layouts/application (14.1ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 42ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?landing=3" for 127.0.0.1 at 2018-03-26 23:15:35 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"3"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_3.html.erb (9.8ms)
+  Rendered pages/home.html.erb within layouts/application (11.4ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_flashes.html.erb (0.3ms)
+  Rendered shared/_footer.html.erb (1.7ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+

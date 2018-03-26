@@ -53,9 +53,9 @@
             </div>
             <div class="col-xs-12 col-md-6 col-md-pull-4">
               <div class="landing-step-card">
-                <h3>Estimation de votre bien</h3>
-                <p>Première étape obligée à toute vente immobilière, l’estimation ! Elle est réalisée en physique par l’un de nos agents connaissant parfaitement votre quartier. L’estimation de votre bien est sans engagement et gratuite.</p>
-                <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
+                <h3>Prix fixe - 1,990€</h3>
+                <p>Chez nous, le tarif est fixe quelle que soit la valeur de votre bien et ne dépend que du travail accompli pour vous. Ne payez que si vous vendez.</p>
+                <%= link_to "En savoir plus", how_it_works_path(landing: @landing), class: "white-btn" %>
               </div>
             </div>
           </div>
@@ -69,9 +69,9 @@
             </div>
             <div class="col-xs-12 col-md-6">
               <div class="landing-step-card">
-                <h3>Diffusion de votre annonce</h3>
-                <p>Une annonce professionnelle vous permettra de réaliser une vente efficace. Nous faisons passer un photographe professionnel qui saura au mieux mettre en valeur votre bien. En 48h, nous créons votre annonce et la diffusons sur une vingtaine de sites d’annonce, dont Seloger, Explorimmo et Leboncoin.</p>
-                <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
+                <h3>Accompagnement</h3>
+                <p>Des conseils d’experts immobiliers vous accompagnent tout le long de la vente. Ils ont une connaissance précise de votre marché local et sont disponibles pour vous informez lorsque vous avez des questions.</p>
+                <%= link_to "En savoir plus", how_it_works_path(landing: @landing), class: "white-btn" %>
               </div>
             </div>
           </div>
@@ -85,25 +85,9 @@
             </div>
             <div class="col-xs-12 col-md-6 col-md-pull-4">
               <div class="landing-step-card">
-                <h3>Vendez votre bien</h3>
-                <p>Vous pourrez enfin rencontrer votre conseiller personnel. Il s'occupera de l'organisation des visites et de la qualification des dossiers de vos acheteurs potentiels. Si vous le souhaitez, nous pourrons assurer les visites pour vous (pour 500€ de plus par rapport au forfait total).</p>
-                <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="landing-step" id="landing-third-step">
-            <div class="col-xs-12 col-md-4 col-md-offset-1">
-              <div class="landing-step-img text-center">
-                <%= image_tag 'step_4.png' %>
-              </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-              <div class="landing-step-card">
-                <h3>Accompagnement jusqu'à la signature</h3>
-                <p>Nous allons vous accompagner tout au long du processus de vente, et nous vous aiderons notamment à réaliser toutes les démarches administratives afin de vous éviter les erreurs qui peuvent ralentir, stopper, ou annuler une vente.</p>
-                <%= link_to "Commencez", new_property_form_path, class: "white-btn" %>
+                <h3>Plateforme digitale</h3>
+                <p>Nous avons créé une plateforme digitale afin d’apporter transparence, simplicité et efficacité dans le processus de vente. Bénéficiez de la puissance d’outils digitaux créés sur mesure.</p>
+                <%= link_to "En savoir plus", how_it_works_path(landing: @landing), class: "white-btn" %>
               </div>
             </div>
           </div>

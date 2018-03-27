@@ -1,7 +1,3 @@
-<% content_for :meta_title, "#{@landing}" %>
-<% content_for :meta_description, @landing_desc %>
-<% content_for :meta_image, @landing_img %>
-
 <div class="main-section">
   <div class="container">
     <div class="validation-section">
@@ -23,7 +19,7 @@
         </div>
       </div>
       <div class="validation-home">
-        <%= link_to "Retour sur la page d'accueil", "/?landing=#{@landing}", class: "btn" %>
+        <%= link_to "Retour sur la page d'accueil", "/", class: "btn" %>
       </div>
     </div>
   </div>

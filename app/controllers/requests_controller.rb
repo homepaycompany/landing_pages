@@ -1,8 +1,5 @@
 class RequestsController < ApplicationController
   def new
-    @landing = params["landing"]
-    @landing_desc = landings.find { |l| l[:landing] == @landing }[:desc]
-    @landing_img = landings.find { |l| l[:landing] == @landing }[:img]
     @fields = personnal_information_fields
     @request = Request.new
   end
@@ -10,7 +7,7 @@ class RequestsController < ApplicationController
   def create
     r = Request.new(property_form_params)
     if r.save
-      redirect_to "/thank-you?landing=#{r.landing}"
+      redirect_to "/thank-you"
     else
       flash[:alert] = "Un erreur est survenue - le formulaire n'a pas pu être créé"
       redirect_to root_path
@@ -32,15 +29,5 @@ class RequestsController < ApplicationController
         ]
     sections = [{id: 1, type: 'input_section'}, {id: 2, type: 'input_section'}, {id: 3, type: 'input_section'}]
     return { sections: sections, fields: a}
-  end
-
-  def landings
-    l = [
-      { landing: "1", desc: "Vendez votre bien en 48h", img: 'cover.png' },
-      { landing: "2", desc: "Vendez en toute tranquilité", img: 'cover.png' },
-      { landing: "3", desc: "L'agence immobilière 2.0", img: 'cover.png' },
-      { landing: "4", desc: "La première agence immobilière gratuite", img: 'cover.png' },
-      { landing: "5", desc: "Des services exceptionnels pour des biens exceptionnels", img: 'cover.png' },
-      ]
   end
 end

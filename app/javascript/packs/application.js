@@ -59,5 +59,6 @@ if (document.getElementById('doc-dropzone')) {
   launchDropzone();
 }
 
-
-
+// Javascript to change the format of filter on Flat#Index
+import { filter } from "../shared/filter.js"
+filter();

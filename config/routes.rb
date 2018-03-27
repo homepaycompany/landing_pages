@@ -35,6 +35,9 @@ Rails.application.routes.draw do
   # Property image routes to create or delete an image
   resources :property_images, only: [:create]
 
+  # RealEstateProperties routes
+  resources :real_estate_properties, only: [:index, :show]
+
   # Sidekiq Web UI, only for admins.
   require "sidekiq/web"
   authenticate :user, lambda { |u| u.admin } do

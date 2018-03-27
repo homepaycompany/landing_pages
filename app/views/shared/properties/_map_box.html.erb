@@ -1,0 +1,36 @@
+<div class="property-marker">
+  <%= link_to real_estate_property_path(property.id) do %>
+    <div class="property-marker-image">
+      <% if property.property_images.first.nil? %>
+        <%= image_tag ("default_property.png") %>
+      <% else %>
+        <%= image_tag property.property_images.first.photo %>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <% if property.title %>
+          <p><strong><%= property.title %></strong></p>
+        <% end %>
+      </div>
+      <div class="col-xs-6">
+        <p>
+          <strong>Surface</strong>
+          <br>
+          <% if property.property_total_size_sqm %>
+           <%= "#{property.property_total_size_sqm} m²" %>
+          <% else %>
+            n/a
+          <% end %>
+        </p>
+      </div>
+      <div class="col-xs-6">
+        <p>
+          <strong>Prix</strong>
+          <br>
+          <%= number_with_delimiter((property.price/1000).round(0), :delimiter => ' ') if !property.price.nil? %>k€
+        </p>
+      </div>
+    </div>
+  <% end %>
+</div>

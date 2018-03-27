@@ -3,6 +3,13 @@ class RealEstatePropertiesController < ApplicationController
     @properties = RealEstateProperty.all
     filter_properties
     sort_properties
+    @markers = @properties.map do |property|
+      {
+        lat: property.latitude,
+        lng: property.longitude,
+        infoWindow: { content: render_to_string(partial: "shared/properties/map_box", locals: { property: property }) }
+      }
+    end
   end
 
   def show

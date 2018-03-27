@@ -23,7 +23,29 @@
         <p>
           <strong>Prix</strong>
           <br>
-          <%#= number_with_delimiter(property.price.round(0), :delimiter => ' ') if !property.price.nil? %>€
+          <%= number_with_delimiter(property.price.round(0), :delimiter => ' ') if !property.price.nil? %>€
+        </p>
+      </div>
+      <div class="col-xs-6 property-card-description text-center">
+        <p>
+          <strong>Pièces</strong>
+          <br>
+          <% if property.num_rooms %>
+           <%= "#{property.num_rooms}" %>
+          <% else %>
+            n/a
+          <% end %>
+        </p>
+      </div>
+      <div class="col-xs-6 property-card-description text-center">
+        <p>
+          <strong>Chambres</strong>
+          <br>
+          <% if property.num_bedrooms %>
+           <%= "#{property.num_bedrooms}" %>
+          <% else %>
+            n/a
+          <% end %>
         </p>
       </div>
     </div>

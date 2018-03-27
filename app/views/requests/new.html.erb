@@ -36,21 +36,16 @@
           </div>
         </div>
         <div class="form-body">
-          <%= simple_form_for(@request) do |f| %>
-            <%= render 'property_forms/form_sections/form_section_dispatch', page: @fields, f: f %>
-            <div class="text-center" style="margin-top: 20px;">
-              <%= f.hidden_field :landing, :value => @landing %>
-              <div class="btn" id="js-validate-section">
-                Je veux être recontacté
-              </div>
-              <%= f.submit "Je m'inscris", class:"hidden btn", id:"js-submit_form" %>
-            </div>
-          <% end %>
+          <%= render 'shared/personnal_information_form'%>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
 
 
 

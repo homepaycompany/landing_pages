@@ -1,0 +1,61 @@
+<%= simple_form_for(@request) do |f| %>
+  <div class="form-section">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-field">
+          <div class="form-field-label">
+            <%= image_tag 'form_personal_info.svg', class: "form-icon" %>
+            <strong>Prénom</strong>
+          </div>
+          <div class="form-input">
+            <%= f.input 'first_name', label: false,  placeholder: 'Jean' %>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-field">
+          <div class="form-field-label">
+            <%= image_tag 'form_personal_info.svg', class: "form-icon" %>
+            <strong>Nom</strong>
+          </div>
+          <div class="form-input">
+            <%= f.input 'last_name', label: false,  placeholder: 'Dupont' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-section">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-field">
+          <div class="form-field-label">
+            <%= image_tag 'form_email.svg', class: "form-icon" %>
+            <strong>Email</strong>
+          </div>
+          <div class="form-input">
+            <%= f.input 'email', label: false,  placeholder: 'jean.dupont@mail.com' %>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="form-field">
+          <div class="form-field-label">
+            <%= image_tag 'form_phone.svg', class: "form-icon" %>
+            <strong>Téléphone</strong>
+          </div>
+          <div class="form-input">
+            <%= f.input 'last_name', label: false,  placeholder: '0123456789' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center" style="margin-top: 20px;">
+    <div class="btn" id="js-validate-section">
+      Je veux être recontacté
+    </div>
+    <%= f.submit "Je m'inscris", class:"hidden btn", id:"js-submit_form" %>
+  </div>
+<% end %>
+

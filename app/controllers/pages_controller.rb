@@ -19,15 +19,17 @@ class PagesController < ApplicationController
   end
 
   def thank_you
-    @landing = params["landing"]
+    @landing = params["landing"] || 'home'
     @landing_desc = landings.find { |l| l[:landing] == @landing }[:desc]
     @landing_img = landings.find { |l| l[:landing] == @landing }[:img]
   end
 
   def how_it_works
+    @landing = params["landing"] || 'home'
   end
 
   def about_us
+    @landing = params["landing"] || 'home'
   end
 
   def set_admin_cookie

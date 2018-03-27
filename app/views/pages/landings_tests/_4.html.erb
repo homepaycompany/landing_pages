@@ -6,7 +6,7 @@
         <div class="banner-content">
           <div>
             <h1>La première agence immobilière gratuite</h1>
-            <%= link_to "Estimer gratuitement mon bien", "javascript:void(0)", class: "btn" %>
+            <%= link_to "Vendre mon bien", "/requests/new?landing=#{@landing}", class: "btn" %>
             <p>Vendre son bien immobilier avec un professionnel sans frais d'agence, c'est possible.</p>
           </div>
         </div>
@@ -94,7 +94,7 @@
         </div>
         <div class="col-xs-12 text-center">
           <div class = "btn-feature text-center">
-            <%= link_to "Estimer gratuitement mon bien", new_property_form_path, class: "btn" %>
+            <%= link_to "Vendre mon bien", "/requests/new?landing=#{@landing}", class: "btn" %>
           </div>
         </div>
       </div>

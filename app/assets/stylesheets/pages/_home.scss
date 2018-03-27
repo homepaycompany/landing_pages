@@ -1,17 +1,21 @@
 .landing-prop {
   background-color: $dark-blue;
-  padding: 80px 0px;
+  padding: 0px 0px;
   .container {
-    width: 70%;
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 5px;
+    width: 80%;
+    color: $green;
   }
   h3 {
-    color: white;
+    color: $dark-blue;
     font-size: 18px;
     margin-top: 10px;
     font-weight: 600;
   }
   p {
-    color: white;
+    color: $dark-blue;
     font-size: 16px;
   }
   img {

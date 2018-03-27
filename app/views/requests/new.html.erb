@@ -8,6 +8,36 @@
       <div class="form-container">
         <div class="form-title text-center">
           <h1>Parlez-nous un peu de vous</h1>
+          <div class="row">
+            <div class="col-xs-12 col-md-10 col-md-offset-1 disclaimer">
+              <!-- DISCLAIMER ON LARGE SCREENS -->
+              <div class="hidden-xs visible-sm visible-md visible-lg">
+                <div class="disclaimer-container">
+                  <%= image_tag 'freedom', class: "disclaimer-icon" %>
+                  <p><i>Fournir ces informations ne vous <strong>engage à rien</strong> : vous aurez l'entière liberté de nous attribuer le mandat ou non</i></p>
+                </div>
+                <div class="disclaimer-container">
+                  <%= image_tag 'locked', class: "disclaimer-icon" %>
+                  <p><i>Ces informations sont <strong>confidentielles</strong> : elles nous servent à prendre contact avec vous et ne seront pas partagées</i></p>
+                </div>
+              </div>
+              <!-- DISCLAIMER ON SMALL SCREENS -->
+              <div class="row visble-xs hidden-sm hidden-md hidden-lg text-center">
+                <div class="col-xs-12">
+                  <%= image_tag 'freedom', class: "disclaimer-icon" %>
+                </div>
+                <div class="col-xs-12">
+                  <p><i>Fournir ces informations ne vous <strong>engage à rien</strong> : vous aurez l'entière liberté de nous attribuer le mandat ou non</i></p>
+                </div>
+                <div class="col-xs-12">
+                  <%= image_tag 'locked', class: "disclaimer-icon" %>
+                </div>
+                <div class="col-xs-12">
+                  <p><i>Ces informations sont <strong>confidentielles</strong> : elles nous servent à prendre contact avec vous et ne seront pas partagées</i></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="form-body">
           <%= simple_form_for(@request) do |f| %>
@@ -15,7 +45,7 @@
             <div class="text-center" style="margin-top: 20px;">
               <%= f.hidden_field :landing, :value => @landing %>
               <div class="btn" id="js-validate-section">
-                Je m'inscris
+                Je veux être recontacté
               </div>
               <%= f.submit "Je m'inscris", class:"hidden btn", id:"js-submit_form" %>
             </div>

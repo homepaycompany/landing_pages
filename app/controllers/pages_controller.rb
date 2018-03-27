@@ -5,23 +5,15 @@ class PagesController < ApplicationController
   before_action :authenticate_admin!, only: [:set_admin_cookie]
 
   def home
-    @faqs = []
-    # @faqs << Faq.find_by(question: "Est-ce que je peux demander une demande d'offre d’achat gratuitement sur Homepay ?")
-    # @faqs << Faq.find_by(question: "Je ne suis pas sûr de vouloir m’engager. Est-ce que je peux quand même demander une offre d’achat ?")
-    # @faqs << Faq.find_by(question: "Qui me rachète ma maison ?")
-    # @faqs << Faq.find_by(question: "Dans quels cas, est-il intéressant d’utiliser les services d'Homepay ?")
-  end
-
-  def landing_liquidity
-  end
-
-  def thank_you
   end
 
   def how_it_works
   end
 
   def about_us
+  end
+
+  def thank_you
   end
 
   def set_admin_cookie

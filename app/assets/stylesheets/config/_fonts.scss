@@ -2,8 +2,23 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 
 // Define fonts for body and headers
-$body-font: "Titillium Web", "Helvetica", "sans-serif";
-$headers-font: "EB Garamond", "Helvetica", "sans-serif";
+$body-font: "Nunito", "Helvetica", "sans-serif";
+$headers-font: "Nunito", "Helvetica", "sans-serif";
+
+// Define font sizes
+h1 {
+  font-size: 54px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 26px;
+}
+p {
+  font-size: 18px;
+}
+
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

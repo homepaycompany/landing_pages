@@ -6,7 +6,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   # Static pages : landing, how-it-works, about etc.
-  get "home", to: 'pages#landing_liquidity'
   get "about", to: 'pages#about_us'
   get "how-it-works", to: 'pages#how_it_works'
   get "thank-you", to: 'pages#thank_you'

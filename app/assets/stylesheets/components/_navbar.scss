@@ -11,6 +11,7 @@
   justify-content: space-between;
   .btn {
     margin-left: 15px;
+    font-size: 16px;
   }
   &:before, &:after {
     content: none;
@@ -50,12 +51,13 @@
 /* Navbar link */
 .navbar-link {
   color: $black;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 26px;
   padding: 20px 0px;
   margin: 0px 20px;
   transition: all 0.3s ease;
+  font-size: 16px;
   &:hover {
     color: $green;
     text-decoration: none;

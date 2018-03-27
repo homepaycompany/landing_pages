@@ -1,38 +1,63 @@
 import "bootstrap";
+import { autocomplete } from '../shared/autocomplete'
+import { goBack } from '../shared/goBack'
+import { formSectionValidation } from '../shared/formSectionValidation'
+import { setChoiceForm } from '../shared/formRevealElements'
+import { addBooleanToForm } from '../shared/formCheckBoolean'
+import { addStateToForm } from '../shared/formCheckStateBox'
+import { validateAddress } from '../shared/addressValidation'
+import { launchDropzone } from '../shared/dropzone'
+import { toggleFaq, faqSection } from '../shared/faq'
 
+if (document.getElementById('js-go-back')) {
+  goBack();
+}
 
 if (document.getElementById('js-validate-section')) {
-  const c = document.getElementById('js-validate-section');
-  c.addEventListener('click', (e) => {
-    if (validateFields()) {
-      document.getElementById('js-submit_form').click()
-    }
-  })
+  formSectionValidation()
 }
 
-function validateFields() {
-  document.querySelectorAll('.form-wrong-input-format').forEach((f) => {
-    f.remove()
-  })
-  let i = true
-  document.querySelectorAll('.form-control').forEach((f) => {
-    if (f.type === 'number' && parseInt(f.value, 10)) {
-      i = i && true
-    } else if (f.type === 'text' && typeof f.value === 'string' && f.value !== '') {
-      i = i && true
-      f.value = f.value.toLowerCase()
-    } else if (f.type === 'email' && f.value.match(/^[^@\s]+@[^@\s]+$/)) {
-      i = i && true
-      f.value = f.value.toLowerCase()
-    } else if (f.type === 'tel' && f.value.match(/(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}/)) {
-      i = i && true
-      f.value = f.value.toLowerCase()
-    } else if (f.classList.contains('js-no-validate')) {
-      i = i && true
-    } else {
-      f.parentElement.parentElement.parentElement.parentElement.insertAdjacentHTML('beforeEnd', `<div class='form-wrong-input-format'>Format incorrect<div>`)
-      i = i && false
-    }
-  })
-  return i
+if (document.getElementById('js-form-toggle-section')) {
+  setChoiceForm();
 }
+
+if (document.getElementById('js-form-toggle-btn')) {
+  addBooleanToForm();
+}
+
+if (document.getElementById('js-form-state-box')) {
+  addStateToForm();
+}
+
+// JS to open the answer related to a specific question in FAQ
+if (document.getElementById('js-faq-question')) {
+  toggleFaq();
+}
+// JS to open the answer related to a specific topic in FAQ
+if (document.querySelector('.faq-wrapper')) {
+  faqSection();
+}
+
+
+// Do not launch JS for address autocomplete and address validation on Review apps, as Google
+// browser API restrictions don't allow them to use the API
+if (window.location.href.match(/homepay-rails-monolyth-st-pr-\d+/) == null) {
+  // Javascript for autocomplete
+  if (document.getElementById('real_estate_property_address')) {
+    autocomplete();
+  }
+
+  // JS for validating the address before creating a form
+  if (document.getElementById('js-form-address')) {
+    validateAddress();
+  }
+}
+
+// JS for launching dropzone
+// JS for validating the address before creating a form
+if (document.getElementById('doc-dropzone')) {
+  launchDropzone();
+}
+
+
+

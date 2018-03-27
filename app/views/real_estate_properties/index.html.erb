@@ -1,1 +1,74 @@
-index.html.erb
+<div class="main-section">
+  <div class="container">
+    <div class="properties-section">
+      <div class="container">
+        <% if @properties.nil? || @properties.size == 0 %>
+          <div class="section-properties-none">
+            <h1 class="text-center page-title">Annonces</h1>
+            <p class="text-center">
+              Nous n'avons pas encore d'annonces à vous présenter
+            </p>
+          </div>
+        <% else %>
+
+          <!-- START version desktop -->
+          <div class="properties-filters hidden-xs">
+            <%= render "shared/search/filter" %>
+            <div class="sortbar">
+              <p>Tri :</p>
+              <%= render "shared/search/sortbar" %>
+            </div>
+          </div>
+
+          <div class="main-container hidden-xs">
+            <div id="map" data-markers="<%= @markers.to_json %>"
+            ></div>
+            <div class="cards-container hidden-xs">
+              <% if @properties && @properties.length > 0 %>
+                <div class="property-cards col-xs-12">
+                  <% @properties.each do |property| %>
+                    <%= render "shared/properties/index-card", property: property %>
+                  <% end %>
+                </div>
+              <% else %>
+                <p class="text-center no-property-card">
+                  Aucune annonce ne correspond à votre recherche.
+                </p>
+              <% end %>
+            </div>
+          </div>
+          <!-- END version desktop -->
+
+          <!-- START version mobile -->
+          <div class="properties-filters visible-xs">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <%= render "shared/search/filter" %>
+              </div>
+              <div class="col-xs-12 text-center">
+                <div class="sortbar">
+                  <%= render "shared/search/sortbar" %>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-container visible-xs">
+            <% if @properties && @properties.length > 0 %>
+              <div class="property-cards col-xs-12">
+                <% @properties.each do |property| %>
+                  <%= render "shared/properties/index-card", property: property %>
+                <% end %>
+              </div>
+            <% else %>
+              <p class="text-center no-property-card">
+                Aucune annonce ne correspond à votre recherche.
+              </p>
+            <% end %>
+          </div>
+          <!-- END version mobile -->
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

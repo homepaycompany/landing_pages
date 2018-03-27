@@ -270,3 +270,9 @@
 =======
 >>>>>>> master
 >>>>>>> 717c715ce9416728b1b6c6b537fae12534acd3e1
+[2018-03-27T11:12:20 (process) #10690][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-27T11:12:21 (process) #10690][ERROR] appsignal: Push api key not set after loading config
+[2018-03-27T11:12:21 (process) #10690][ERROR] Not starting, no valid config for this environment
+[2018-03-27T11:17:43 (process) #10826][INFO] appsignal: Loading Rails (5.1.5) integration
+[2018-03-27T11:17:44 (process) #10826][ERROR] appsignal: Push api key not set after loading config
+[2018-03-27T11:17:44 (process) #10826][ERROR] Not starting, no valid config for this environment

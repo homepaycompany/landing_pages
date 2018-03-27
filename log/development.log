@@ -8076,3 +8076,327 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 265ms (Views: 163.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:17:49 +0200
+  [1m[35m (14.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 74ms (ActiveRecord: 36.9ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:9:in `home'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:18:37 +0200
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:9:in `home'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/requests" for 127.0.0.1 at 2018-03-27 11:18:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/requests"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.2.2) lib/webpacker/dev_server_proxy.rb:18:in `perform_request'
+rack-proxy (0.6.3) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:18:41 +0200
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:9:in `home'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/" for 127.0.0.1 at 2018-03-27 11:18:42 +0200
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:9:in `home'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=simplicity" for 127.0.0.1 at 2018-03-27 11:18:42 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"simplicity"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:9:in `home'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=" for 127.0.0.1 at 2018-03-27 11:18:45 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>""}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/pages_controller.rb:9:in `home'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-27 11:18:45 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+Started GET "/?landing=4" for 127.0.0.1 at 2018-03-27 11:18:46 +0200
+Processing by PagesController#home as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/landings_tests/_4.html.erb (3022.5ms)
+  Rendered pages/home.html.erb within layouts/application (3027.1ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered pages/landings_tests/_4.html.erb (2822.9ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered pages/home.html.erb within layouts/application (2832.9ms)
+  Rendered shared/_footer.html.erb (5.1ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.0ms)
+Completed 200 OK in 3110ms (Views: 3105.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 2890ms (Views: 2887.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/requests/new?landing=4" for 127.0.0.1 at 2018-03-27 11:19:05 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered requests/new.html.erb within layouts/application (5.8ms)
+Completed 401 Unauthorized in 31ms (ActiveRecord: 4.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `description' for "4":String):
+    1: <% content_for :meta_title, "#{@landing}" %>
+    2: <% content_for :meta_description, @landing.description %>
+    3: <% content_for :meta_image, @landing.cover %>
+    4: 
+    5: <div class="main-section">
+  
+app/views/requests/new.html.erb:2:in `_app_views_requests_new_html_erb__1525736762307340472_70196038923540'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/requests/new?landing=4" for 127.0.0.1 at 2018-03-27 11:19:33 +0200
+Processing by RequestsController#new as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering requests/new.html.erb within layouts/application
+  Rendered property_forms/form_fields/_text_field.html.erb (14.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (0.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (21.3ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.8ms)
+  Rendered property_forms/form_fields/_text_field.html.erb (2.9ms)
+  Rendered property_forms/form_sections/_form_input_section.html.erb (9.7ms)
+  Rendered property_forms/form_sections/_form_section_dispatch.html.erb (36.7ms)
+  Rendered requests/new.html.erb within layouts/application (360.7ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (2.2ms)
+Completed 200 OK in 409ms (Views: 406.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-27 11:20:02 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XmjPzEmEA4iAWCjTWokW2yWkh6pEG9R9Nj0bPxB2+c1knHDmdZZo7DLXEmfqYLq63X+iztOCXYXX5QSRG9ujZQ==", "request"=>{"first_name"=>"arthur", "last_name"=>"reboul", "email"=>"arthur@mail.com", "phone_number"=>"0987654321", "landing"=>"4"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (4.6ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "arthur@mail.com"], ["first_name", "arthur"], ["last_name", "reboul"], ["phone_number", "0987654321"], ["landing", "4"], ["created_at", "2018-03-27 09:20:02.709161"], ["updated_at", "2018-03-27 09:20:02.709161"]]
+  Rendering admin_mailer/new_form.html.erb within layouts/mailer
+  Rendered admin_mailer/new_form.html.erb within layouts/mailer (0.5ms)
+  Rendering admin_mailer/new_form.text.erb within layouts/mailer
+  Rendered admin_mailer/new_form.text.erb within layouts/mailer (0.3ms)
+AdminMailer#new_form: processed outbound mail in 405.0ms
+Sent mail to admin@homepay.fr (40.7ms)
+Date: Tue, 27 Mar 2018 11:20:03 +0200
+From: guillaume@homepay.fr
+To: admin@homepay.fr
+Message-ID: <5aba0cc31fb8c_2a4a3fd7c678ef5021746@MBP-de-arthur.localdomain.mail>
+Subject: Landing 4 - formulaire rempli
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5aba0cc31d13f_2a4a3fd7c678ef5021629";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5aba0cc31d13f_2a4a3fd7c678ef5021629
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+new_form.text.erb
+
+
+----==_mimepart_5aba0cc31d13f_2a4a3fd7c678ef5021629
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>A form has been created !</h1>
+<h2>landing : 4</h2>
+<p>arthur reboul</p>
+<p>arthur@mail.com</p>
+<p>0987654321</p>
+
+
+
+  </body>
+</html>
+
+----==_mimepart_5aba0cc31d13f_2a4a3fd7c678ef5021629--
+
+  [1m[35m (10.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you?landing=4
+Completed 302 Found in 469ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/thank-you?landing=4" for 127.0.0.1 at 2018-03-27 11:20:03 +0200
+Processing by PagesController#thank_you as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (8.1ms)
+Completed 401 Unauthorized in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `description' for "4":String):
+    1: <% content_for :meta_title, "#{@landing}" %>
+    2: <% content_for :meta_description, @landing.description %>
+    3: <% content_for :meta_image, @landing.cover %>
+    4: 
+    5: <div class="main-section">
+  
+app/views/pages/thank_you.html.erb:2:in `_app_views_pages_thank_you_html_erb__4448267575273307573_70196021312240'
+appsignal (2.5.0) lib/appsignal/rack/rails_instrumentation.rb:17:in `call'
+Started GET "/thank-you?landing=4" for 127.0.0.1 at 2018-03-27 11:20:23 +0200
+Processing by PagesController#thank_you as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (2.2ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/requests" for 127.0.0.1 at 2018-03-27 11:36:02 +0200
+Processing by RequestsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XmjPzEmEA4iAWCjTWokW2yWkh6pEG9R9Nj0bPxB2+c1knHDmdZZo7DLXEmfqYLq63X+iztOCXYXX5QSRG9ujZQ==", "request"=>{"first_name"=>"arthur", "last_name"=>"reboul", "email"=>"arthur@mail.com", "phone_number"=>"0987654321", "landing"=>"4"}, "commit"=>"Je m'inscris"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "requests" ("email", "first_name", "last_name", "phone_number", "landing", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "arthur@mail.com"], ["first_name", "arthur"], ["last_name", "reboul"], ["phone_number", "0987654321"], ["landing", "4"], ["created_at", "2018-03-27 09:36:02.276013"], ["updated_at", "2018-03-27 09:36:02.276013"]]
+  Rendering admin_mailer/new_form.html.erb within layouts/mailer
+  Rendered admin_mailer/new_form.html.erb within layouts/mailer (2.4ms)
+  Rendering admin_mailer/new_form.text.erb within layouts/mailer
+  Rendered admin_mailer/new_form.text.erb within layouts/mailer (0.5ms)
+AdminMailer#new_form: processed outbound mail in 41.3ms
+Sent mail to admin@homepay.fr (46.8ms)
+Date: Tue, 27 Mar 2018 11:36:02 +0200
+From: guillaume@homepay.fr
+To: admin@homepay.fr
+Message-ID: <5aba1082508b2_2a4a3fd7c678f068219e0@MBP-de-arthur.localdomain.mail>
+Subject: Landing 4 - formulaire rempli
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5aba10824f126_2a4a3fd7c678f0682181f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5aba10824f126_2a4a3fd7c678f0682181f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+new_form.text.erb
+
+
+----==_mimepart_5aba10824f126_2a4a3fd7c678f0682181f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>A form has been created !</h1>
+<h2>landing : 4</h2>
+<p>arthur reboul</p>
+<p>arthur@mail.com</p>
+<p>0987654321</p>
+
+
+
+  </body>
+</html>
+
+----==_mimepart_5aba10824f126_2a4a3fd7c678f0682181f--
+
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/thank-you?landing=4
+Completed 302 Found in 126ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/thank-you?landing=4" for 127.0.0.1 at 2018-03-27 11:36:02 +0200
+Processing by PagesController#thank_you as HTML
+  Parameters: {"landing"=>"4"}
+  Rendering pages/thank_you.html.erb within layouts/application
+  Rendered pages/thank_you.html.erb within layouts/application (9.5ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (2.4ms)
+Completed 200 OK in 75ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+

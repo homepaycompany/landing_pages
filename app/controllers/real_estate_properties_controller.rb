@@ -5,5 +5,6 @@ class RealEstatePropertiesController < ApplicationController
 
   def show
     @property = RealEstateProperty.find(params[:id])
+    @property_form = @property.property_form
   end
 end

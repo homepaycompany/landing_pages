@@ -1,0 +1,24 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 10px 0;
+  #carousel {
+    li {
+      border-color: $dark-blue;
+      width: 20px;
+      height: 20px;
+      &.active {
+        background-color: $green;
+        border-color: $green;
+      }
+    }
+    img {
+      border-radius: 5px;
+      max-height: 500px;
+    }
+    .item.active {
+      border-color: transparent;
+    }
+  }
+}

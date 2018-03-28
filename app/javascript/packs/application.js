@@ -1,4 +1,5 @@
 import "bootstrap";
+$('#carousel').carousel()
 import { autocomplete } from '../shared/autocomplete'
 import { goBack } from '../shared/goBack'
 import { formSectionValidation } from '../shared/formSectionValidation'
@@ -58,6 +59,7 @@ if (window.location.href.match(/homepay-rails-monolyth-st-pr-\d+/) == null) {
 if (document.getElementById('doc-dropzone')) {
   launchDropzone();
 }
+
 
 
 

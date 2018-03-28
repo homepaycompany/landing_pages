@@ -1,1 +1,62 @@
-<p>hello from property <%= @property.id %></p>
+<div class="main-section">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+      <div class="form-container">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+          <div class="property-card">
+            <%= render 'real_estate_properties/carousel/carousel' %>
+            <div class="property-title">
+              <h2><%= "#{@property.property_type.capitalize} " + "#{@property.num_rooms} pièces" + " - #{@property.livable_size_sqm}" %>m<sup>2</sup></h2>
+              <h3>250 000€</h3>
+              <p>Posté le : <%= @property.created_at %></p>
+            </div>
+          </div>
+        </div>
+        <div class="highlights-container">
+          <div class="highlights-section">
+            <div class="col-xs-12">
+              <p>Points clés</p>
+            </div>
+            <div class="row">
+              <% @property_form.dsc_1_fields[:sections].each do |s| %>
+                <% fields = @property_form.dsc_1_fields[:fields].select { |f| f[:section] == s[:id] } %>
+                <% fields.each do |t| %>
+                  <div class="col-xs-6 col-sm-4">
+                    <div class="highlight">
+                      <div class="highlight-label">
+                        <%= image_tag t[:icon], class: "highlight-icon" %>
+                        <strong><%= t[:desc] %></strong>
+                      </div>
+                      <div class="highlight-value"><%= @property.send t[:name] %></div>
+                    </div>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+          <div class="highlights-section">
+            <div class="col-xs-12">
+              <p>Avantages</p>
+            </div>
+            <div class="row">
+              <% @property_form.dsc_2_fields[:sections].each do |s| %>
+                <% fields = @property_form.dsc_1_fields[:fields].select { |f| f[:section] == s[:id] } %>
+                <% fields.each do |t| %>
+                  <div class="col-xs-6 col-sm-4">
+                    <div class="highlight">
+                      <div class="highlight-label">
+                        <%= image_tag t[:icon], class: "highlight-icon" %>
+                        <strong><%= t[:desc] %></strong>
+                      </div>
+                      <div class="highlight-value"><%= @property.send t[:name] %></div>
+                    </div>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

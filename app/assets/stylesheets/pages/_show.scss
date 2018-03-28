@@ -1,0 +1,45 @@
+.property-card {
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  .property-title {
+    padding: 10px;
+    margin-bottom: 30px;
+    h2 {
+      color: $green;
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+    h3 {
+      color: $dark-blue;
+      font-size: 20px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+.highlights-container {
+  padding: 10px;
+  .highlights-section {
+    .highlight {
+      margin-bottom: 20px;
+      .highlight-label {
+        display: flex;
+        height: 50px;
+        .highlight-icon {
+          max-width: 50px;
+          max-height: 50px;
+        }
+        strong {
+          font-size: 15px;
+          height: 50px;
+          line-height: 50px;
+        }
+      }
+      .highlight-value {
+        margin-top: -15px;
+        margin-left: 50px;
+      }
+    }
+  }
+}

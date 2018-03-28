@@ -46,7 +46,7 @@
       }
     }
     .regular-step {
-      height: 250px;
+      height: 500px;
       &:before {
         content: '';
         width: 8px;
@@ -65,7 +65,7 @@
         background-color: $light-grey;
         position: absolute;
         width: 1px;
-        height: 250px;
+        height: 500px;
         top: 0px;
         left: 50%;
         display: block;

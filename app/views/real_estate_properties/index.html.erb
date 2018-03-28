@@ -2,7 +2,7 @@
   <div class="container">
     <div class="properties-section">
       <div class="container">
-        <% if @properties.nil? || @properties.size == 0 %>
+        <% if (@properties.nil? || @properties.size == 0) && (PropertyForm.count == 0) %>
           <div class="section-properties-none">
             <h1 class="text-center page-title">Annonces</h1>
             <p class="text-center">
@@ -34,6 +34,7 @@
                 <p class="text-center no-property-card">
                   Aucune annonce ne correspond à votre recherche.
                 </p>
+                <%= link_to "Réinitialiser la recherche", real_estate_properties_path %>
               <% end %>
             </div>
           </div>

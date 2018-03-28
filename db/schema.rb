@@ -62,6 +62,8 @@ ActiveRecord::Schema.define(version: 20180327183307) do
     t.string "phone_number"
     t.string "time_to_sell"
     t.string "token"
+    t.integer "price"
+    t.string "title"
     t.index ["user_id"], name: "index_property_forms_on_user_id"
   end
 
@@ -117,6 +119,7 @@ ActiveRecord::Schema.define(version: 20180327183307) do
     t.string "phone_number"
     t.string "token"
     t.integer "price"
+    t.string "title"
     t.index ["property_form_id"], name: "index_real_estate_properties_on_property_form_id"
     t.index ["user_id"], name: "index_real_estate_properties_on_user_id"
   end

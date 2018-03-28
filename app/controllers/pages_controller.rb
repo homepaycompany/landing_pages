@@ -10,6 +10,9 @@ class PagesController < ApplicationController
   def how_it_works
   end
 
+  def features
+  end
+
   def about_us
   end
 

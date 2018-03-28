@@ -9,6 +9,7 @@ import { addStateToForm } from '../shared/formCheckStateBox'
 import { validateAddress } from '../shared/addressValidation'
 import { launchDropzone } from '../shared/dropzone'
 import { toggleFaq, faqSection } from '../shared/faq'
+import { filter } from "../shared/filter.js"
 
 if (document.getElementById('js-go-back')) {
   goBack();
@@ -60,6 +61,7 @@ if (document.getElementById('doc-dropzone')) {
   launchDropzone();
 }
 
-
-
-
+// Javascript to change the format of filter on Flat#Index
+if (document.querySelectorAll('.room-filter input')) {
+  filter();
+}

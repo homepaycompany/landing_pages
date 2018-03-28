@@ -1,0 +1,40 @@
+<svg width="100" height="100" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>negociation</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1077 -741)">
+<g id="negociation">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="translate(1077 741)" fill="#FFFFFF"/>
+</g>
+<g id="Group">
+<g id="Rectangle">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="matrix(1 1.22465e-16 1.22465e-16 -1 1103 822.41)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="matrix(1 1.22465e-16 1.22465e-16 -1 1103 822.41)" fill="#20E8B6"/>
+</g>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path3_fill" transform="matrix(1 -9.95799e-17 -9.95799e-17 -1 1110.5 778.319)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="matrix(1 -9.95799e-17 -9.95799e-17 -1 1110.5 788.319)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="matrix(1 -9.95799e-17 -9.95799e-17 -1 1110.5 798.319)" fill="#20E8B6"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path4_fill" transform="matrix(1 -9.95799e-17 -9.95799e-17 -1 1110.5 808.319)" fill="#20E8B6"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 100 0L 100 100L 0 100L 0 0Z"/>
+<path id="path1_fill" d="M 0 4C 0 1.79086 1.79086 0 4 0L 45 0C 47.2091 0 49 1.79086 49 4L 49 50.4103L 36 62.4098L 4 62.4098C 1.79086 62.4098 0 60.619 0 58.4098L 0 4Z"/>
+<path id="path2_stroke_2x" d="M 36 50.4103L 36 48.9103C 35.1716 48.9103 34.5 49.5819 34.5 50.4103L 36 50.4103ZM 37.5 62.4098L 37.5 50.4103L 34.5 50.4103L 34.5 62.4098L 37.5 62.4098ZM 36 51.9103L 49 51.9103L 49 48.9103L 36 48.9103L 36 51.9103ZM 49 50.4103L 51.0348 52.6147C 51.6501 52.0468 52 51.2476 52 50.4103L 49 50.4103ZM 36 62.4098L 36 65.4098C 36.7542 65.4098 37.4806 65.1258 38.0348 64.6143L 36 62.4098ZM 4 3L 45 3L 45 -3L 4 -3L 4 3ZM 3 58.4098L 3 4L -3 4L -3 58.4098L 3 58.4098ZM 46.9652 48.2058L 33.9652 60.2054L 38.0348 64.6143L 51.0348 52.6147L 46.9652 48.2058ZM 36 59.4098L 4 59.4098L 4 65.4098L 36 65.4098L 36 59.4098ZM 46 4L 46 50.4103L 52 50.4103L 52 4L 46 4ZM -3 58.4098C -3 62.2758 0.134007 65.4098 4 65.4098L 4 59.4098C 3.44772 59.4098 3 58.9621 3 58.4098L -3 58.4098ZM 45 3C 45.5523 3 46 3.44772 46 4L 52 4C 52 0.134007 48.866 -3 45 -3L 45 3ZM 4 -3C 0.134008 -3 -3 0.134005 -3 4L 3 4C 3 3.44772 3.44771 3 4 3L 4 -3Z"/>
+<path id="path3_fill" d="M 0 1C 0 0.447715 0.447715 0 1 0L 22 0C 22.5523 0 23 0.447715 23 1L 23 3.40984C 23 3.96212 22.5523 4.40984 22 4.40984L 1 4.40984C 0.447715 4.40984 0 3.96212 0 3.40984L 0 1Z"/>
+<path id="path4_fill" d="M 0 1C 0 0.447715 0.447715 0 1 0L 33 0C 33.5523 0 34 0.447715 34 1L 34 3.40984C 34 3.96212 33.5523 4.40984 33 4.40984L 1 4.40984C 0.447715 4.40984 0 3.96212 0 3.40984L 0 1Z"/>
+</defs>
+</svg>

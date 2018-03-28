@@ -6,8 +6,7 @@ class RealEstatePropertiesController < ApplicationController
     @markers = @properties.map do |property|
       {
         lat: property.latitude,
-        lng: property.longitude,
-        infoWindow: { content: render_to_string(partial: "shared/properties/map_box", locals: { property: property }) }
+        lng: property.longitude
       }
     end
   end

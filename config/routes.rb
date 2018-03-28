@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # Static pages : landing, how-it-works, about etc.
   get "about", to: 'pages#about_us'
   get "how-it-works", to: 'pages#how_it_works'
+  get "features", to: 'pages#features'
   get "thank-you", to: 'pages#thank_you'
 
   # Static admin section to set admin cookie to exclude internal traffic

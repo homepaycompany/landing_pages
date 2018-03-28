@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180327183307) do
+ActiveRecord::Schema.define(version: 20180328121522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 20180327183307) do
     t.string "token"
     t.integer "price"
     t.string "title"
+    t.text "description"
     t.index ["user_id"], name: "index_property_forms_on_user_id"
   end
 
@@ -120,6 +121,7 @@ ActiveRecord::Schema.define(version: 20180327183307) do
     t.string "token"
     t.integer "price"
     t.string "title"
+    t.text "description"
     t.index ["property_form_id"], name: "index_real_estate_properties_on_property_form_id"
     t.index ["user_id"], name: "index_real_estate_properties_on_user_id"
   end
@@ -129,7 +131,7 @@ ActiveRecord::Schema.define(version: 20180327183307) do
     t.string "first_name"
     t.string "last_name"
     t.string "phone_number"
-    t.string "landing"
+    t.string "request_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

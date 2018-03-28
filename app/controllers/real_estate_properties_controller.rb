@@ -15,6 +15,7 @@ class RealEstatePropertiesController < ApplicationController
   def show
     @property = RealEstateProperty.find(params[:id])
     @property_form = @property.property_form
+    @markers = { lat: @property_form.latitude, lng: @property_form.longitude }
   end
 
   private

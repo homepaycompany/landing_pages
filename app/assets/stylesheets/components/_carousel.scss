@@ -22,3 +22,12 @@
     }
   }
 }
+
+// MEDIA WIDTH RELATED STYLES
+@media(max-width: 768px) {
+  .carousel-container {
+    padding: 0px 0;
+    background-color: transparent;
+  }
+}
+

@@ -2,6 +2,7 @@ class RequestsController < ApplicationController
   def new
     @fields = personnal_information_fields
     @request = Request.new
+    @type = params[:request_type] || 'seller'
   end
 
   def create
@@ -17,7 +18,7 @@ class RequestsController < ApplicationController
   private
 
   def property_form_params
-    params.require(:request).permit(:email, :first_name, :last_name, :phone_number, :landing)
+    params.require(:request).permit(:email, :first_name, :last_name, :phone_number, :request_type)
   end
 
   def personnal_information_fields

@@ -1,0 +1,87 @@
+<div class="highlights-container">
+  <div class="highlights-section">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="highlight-title">Points clés</p>
+      </div>
+    </div>
+    <div class="row">
+      <% @property_form.dsc_1_fields[:sections].each do |s| %>
+        <% fields_1 = @property_form.dsc_1_fields[:fields].select { |f| f[:section] == s[:id] } %>
+        <% fields_1.each do |t| %>
+          <div class="col-xs-6 col-sm-4">
+            <div class="highlight">
+              <div class="highlight-label">
+                <%= image_tag t[:icon], class: "highlight-icon" %>
+                <strong><%= t[:desc] %></strong>
+              </div>
+              <div class="highlight-value"><%= @property.send t[:name] %></div>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="highlights-section">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="highlight-title">Avantages</p>
+      </div>
+    </div>
+    <div class="row">
+      <% @property_form.dsc_2_fields[:sections].each do |s| %>
+        <% fields_2 = @property_form.dsc_2_fields[:fields].select { |f| f[:section] == s[:id] } %>
+        <% fields_2.each do |t| %>
+          <% if @property.send(t[:name]) ==  true %>
+            <div class="col-xs-6 col-sm-4">
+              <div class="highlight">
+                <div class="highlight-label">
+                  <%= image_tag t[:icon], class: "highlight-icon" %>
+                  <strong><%= t[:desc] %></strong>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="highlights-section">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="highlight-title">Description</p>
+        <div class="description">
+          Magnifique appartement situé en plein coeur du 9e, de <%= @property.livable_size_sqm %>m<sup>2</sup> à <%= @property.price %> avec ascenseur. Vous serez séduits par son parquet en points de hongrie, ses moulures, son grand salon avec cuisine ouverte. Idéalement situé à 5 minutes des commerces et des lignes 9 et 2. Coups de coeur assuré, à ne pas manquer !
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlights-section">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="highlight-title">Frais d'agence</p>
+        <div class="description">
+          Notre particularité chez Zenkey c'est que nous sommes à la fois une agence immobilière digitale et un courtier en prêt immobilier. Ceci nous permet de proposer nos services d'agence <strong>gratuitement</strong> à nos vendeurs, et les meilleures offres de prêt à nos acquéreurs !
+          <br>Comment se rémunère-t-on ? C'est simple, chaque fois qu'un acquéreur passe par nous pour souscrire un prêt, la banque nous verse une commission... <strong>tout le monde est gagnant</strong> !
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="highlights-section">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="highlight-title">Localisation</p>
+        <%= render 'shared/map' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="property-booking text-center">
+    <%= link_to "Prévoir une visite", "/requests/new", class: "btn" %>
+  </div>
+
+</div>

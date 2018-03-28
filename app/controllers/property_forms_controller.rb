@@ -57,7 +57,7 @@ class PropertyFormsController < ApplicationController
   # FORM SPECIFIC ACTIONS
 
   def a_address_validation
-    @marker = { lat: @property_form.latitude, lng: @property_form.longitude }
+    @markers = { lat: @property_form.latitude, lng: @property_form.longitude }
   end
 
   def b_property_type_selection

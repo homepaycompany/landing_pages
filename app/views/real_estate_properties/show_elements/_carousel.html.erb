@@ -1,0 +1,18 @@
+<div class="carousel-container">
+  <div id="carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <% if @property.property_images.count > 1 %>
+        <% @property.property_images.count.times do |i| %>
+          <li data-target="#carousel" data-slide-to="<%= i %>" class="<%= 'active' if i == 0 %>"></li>
+        <% end %>
+      <% end %>
+    </ol>
+    <div class="carousel-inner">
+      <% @property.property_images.each_with_index do |p, i| %>
+        <div class="item <%= 'active' if i == 0 %>">
+          <%= cl_image_tag p.photo, class: "d-block w-100 carousel-img", :alt => "Slide #{i}" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -136,6 +136,8 @@ class PropertyFormsController < ApplicationController
   def property_form_params
     params.require(:property_form).permit(:address,
     :property_type,
+    :title,
+    :price,
     :livable_size_sqm,
     :num_rooms,
     :num_bedrooms,

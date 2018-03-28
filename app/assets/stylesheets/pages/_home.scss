@@ -5,22 +5,19 @@
     background-color: white;
     padding: 50px 20px;
     border-radius: 5px;
-    width: 80%;
+    width: 60%;
     color: $green;
   }
-  h3 {
-    color: $dark-blue;
+  h4 {
     margin-top: 10px;
     font-weight: 600;
   }
   p {
     color: $dark-blue;
+    text-align: justify;
   }
   img {
     max-height: 90px;
-  }
-  .landing-prop-item {
-    animation-duration: 5s;
   }
 }
 
@@ -42,18 +39,21 @@
     margin: 50px 0px;
     background-color: white;
     border-radius: 6px;
-    padding: 40px;
+    padding: 10px;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
     min-height: 250px;
-    width: 500px;
     h3 {
-      margin-top: 20px;
+      margin-top: 50px;
       font-weight: 800;
       color: $black;
     }
     p {
       margin-top: 20px;
       color: $light-black;
+      text-align: justify;
+    }
+    .btn {
+      margin-top: 20px;
     }
   }
   .landing-step-img {

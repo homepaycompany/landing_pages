@@ -5,6 +5,10 @@
 .cards-container {
   padding-left: 10px;
   margin-right: -20px;
+  a {
+    text-decoration: none;
+    color: $green;
+  }
   @media (max-width: 732px) {
     padding-left: 0px;
   }
@@ -161,6 +165,10 @@
       margin-bottom: 20px;
     }
   }
+  .btn {
+    height: 40px;
+    font-size: 14px;
+  }
   .sortbar {
     display: inline-flex;
     p {
@@ -185,7 +193,7 @@
       &:nth-child(2) {
         border-radius: 8px 0px 0px 8px;
       }
-      &:nth-child(5) {
+      &:nth-child(4) {
         border-radius: 0px 8px 8px 0px;
       }
       &:hover {

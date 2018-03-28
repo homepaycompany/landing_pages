@@ -2,13 +2,13 @@
 <footer id="main-footer">
   <div class="container footer">
     <div class="row">
-      <div class="text-center col-xs-12 col-sm-4">
+      <div class="text-center col-xs-12 col-sm-6">
         <%= link_to root_path do %>
           <%= image_tag "logo.png" %>
           <p>© Zenkey (2018)</p>
         <% end %>
       </div>
-      <div class="text-center col-xs-12 col-sm-4">
+      <div class="text-center col-xs-12 col-sm-6">
         <h4>Entreprise</h4>
         <ul>
           <li>
@@ -18,29 +18,6 @@
             <%= mail_to "contact@homepay.fr", "Nous contacter" %>
           </li>
         </ul>
-      </div>
-      <div class="text-center">
-        <div class="footer-links col-xs-12 col-sm-4">
-          <h4>Suivez-nous</h4>
-          <ul>
-            <li>
-              <%= link_to 'https://www.facebook.com/homepay.fr', target: :_blank do %>
-                <i class="fab fa-facebook-f"></i>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to 'https://twitter.com/homepay_fr', target: :_blank do %>
-                <i class="fab fa-twitter"></i>
-              <% end %>
-            </li>
-            <li>
-              <%= link_to 'https://medium.com/@homepay', target: :_blank do %>
-                <i class="fab fa-medium-m"></i>
-              <% end %>
-            </li>
-          </ul>
-        </div>
-
       </div>
     </div>
   </div>

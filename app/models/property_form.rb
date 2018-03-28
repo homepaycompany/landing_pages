@@ -8,7 +8,9 @@ class PropertyForm < ApplicationRecord
 
   def dsc_1_fields
     a = [
-          { section: 1, name: 'livable_size_sqm', input_type: 'text', desc: 'Surface habitable', validation_type: 'number', unit: 'm2', icon: 'form_size.svg' },
+          { section: 1, name: 'title', input_type: 'text', desc: "Titre de l'annonce", validation_type: 'string', icon: 'form_size.svg' },
+          { section: 1, name: 'price', input_type: 'text', desc: 'Prix', validation_type: 'number', icon: 'form_size.svg' },
+          { section: 2, name: 'livable_size_sqm', input_type: 'text', desc: 'Surface habitable', validation_type: 'number', unit: 'm2', icon: 'form_size.svg' },
           { section: 3, name: 'num_rooms', input_type: 'text', desc: 'Nb de pièces', validation_type: 'number', unit: 'nombre', icon: 'form_rooms.svg' },
           { section: 3, name: 'num_bedrooms', input_type: 'text', desc: 'Nb de chambres', validation_type: 'number', unit: 'nombre', icon: 'form_bedrooms.svg' },
           { section: 3, name: 'num_bathrooms', input_type: 'text', desc: 'Nb de salles de bain', validation_type: 'number', unit: 'nombre', icon: 'form_bathrooms.svg' }

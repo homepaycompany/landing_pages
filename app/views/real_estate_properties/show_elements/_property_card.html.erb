@@ -1,0 +1,17 @@
+<div class="property-card">
+  <%= render 'real_estate_properties/show_elements/carousel' %>
+  <div class="property-card-bottom">
+    <div class="property-title">
+      <h2><%=property_type_to_fr(@property.property_type).capitalize%> <%=@property.num_rooms %> <%= @property.num_rooms > 1 ? 'pièces' : 'pièce' %> - <%= @property.livable_size_sqm %>m<sup>2</sup></h2>
+      <h3><%= @property.address.gsub(/(\d+)/, "").titleize %></h3>
+      <h3><strong>250 000€</strong></h3>
+      <p>Posté le : <%= @property.created_at %></p>
+      <div class="property-booking--sm visible-xs visible-sm hidden-md hidden-lg">
+        <%= link_to "Visiter", "/requests/new?type=buyer", class: "btn" %>
+      </div>
+    </div>
+    <div class="property-booking--lg hidden-xs hidden-sm visible-md visible-lg">
+      <%= link_to "Prévoir une visite", "/requests/new?type=buyer", class: "btn" %>
+    </div>
+  </div>
+</div>

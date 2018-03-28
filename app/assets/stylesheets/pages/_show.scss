@@ -1,0 +1,145 @@
+.show-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.show-content {
+  min-height: calc(100vh - 310px);
+  max-width: 900px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 30px;
+  box-shadow: 0 0 1px $grey;
+}
+
+.property-card {
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  .property-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    .property-booking--lg {
+      margin-right: 100px;
+    }
+  }
+  .property-title {
+    padding: 10px;
+    h2 {
+      color: $green;
+      font-size: 25px;
+      margin: 10px;
+    }
+    h3 {
+      font-size: 20px;
+      margin: 10px;
+
+    }
+    p {
+      font-size: 15px;
+      margin: 10px;
+    }
+  }
+}
+.highlights-container {
+  padding: 10px;
+  .highlights-section {
+    margin-bottom: 30px;
+    .highlight-title {
+      border-bottom: 2px solid $green;
+      font-weight: bolder;
+    }
+    .highlight {
+      margin-bottom: 20px;
+      .highlight-label {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        .highlight-icon {
+          max-width: 50px;
+          max-height: 50px;
+        }
+        strong {
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+        }
+      }
+      .highlight-value {
+        margin-top: 10px;
+        margin-left: 50px;
+      }
+    }
+    .description {
+      font-size: 15px;
+    }
+  }
+}
+
+// MEDIA WIDTH RELATED STYLES
+@media(max-width: 768px) {
+  .show-content {
+    margin: 10px;
+    padding: 0 0 10px 0;
+  }
+
+  .property-card {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    .property-card-bottom {
+      display: flex;
+      justify-content: space-around;
+      .property-booking--sm {
+        text-align: center;
+        .btn {
+          font-size: 15px;
+        }
+      }
+    }
+    .property-title {
+      padding: 10px;
+      h2 {
+        color: $green;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+
+      }
+      p {
+        font-size: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .highlights-container {
+    .highlights-section {
+      .highlight {
+        .highlight-label {
+          display: flex;
+          height: 50px;
+          .highlight-icon {
+            max-width: 50px;
+            max-height: 50px;
+          }
+          strong {
+            font-size: 12px;
+            height: 50px;
+          }
+        }
+        .highlight-value {
+          font-size: 12px;
+          margin-left: 50px;
+        }
+      }
+      .description {
+        font-size: 15px;
+      }
+    }
+  }
+
+}
+

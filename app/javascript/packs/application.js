@@ -1,4 +1,5 @@
 import "bootstrap";
+$('#carousel').carousel()
 import { autocomplete } from '../shared/autocomplete'
 import { goBack } from '../shared/goBack'
 import { formSectionValidation } from '../shared/formSectionValidation'
@@ -8,6 +9,7 @@ import { addStateToForm } from '../shared/formCheckStateBox'
 import { validateAddress } from '../shared/addressValidation'
 import { launchDropzone } from '../shared/dropzone'
 import { toggleFaq, faqSection } from '../shared/faq'
+import { filter } from "../shared/filter.js"
 
 if (document.getElementById('js-go-back')) {
   goBack();
@@ -60,5 +62,6 @@ if (document.getElementById('doc-dropzone')) {
 }
 
 // Javascript to change the format of filter on Flat#Index
-import { filter } from "../shared/filter.js"
-filter();
+if (document.querySelectorAll('.room-filter input')) {
+  filter();
+}

@@ -7,7 +7,8 @@
           <h1>Confirmez l'addresse de votre bien</h1>
         </div>
         <div class="form-body">
-          <%= render 'property_forms/form_map/form_map' %>
+          <%= render 'shared/map' %>
+          <p class="text-center"><%= @property_form.address %></p>
         </div>
         <%= render 'property_forms/form_validation/form_validation', next_p: 'Valider', previous_p: 'Retour' %>
       </div>

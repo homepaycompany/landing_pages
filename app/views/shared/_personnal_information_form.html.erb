@@ -45,7 +45,7 @@
             <strong>Téléphone</strong>
           </div>
           <div class="form-input">
-            <%= f.input 'last_name', label: false,  placeholder: '0123456789' %>
+            <%= f.input 'phone_number', label: false,  placeholder: '0123456789' %>
           </div>
         </div>
       </div>
@@ -55,7 +55,8 @@
     <div class="btn" id="js-validate-section">
       Je veux être recontacté
     </div>
-    <%= f.submit "Je m'inscris", class:"hidden btn", id:"js-submit_form" %>
+    <%= f.hidden_field :request_type, value: @type %>
+    <%= f.submit "Je m'inscris", class:"hidden btn", id:"move-to-next-section" %>
   </div>
 <% end %>
 

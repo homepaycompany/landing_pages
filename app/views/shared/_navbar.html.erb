@@ -8,6 +8,7 @@
 
   <!-- Right Navigation -->
   <div class="navbar-right hidden-xs hidden-sm">
+    <%= link_to "Comment ça marche", how_it_works_path(landing: @landing), class: "navbar-item navbar-link #{active_class(how_it_works_path(landing: @landing))}" %>
     <%= link_to "Comment ça marche", how_it_works_path, class: "navbar-item navbar-link #{active_class(how_it_works_path)}" %>
     <%= link_to "Services et prix", features_path, class: "navbar-item navbar-link #{active_class(features_path)}" %>
     <%= link_to "A propos", about_path, class: "navbar-item navbar-link #{active_class(about_path)}" %>
@@ -33,6 +34,7 @@
             <%= link_to "A propos", about_path, class: "navbar-item navbar-link #{active_class(about_path)}" %>
           </li>
           <li>
+            <%= link_to "Nos biens", real_estate_properties_path, class: "navbar-item navbar-link #{active_class(real_estate_properties_path)}" %>
           </li>
         </ul>
       </div>
